@@ -1,0 +1,1657 @@
+{
+  "pocket/repo/poktroll/x/tokenomics/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc          codec.BinaryCodec\n\tstoreService store.KVStoreService\n\tlogger       log.Logger\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n\n\t// keepers\n\tbankKeeper        types.BankKeeper\n\taccountKeeper     types.AccountKeeper\n\tapplicationKeeper types.ApplicationKeeper\n\tsupplierKeeper    types.SupplierKeeper\n\tproofKeeper       types.ProofKeeper\n\tsharedKeeper      types.SharedKeeper\n\tsessionKeeper     types.SessionKeeper\n\tserviceKeeper     types.ServiceKeeper\n\n\tsharedQuerier client.SharedQueryClient\n\n\ttokenLogicModules []tlm.TokenLogicModule\n}",
+    "items": [
+      {
+        "key": "tokenLogicModules",
+        "type": "[]tlm.TokenLogicModule"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/upgrade/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\thomePath           string                          // root directory of app config\n\tskipUpgradeHeights map[int64]bool                  // map of heights to skip for an upgrade\n\tstoreKey           sdk.StoreKey                    // key to access x/upgrade store\n\tcdc                codec.BinaryCodec               // App-wide binary codec\n\tupgradeHandlers    map[string]types.UpgradeHandler // map of plan name to upgrade handler\n\tversionSetter      xp.ProtocolVersionSetter        // implements setting the protocol version field on BaseApp\n\tdowngradeVerified  bool                            // tells if we've already sanity checked that this binary version isn't being used against an old state.\n}",
+    "items": [
+      {
+        "key": "skipUpgradeHeights",
+        "type": "map[int64]bool"
+      },
+      {
+        "key": "versionSetter",
+        "type": "xp.ProtocolVersionSetter"
+      },
+      {
+        "key": "downgradeVerified",
+        "type": "bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/distribution/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey      sdk.StoreKey\n\tcdc           codec.BinaryCodec\n\tparamSpace    paramtypes.Subspace\n\tauthKeeper    types.AccountKeeper\n\tbankKeeper    types.BankKeeper\n\tstakingKeeper types.StakingKeeper\n\n\tblockedAddrs map[string]bool\n\n\tfeeCollectorName string // name of the FeeCollector ModuleAccount\n}",
+    "items": [
+      {
+        "key": "blockedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/crisis/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\troutes         []types.InvarRoute\n\tparamSpace     paramtypes.Subspace\n\tinvCheckPeriod uint\n\n\tsupplyKeeper types.SupplyKeeper\n\n\tfeeCollectorName string // name of the FeeCollector ModuleAccount\n}",
+    "items": [
+      {
+        "key": "invCheckPeriod",
+        "type": "uint"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/params/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc         codec.BinaryCodec\n\tlegacyAmino *codec.LegacyAmino\n\tkey         sdk.StoreKey\n\ttkey        sdk.StoreKey\n\tspaces      map[string]*types.Subspace\n}",
+    "items": [
+      {
+        "key": "legacyAmino",
+        "type": "*codec.LegacyAmino"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "realio/repo/realio-network/x/asset/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc          codec.Codec\n\tstoreService store.KVStoreService\n\tbankKeeper   types.BankKeeper\n\tak           types.AccountKeeper\n\tallowAddrs   map[string]bool\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n\n\tSchema collections.Schema\n\tParams collections.Item[types.Params]\n\tToken  collections.Map[string, types.Token]\n}",
+    "items": [
+      {
+        "key": "allowAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "highbury/repo/fury/x/cdp/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tkey             storetypes.StoreKey\n\tcdc             codec.Codec\n\tparamSubspace   paramtypes.Subspace\n\tpricefeedKeeper types.PricefeedKeeper\n\tauctionKeeper   types.AuctionKeeper\n\tbankKeeper      types.BankKeeper\n\taccountKeeper   types.AccountKeeper\n\thooks           types.CDPHooks\n\tmaccPerms       map[string][]string\n}",
+    "items": [
+      {
+        "key": "maccPerms",
+        "type": "map[string][]string"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "highbury/repo/fury/x/bep3/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tkey           storetypes.StoreKey\n\tcdc           codec.Codec\n\tparamSubspace paramtypes.Subspace\n\tbankKeeper    types.BankKeeper\n\taccountKeeper types.AccountKeeper\n\tMaccs         map[string]bool\n}",
+    "items": [
+      {
+        "key": "Maccs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "highbury/repo/fury/x/furydist/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tkey           storetypes.StoreKey\n\tcdc           codec.BinaryCodec\n\tparamSubspace paramtypes.Subspace\n\tbankKeeper    types.BankKeeper\n\tdistKeeper    types.DistKeeper\n\taccountKeeper types.AccountKeeper\n\n\tblacklistedAddrs map[string]bool\n}",
+    "items": [
+      {
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "cudos/repo/cudos-node/x/bank/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tbankkeeper.BaseKeeper\n\n\tak accountkeeper.AccountKeeper\n\n\tdk    distrkeeper.Keeper\n\tdkSet bool\n}",
+    "items": [
+      {
+        "key": "dkSet",
+        "type": "bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sifchain/repo/sifnode/x/oracle/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc         codec.BinaryCodec // The wire codec for binary encoding/decoding.\n\tstoreKey    sdk.StoreKey      // Unexposed key to access store from sdk.Context\n\tstakeKeeper types.StakingKeeper\n\t// TODO: use this as param instead\n\tconsensusNeeded float64 // The minimum % of stake needed to sign claims in order for consensus to occur\n}",
+    "items": [
+      {
+        "key": "consensusNeeded",
+        "type": "float64"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "meme/repo/meme/x/wasm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey              sdk.StoreKey\n\tcdc                   codec.Codec\n\taccountKeeper         types.AccountKeeper\n\tbank                  CoinTransferrer\n\tportKeeper            types.PortKeeper\n\tcapabilityKeeper      types.CapabilityKeeper\n\twasmVM                types.WasmerEngine\n\twasmVMQueryHandler    WasmVMQueryHandler\n\twasmVMResponseHandler WasmVMResponseHandler\n\tmessenger             Messenger\n\t// queryGasLimit is the max wasmvm gas that can be spent on executing a query with a contract\n\tqueryGasLimit uint64\n\tparamSpace    paramtypes.Subspace\n\tgasRegister   GasRegister\n}",
+    "items": [
+      {
+        "key": "bank",
+        "type": "CoinTransferrer"
+      },
+      {
+        "key": "messenger",
+        "type": "Messenger"
+      },
+      {
+        "key": "queryGasLimit",
+        "type": "uint64"
+      },
+      {
+        "key": "gasRegister",
+        "type": "GasRegister"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "chronicnetwork/repo/cht/x/cht/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey              sdk.StoreKey\n\tcdc                   codec.Codec\n\taccountKeeper         types.AccountKeeper\n\tbank                  CoinTransferrer\n\tportKeeper            types.PortKeeper\n\tcapabilityKeeper      types.CapabilityKeeper\n\twasmVM                types.WasmerEngine\n\twasmVMQueryHandler    WasmVMQueryHandler\n\twasmVMResponseHandler WasmVMResponseHandler\n\tmessenger             Messenger\n\t// queryGasLimit is the max wasmvm gas that can be spent on executing a query with a contract\n\tqueryGasLimit uint64\n\tparamSpace    paramtypes.Subspace\n\tgasRegister   GasRegister\n}",
+    "items": [
+      {
+        "key": "bank",
+        "type": "CoinTransferrer"
+      },
+      {
+        "key": "messenger",
+        "type": "Messenger"
+      },
+      {
+        "key": "queryGasLimit",
+        "type": "uint64"
+      },
+      {
+        "key": "gasRegister",
+        "type": "GasRegister"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "archway/repo/archway/x/rewards/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc              codec.Codec\n\tstoreKey         storetypes.StoreKey\n\tcontractInfoView ContractInfoReaderExpected\n\ttrackingKeeper   TrackingKeeperExpected\n\tauthKeeper       AuthKeeperExpected\n\tbankKeeper       BankKeeperExpected\n\tauthority        string // this should be the x/gov module account\n\tlogger           log.Logger\n\n\tSchema collections.Schema\n\n\tParams           collections.Item[types.Params]\n\tMinConsFee       collections.Item[sdk.DecCoin]\n\tContractMetadata collections.Map[[]byte, types.ContractMetadata]\n\tBlockRewards     collections.Map[uint64, types.BlockRewards]\n\tFlatFees         collections.Map[[]byte, sdk.Coin]\n\tTxRewards        *collections.IndexedMap[uint64, types.TxRewards, TxRewardsIndex]\n\tRewardsRecordID  collections.Sequence\n\tRewardsRecords   *collections.IndexedMap[uint64, types.RewardsRecord, RewardsRecordsIndex]\n}",
+    "items": [
+      {
+        "key": "contractInfoView",
+        "type": "ContractInfoReaderExpected"
+      },
+      {
+        "key": "trackingKeeper",
+        "type": "TrackingKeeperExpected"
+      },
+      {
+        "key": "authKeeper",
+        "type": "AuthKeeperExpected"
+      },
+      {
+        "key": "bankKeeper",
+        "type": "BankKeeperExpected"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "archway/repo/archway/x/rewards/mintbankkeeper/keeper.go": {
+    "source": "type Keeper struct {\n\tbankKeeper    mintTypes.BankKeeper\n\trewardsKeeper RewardsKeeperExpected\n}",
+    "items": [
+      {
+        "key": "rewardsKeeper",
+        "type": "RewardsKeeperExpected"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "archway/repo/archway/x/tracking/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tWasmGasRegister wasmtypes.GasRegister\n\tlogger          log.Logger\n\n\tcdc   codec.Codec\n\tstate State\n}",
+    "items": [
+      {
+        "key": "state",
+        "type": "State"
+      }
+    ],
+    "result": "mutation in beginblock"
+  },
+  "agoric/repo/agoric-sdk/golang/cosmos/x/vstorage/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tchangeManager ChangeManager\n\tstoreKey      storetypes.StoreKey\n}",
+    "items": [
+      {
+        "key": "changeManager",
+        "type": "ChangeManager"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "agoric/repo/agoric-sdk/golang/cosmos/x/swingset/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey   storetypes.StoreKey\n\tcdc        codec.Codec\n\tparamSpace paramtypes.Subspace\n\n\taccountKeeper    types.AccountKeeper\n\tbankKeeper       bankkeeper.Keeper\n\tvstorageKeeper   vstoragekeeper.Keeper\n\tfeeCollectorName string\n\n\t// CallToController dispatches a message to the controlling process\n\tcallToController func(ctx sdk.Context, str string) (string, error)\n}",
+    "items": [
+      {
+        "key": "callToController",
+        "type": "func(ctx sdk.Context, str string) (string, error)"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "agoric/repo/agoric-sdk/golang/cosmos/x/vibc/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc codec.Codec\n\n\tchannelKeeper types.ChannelKeeper\n\tportKeeper    types.PortKeeper\n\n\t// Filled out by `WithScope`\n\tscopedKeeper types.ScopedKeeper\n\tstoreKey     storetypes.StoreKey\n\tpushAction   vm.ActionPusher\n}",
+    "items": [
+      {
+        "key": "pushAction",
+        "type": "vm.ActionPusher"
+      }
+    ],
+    "result": "unknown"
+  },
+  "agoric/repo/agoric-sdk/golang/cosmos/x/vbank/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey   storetypes.StoreKey\n\tcdc        codec.Codec\n\tparamSpace paramtypes.Subspace\n\n\taccountKeeper         types.AccountKeeper\n\tbankKeeper            types.BankKeeper\n\trewardDistributorName string\n\tPushAction            vm.ActionPusher\n}",
+    "items": [
+      {
+        "key": "PushAction",
+        "type": "vm.ActionPusher"
+      }
+    ],
+    "result": "unknown"
+  },
+  "agoric/repo/agoric-sdk/golang/cosmos/x/vtransfer/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tporttypes.ICS4Wrapper\n\tvibctypes.ReceiverImpl\n\n\tvibcKeeper vibc.Keeper\n\n\tkey storetypes.StoreKey\n\tcdc codec.Codec\n\n\tvibcModule porttypes.IBCModule\n\n\t// This is a pointer so that copies of the Keeper struct share the same mutable debug options.\n\tdebug *KeeperDebugOptions\n}",
+    "items": [
+      {
+        "key": "debug",
+        "type": "*KeeperDebugOptions"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "umee/repo/umee/x/auction/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstore sdk.KVStore\n\tcdc   codec.BinaryCodec\n\taccs  SubAccounts\n\tbank  auction.BankKeeper\n\tugov  ugov.WithEmergencyGroup\n\n\tctx *sdk.Context\n}",
+    "items": [
+      {
+        "key": "accs",
+        "type": "SubAccounts"
+      },
+      {
+        "key": "ugov",
+        "type": "ugov.WithEmergencyGroup"
+      },
+      {
+        "key": "ctx",
+        "type": "*sdk.Context"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "umee/repo/umee/x/metoken/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc            codec.BinaryCodec\n\tstore          sdk.KVStore\n\tbankKeeper     metoken.BankKeeper\n\tleverageKeeper metoken.LeverageKeeper\n\toracleKeeper   metoken.OracleKeeper\n\tugov           ugov.EmergencyGroupBuilder\n\trewardsAuction sdk.AccAddress\n\n\t// TODO: ctx should be removed when we migrate leverageKeeper and oracleKeeper\n\tctx *sdk.Context\n}",
+    "items": [
+      {
+        "key": "ugov",
+        "type": "ugov.EmergencyGroupBuilder"
+      },
+      {
+        "key": "ctx",
+        "type": "*sdk.Context"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "umee/repo/umee/x/uibc/quota/keeper.go": {
+    "source": "type Keeper struct {\n\t// Note: ideally we use a ligther interface here to directly use cosmos-db/DB\n\t// however we will need to wait probably until Cosmos SDK 0.48\n\t// We can have multiple stores if needed\n\tstore    sdk.KVStore\n\tleverage uibc.Leverage\n\toracle   uibc.Oracle\n\tugov     ugov.WithEmergencyGroup\n\n\t/**\n\tif Keeper methods depends on sdk.Context, then we should add those dependencies directly,\n\tor provide them as function arguments.\n\t   gasMeter    sdk.GasMeter\n\n\tSometimes, all types don't have Any. In that case we don't codec, and those types can be\n\tserialized directly using `bz := protoObject.Marshal()`.\n\t*/\n\tblockTime time.Time\n\tcdc       codec.BinaryCodec\n\n\t// TODO: ctx should be removed when we migrate leverage and oracle\n\tctx *sdk.Context\n}",
+    "items": [
+      {
+        "key": "leverage",
+        "type": "uibc.Leverage"
+      },
+      {
+        "key": "oracle",
+        "type": "uibc.Oracle"
+      },
+      {
+        "key": "ugov",
+        "type": "ugov.WithEmergencyGroup"
+      },
+      {
+        "key": "gasMeter",
+        "type": "sdk.GasMeter"
+      },
+      {
+        "key": "serialized",
+        "type": "directly using `bz := protoObject.Marshal()`."
+      },
+      {
+        "key": "blockTime",
+        "type": "time.Time"
+      },
+      {
+        "key": "ctx",
+        "type": "*sdk.Context"
+      }
+    ],
+    "result": "unknown"
+  },
+  "umee/repo/umee/x/leverage/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc                    codec.BinaryCodec\n\tstoreKey               storetypes.StoreKey\n\takStoreKey             storetypes.StoreKey\n\tbankKeeper             types.BankKeeper\n\tauthKeeper             authkeeper.AccountKeeper\n\toracleKeeper           types.OracleKeeper\n\tugov                   ugov.EmergencyGroupBuilder\n\tliquidatorQueryEnabled bool\n\trewardsAuction         sdk.AccAddress\n\n\ttokenHooks []types.TokenHooks\n\tbondHooks  []types.BondHooks\n}",
+    "items": [
+      {
+        "key": "ugov",
+        "type": "ugov.EmergencyGroupBuilder"
+      },
+      {
+        "key": "liquidatorQueryEnabled",
+        "type": "bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "nibiru/repo/nibiru/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc codec.BinaryCodec\n\t// storeKey: For persistent storage of EVM state.\n\tstoreKey storetypes.StoreKey\n\t// transientKey: Store key that resets every block during Commit\n\ttransientKey storetypes.StoreKey\n\n\t// EvmState isolates the key-value stores (collections) for the x/evm module.\n\tEvmState EvmState\n\n\t// FunTokens isolates the key-value stores (collections) for fungible token\n\t// mappings.\n\tFunTokens FunTokenState\n\n\t// the address capable of executing a MsgUpdateParams message. Typically,\n\t// this should be the x/gov module account.\n\tauthority sdk.AccAddress\n\n\tBank          *NibiruBankKeeper\n\taccountKeeper evm.AccountKeeper\n\tstakingKeeper evm.StakingKeeper\n\n\t// precompiles is the set of active precompiled contracts used in the EVM.\n\t// Precompiles are special, built-in contract interfaces that exist at\n\t// predefined address and run custom logic outside of what is possible only\n\t// in Solidity.\n\tprecompiles omap.SortedMap[gethcommon.Address, vm.PrecompiledContract]\n\n\t// tracer: Configures the output type for a geth `vm.EVMLogger`. Tracer types\n\t// include \"access_list\", \"json\", \"struct\", and \"markdown\". If any other\n\t// value is used, a no operation tracer is set.\n\ttracer string\n}",
+    "items": [
+      {
+        "key": "EvmState",
+        "type": "EvmState"
+      },
+      {
+        "key": "FunTokens",
+        "type": "FunTokenState"
+      },
+      {
+        "key": "precompiles",
+        "type": "omap.SortedMap[gethcommon.Address, vm.PrecompiledContract]"
+      }
+    ],
+    "result": "invalid: also ctx.storage"
+  },
+  "bandchain/repo/chain/x/oracle/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey         storetypes.StoreKey\n\tcdc              codec.BinaryCodec\n\tfileCache        filecache.Cache\n\tfeeCollectorName string\n\towasmVM          *owasm.Vm\n\n\tauthKeeper        types.AccountKeeper\n\tbankKeeper        types.BankKeeper\n\tstakingKeeper     types.StakingKeeper\n\tdistrKeeper       types.DistrKeeper\n\tauthzKeeper       types.AuthzKeeper\n\tics4Wrapper       porttypes.ICS4Wrapper\n\tportKeeper        types.PortKeeper\n\trollingseedKepper types.RollingseedKeeper\n\tbandtssKeeper     types.BandtssKeeper\n\tscopedKeeper      capabilitykeeper.ScopedKeeper\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "fileCache",
+        "type": "filecache.Cache"
+      },
+      {
+        "key": "owasmVM",
+        "type": "*owasm.Vm"
+      }
+    ],
+    "result": "valid but not accessable"
+  },
+  "comdex/repo/comdex/x/asset/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc        codec.BinaryCodec\n\tkey        storetypes.StoreKey\n\tparams     paramstypes.Subspace\n\taccount    expected.AccountKeeper\n\tbank       expected.BankKeeper\n\trewards    expected.RewardsKeeper\n\tvault      expected.VaultKeeper\n\tbandoracle expected.Bandoraclekeeper\n\tauthority  string\n}",
+    "items": [
+      {
+        "key": "bandoracle",
+        "type": "expected.Bandoraclekeeper"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "qfs/repo/comdex/x/asset/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc        codec.BinaryCodec\n\tkey        storetypes.StoreKey\n\tparams     paramstypes.Subspace\n\taccount    expected.AccountKeeper\n\tbank       expected.BankKeeper\n\trewards    expected.RewardsKeeper\n\tvault      expected.VaultKeeper\n\tbandoracle expected.Bandoraclekeeper\n\tauthority  string\n}",
+    "items": [
+      {
+        "key": "bandoracle",
+        "type": "expected.Bandoraclekeeper"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "haqq/repo/haqq/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey storetypes.StoreKey\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey storetypes.StoreKey\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this should be the x/gov module account.\n\tauthority sdk.AccAddress\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\t// update balance and accounting operations with coins\n\tbankKeeper types.BankKeeper\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\t// fetch EIP1559 base fee and parameters\n\tfeeMarketKeeper types.FeeMarketKeeper\n\n\t// chain ID number obtained from the context's chain id\n\teip155ChainID *big.Int\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// EVM Hooks for tx post-processing\n\thooks types.EvmHooks\n\t// Legacy subspace\n\tss paramstypes.Subspace\n\n\t// precompiles defines the map of all available precompiled smart contracts.\n\t// Some these precompiled contracts might not be active depending on the EVM\n\t// parameters.\n\tprecompiles map[common.Address]vm.PrecompiledContract\n}",
+    "items": [
+      {
+        "key": "eip155ChainID",
+        "type": "*big.Int"
+      },
+      {
+        "key": "precompiles",
+        "type": "map[common.Address]vm.PrecompiledContract"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "kava/repo/kava/x/cdp/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tkey             storetypes.StoreKey\n\tcdc             codec.Codec\n\tparamSubspace   paramtypes.Subspace\n\tpricefeedKeeper types.PricefeedKeeper\n\tauctionKeeper   types.AuctionKeeper\n\tbankKeeper      types.BankKeeper\n\taccountKeeper   types.AccountKeeper\n\thooks           types.CDPHooks\n\tmaccPerms       map[string][]string\n}",
+    "items": [
+      {
+        "key": "maccPerms",
+        "type": "map[string][]string"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "kava/repo/kava/x/kavadist/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tkey           storetypes.StoreKey\n\tcdc           codec.BinaryCodec\n\tparamSubspace paramtypes.Subspace\n\tbankKeeper    types.BankKeeper\n\tdistKeeper    types.DistKeeper\n\taccountKeeper types.AccountKeeper\n\n\tblacklistedAddrs map[string]bool\n}",
+    "items": [
+      {
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "kava/repo/kava/x/bep3/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tkey           storetypes.StoreKey\n\tcdc           codec.Codec\n\tparamSubspace paramtypes.Subspace\n\tbankKeeper    types.BankKeeper\n\taccountKeeper types.AccountKeeper\n\tMaccs         map[string]bool\n}",
+    "items": [
+      {
+        "key": "Maccs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "starname/repo/starnamed/x/wasm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey              sdk.StoreKey\n\tcdc                   codec.Codec\n\taccountKeeper         types.AccountKeeper\n\tbank                  CoinTransferrer\n\tportKeeper            types.PortKeeper\n\tcapabilityKeeper      types.CapabilityKeeper\n\twasmVM                types.WasmerEngine\n\twasmVMQueryHandler    WasmVMQueryHandler\n\twasmVMResponseHandler WasmVMResponseHandler\n\tmessenger             Messenger\n\t// queryGasLimit is the max wasmvm gas that can be spent on executing a query with a contract\n\tqueryGasLimit        uint64\n\tparamSpace           paramtypes.Subspace\n\tgasRegister          GasRegister\n\tmaxQueryStackSize    uint32\n\tacceptedAccountTypes map[reflect.Type]struct{}",
+    "items": [
+      {
+        "key": "bank",
+        "type": "CoinTransferrer"
+      },
+      {
+        "key": "messenger",
+        "type": "Messenger"
+      },
+      {
+        "key": "queryGasLimit",
+        "type": "uint64"
+      },
+      {
+        "key": "gasRegister",
+        "type": "GasRegister"
+      },
+      {
+        "key": "maxQueryStackSize",
+        "type": "uint32"
+      },
+      {
+        "key": "acceptedAccountTypes",
+        "type": "map[reflect.Type]struct{}"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "starname/repo/starnamed/x/starname/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// external keepers\n\tConfigurationKeeper ConfigurationKeeper\n\tSupplyKeeper        SupplyKeeper\n\tEscrowKeeper        EscrowKeeper\n\tAuthKeeper          AuthKeeper\n\tStakingKeeper       StakingKeeper\n\tDistributionKeeper  DistributionKeeper\n\t// default fields\n\tStoreKey   sdk.StoreKey // contains the store key for the domain module\n\tCdc        codec.Codec\n\tparamspace ParamSubspace\n\t// Used for block fees queries\n\tcms sdk.CommitMultiStore\n}",
+    "items": [
+      {
+        "key": "cms",
+        "type": "sdk.CommitMultiStore"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "starname/repo/starnamed/x/escrow/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey            sdk.StoreKey\n\tcdc                 codec.Codec\n\tparamSpace          paramstypes.Subspace\n\taccountKeeper       types.AccountKeeper\n\tbankKeeper          types.BankKeeper\n\tconfigurationKeeper types.ConfigurationKeeper\n\tcustomData          map[types.TypeID]types.CustomData\n\tblockedAddrs        map[string]bool\n}",
+    "items": [
+      {
+        "key": "blockedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "acrechain/repo/acrechain/ethermint/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey sdk.StoreKey\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey sdk.StoreKey\n\n\t// module specific parameter space that can be configured through governance\n\tparamSpace paramtypes.Subspace\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\t// update balance and accounting operations with coins\n\tbankKeeper types.BankKeeper\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\t// fetch EIP1559 base fee and parameters\n\tfeeMarketKeeper types.FeeMarketKeeper\n\n\t// chain ID number obtained from the context's chain id\n\teip155ChainID *big.Int\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// EVM Hooks for tx post-processing\n\thooks types.EvmHooks\n}",
+    "items": [
+      {
+        "key": "eip155ChainID",
+        "type": "*big.Int"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sommelier/repo/sommelier/x/auction/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey               storetypes.StoreKey\n\tcdc                    codec.BinaryCodec\n\tparamSpace             paramtypes.Subspace\n\tbankKeeper             types.BankKeeper\n\taccountKeeper          types.AccountKeeper\n\tfundingModuleAccounts  map[string]bool\n\tproceedsModuleAccounts map[string]bool\n}",
+    "items": [
+      {
+        "key": "fundingModuleAccounts",
+        "type": "map[string]bool"
+      },
+      {
+        "key": "proceedsModuleAccounts",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sunrise/repo/sunrise/x/tokenconverter/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tappmodule.Environment\n\n\tcdc          codec.BinaryCodec\n\taddressCodec address.Codec\n\t// Address capable of executing a MsgUpdateParams message.\n\t// Typically, this should be the x/gov module account.\n\tauthority []byte\n\n\tSchema collections.Schema\n\tParams collections.Item[types.Params]\n\n\taccountKeeper types.AccountKeeper\n\tbankKeeper    types.BankKeeper\n}",
+    "items": [
+      {
+        "key": "authority",
+        "type": "[]byte"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sunrise/repo/sunrise/x/fee/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tappmodule.Environment\n\n\tcdc          codec.BinaryCodec\n\taddressCodec address.Codec\n\t// Address capable of executing a MsgUpdateParams message.\n\t// Typically, this should be the x/gov module account.\n\tauthority []byte\n\n\tSchema collections.Schema\n\tParams collections.Item[types.Params]\n\n\taccountKeeper types.AccountKeeper\n\tbankKeeper    types.BankKeeper\n}",
+    "items": [
+      {
+        "key": "authority",
+        "type": "[]byte"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sunrise/repo/sunrise/x/da/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tappmodule.Environment\n\n\tcdc                   codec.BinaryCodec\n\taddressCodec          address.Codec\n\tvalidatorAddressCodec address.ValidatorAddressCodec\n\t// Address capable of executing a MsgUpdateParams message.\n\t// Typically, this should be the x/gov module account.\n\tauthority []byte\n\n\tSchema          collections.Schema\n\tParams          collections.Item[types.Params]\n\tPublishedData   *collections.IndexedMap[string, types.PublishedData, types.PublishedDataIndexes]\n\tChallengeCounts collections.Item[uint64]\n\tFaultCounts     collections.Map[[]byte, uint64]\n\tProofs          collections.Map[collections.Pair[string, []byte], types.Proof]\n\tInvalidities    collections.Map[collections.Pair[string, []byte], types.Invalidity]\n\tProofDeputies   collections.Map[[]byte, []byte]\n\n\tBankKeeper     types.BankKeeper\n\tStakingKeeper  types.StakingKeeper\n\tSlashingKeeper types.SlashingKeeper\n}",
+    "items": [
+      {
+        "key": "authority",
+        "type": "[]byte"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sunrise/repo/sunrise/x/swap/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tappmodule.Environment\n\n\tcdc          codec.BinaryCodec\n\taddressCodec address.Codec\n\t// Address capable of executing a MsgUpdateParams message.\n\t// Typically, this should be the x/gov module account.\n\tauthority []byte\n\n\tSchema                  collections.Schema\n\tParams                  collections.Item[types.Params]\n\tIncomingInFlightPackets collections.Map[collections.Triple[string, string, uint64], types.IncomingInFlightPacket]\n\tOutgoingInFlightPackets collections.Map[collections.Triple[string, string, uint64], types.OutgoingInFlightPacket]\n\n\tAccountKeeper       types.AccountKeeper\n\tBankKeeper          types.BankKeeper\n\tTransferKeeper      types.TransferKeeper\n\tliquidityPoolKeeper types.LiquidityPoolKeeper\n\n\tIbcKeeperFn func() *ibckeeper.Keeper\n}",
+    "items": [
+      {
+        "key": "authority",
+        "type": "[]byte"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sunrise/repo/sunrise/x/liquidityincentive/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tappmodule.Environment\n\n\tcdc          codec.BinaryCodec\n\taddressCodec address.Codec\n\t// Address capable of executing a MsgUpdateParams message.\n\t// Typically, this should be the x/gov module account.\n\tauthority []byte\n\n\tSchema  collections.Schema\n\tParams  collections.Item[types.Params]\n\tEpochs  collections.Map[uint64, types.Epoch]\n\tEpochId collections.Sequence\n\tGauges  collections.Map[collections.Pair[uint64, uint64], types.Gauge]\n\tVotes   collections.Map[sdk.AccAddress, types.Vote]\n\n\taccountKeeper       types.AccountKeeper\n\tbankKeeper          types.BankKeeper\n\tstakingKeeper       types.StakingKeeper\n\tliquidityPoolKeeper types.LiquidityPoolKeeper\n}",
+    "items": [
+      {
+        "key": "authority",
+        "type": "[]byte"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sunrise/repo/sunrise/x/selfdelegation/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tappmodule.Environment\n\n\tcdc                   codec.BinaryCodec\n\taddressCodec          address.Codec\n\tvalidatorAddressCodec address.ValidatorAddressCodec\n\t// Address capable of executing a MsgUpdateParams message.\n\t// Typically, this should be the x/gov module account.\n\tauthority []byte\n\n\tSchema                collections.Schema\n\tParams                collections.Item[types.Params]\n\tLockupAccounts        collections.Map[[]byte, []byte] // lockup account address -> owner address\n\tSelfDelegationProxies collections.Map[[]byte, []byte] // owner address -> self-delegation proxy address\n\n\taccountsKeeper       types.AccountsKeeper\n\tbankKeeper           types.BankKeeper\n\ttokenConverterKeeper types.TokenConverterKeeper\n}",
+    "items": [
+      {
+        "key": "authority",
+        "type": "[]byte"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sunrise/repo/sunrise/x/liquiditypool/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tappmodule.Environment\n\n\tcdc          codec.BinaryCodec\n\taddressCodec address.Codec\n\t// Address capable of executing a MsgUpdateParams message.\n\t// Typically, this should be the x/gov module account.\n\tauthority []byte\n\n\tSchema     collections.Schema\n\tParams     collections.Item[types.Params]\n\tPools      collections.Map[uint64, types.Pool]\n\tPoolId     collections.Sequence\n\tPositions  *collections.IndexedMap[uint64, types.Position, types.PositionsIndexes]\n\tPositionId collections.Sequence\n\n\tbankKeeper types.BankKeeper\n}",
+    "items": [
+      {
+        "key": "authority",
+        "type": "[]byte"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "paloma/repo/paloma/x/scheduler/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc      codec.BinaryCodec\n\tstoreKey store.KVStoreService\n\n\taccount   types.AccountKeeper\n\tEvmKeeper types.EvmKeeper\n\n\tider keeperutil.IDGenerator\n\n\tChains map[xchain.Type]xchain.Bridge\n}",
+    "items": [
+      {
+        "key": "ider",
+        "type": "keeperutil.IDGenerator"
+      },
+      {
+        "key": "Chains",
+        "type": "map[xchain.Type]xchain.Bridge"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "paloma/repo/paloma/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc             codec.BinaryCodec\n\tstoreKey        corestore.KVStoreService\n\tauthority       string\n\tConsensusKeeper types.ConsensusKeeper\n\tSchedulerKeeper types.SchedulerKeeper\n\tValset          types.ValsetKeeper\n\tSkyway          types.SkywayKeeper\n\tider            keeperutil.IDGenerator\n\tmsgSender       types.MsgSender\n\tmsgAssigner     types.MsgAssigner\n\tAddressCodec    address.Codec\n\n\tonMessageAttestedListeners []metrixtypes.OnConsensusMessageAttestedListener\n\tconsensusChecker           *libcons.ConsensusChecker\n}",
+    "items": [
+      {
+        "key": "ider",
+        "type": "keeperutil.IDGenerator"
+      },
+      {
+        "key": "consensusChecker",
+        "type": "*libcons.ConsensusChecker"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "paloma/repo/paloma/x/treasury/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc         codec.BinaryCodec\n\tparamstore  paramtypes.Subspace\n\tbank        types.BankKeeper\n\taccount     types.AccountKeeper\n\tevm         types.EvmKeeper\n\tChains      []xchain.FundCollecter\n\tKeeperUtil  keeperutil.KeeperUtilI[*types.Fees]\n\tStore       types.TreasuryStore\n\trelayerFees keeperutil.KVStoreWrapper[*types.RelayerFeeSetting]\n}",
+    "items": [
+      {
+        "key": "Chains",
+        "type": "[]xchain.FundCollecter"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "paloma/repo/paloma/x/valset/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tEvmKeeper         types.EvmKeeper\n\tSnapshotListeners []types.OnSnapshotBuiltListener\n\n\tcdc            codec.BinaryCodec\n\tider           keeperutil.IDGenerator\n\tparamstore     paramtypes.Subspace\n\tpowerReduction sdkmath.Int\n\tstaking        types.StakingKeeper\n\tstoreKey       cosmosstore.KVStoreService\n\tAddressCodec   address.Codec\n\tslashing       types.SlashingKeeper\n\n\tjailLog keeperutil.KVStoreWrapper[*types.JailRecord]\n}",
+    "items": [
+      {
+        "key": "ider",
+        "type": "keeperutil.IDGenerator"
+      },
+      {
+        "key": "powerReduction",
+        "type": "sdkmath.Int"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "impacthub/repo/ixo-blockchain/x/smart-account/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey                storetypes.StoreKey\n\tcdc                     codec.BinaryCodec\n\tparamSpace              paramtypes.Subspace\n\tCircuitBreakerGovernor  sdk.AccAddress\n\tisSmartAccountActiveBz  []byte\n\tisSmartAccountActiveVal bool\n\n\tAuthenticatorManager *authenticator.AuthenticatorManager\n}",
+    "items": [
+      {
+        "key": "isSmartAccountActiveBz",
+        "type": "[]byte"
+      },
+      {
+        "key": "isSmartAccountActiveVal",
+        "type": "bool"
+      },
+      {
+        "key": "AuthenticatorManager",
+        "type": "*authenticator.AuthenticatorManager"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "imversed/repo/imversed/x/xverse/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey   storetypes.StoreKey\n\tcdc        codec.BinaryCodec\n\tparamstore paramtypes.Subspace\n\trnd        *rand.Rand\n}",
+    "items": [
+      {
+        "key": "rnd",
+        "type": "*rand.Rand"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "bostrom/repo/go-cyber/x/resources/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc            codec.BinaryCodec\n\tstoreKey       storetypes.StoreKey\n\taccountKeeper  types.AccountKeeper\n\tbankKeeper     types.BankKeeper\n\tbandwidthMeter *bandwithkeeper.BandwidthMeter\n\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "bandwidthMeter",
+        "type": "*bandwithkeeper.BandwidthMeter"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "bitsong/repo/go-bitsong/x/smart-account/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey                storetypes.StoreKey\n\tcdc                     codec.BinaryCodec\n\tparamSpace              paramtypes.Subspace\n\tCircuitBreakerGovernor  sdk.AccAddress\n\tisSmartAccountActiveBz  []byte\n\tisSmartAccountActiveVal bool\n\n\tAuthenticatorManager *authenticator.AuthenticatorManager\n\tFeegrantKeeper       types.FeegrantKeeper\n}",
+    "items": [
+      {
+        "key": "isSmartAccountActiveBz",
+        "type": "[]byte"
+      },
+      {
+        "key": "isSmartAccountActiveVal",
+        "type": "bool"
+      },
+      {
+        "key": "AuthenticatorManager",
+        "type": "*authenticator.AuthenticatorManager"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "bitsong/repo/go-bitsong/x/fantoken/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey storetypes.StoreKey\n\tcdc      codec.Codec\n\t// accountKeeper types.AccountKeeper\n\tbankKeeper   types.BankKeeper\n\tdistrKeeper  types.DistrKeeper\n\tparamSpace   types.ParamSubspace\n\tblockedAddrs map[string]bool\n}",
+    "items": [
+      {
+        "key": "blockedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "saga/repo/ssc/x/chainlet/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc            codec.BinaryCodec\n\tstoreKey       storetypes.StoreKey\n\tparamstore     paramtypes.Subspace\n\tbillingKeeper  types.BillingKeeper\n\tproviderKeeper types.ProviderKeeper\n\tescrowKeeper   types.EscrowKeeper\n\taclKeeper      types.AclKeeper\n\n\tstackVersions map[string]*versions.Versions // display name => version tree\n}",
+    "items": [
+      {
+        "key": "stackVersions",
+        "type": "map[string]*versions.Versions"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "osmosis/repo/osmosis/x/smart-account/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey                storetypes.StoreKey\n\tcdc                     codec.BinaryCodec\n\tparamSpace              paramtypes.Subspace\n\tCircuitBreakerGovernor  sdk.AccAddress\n\tisSmartAccountActiveBz  []byte\n\tisSmartAccountActiveVal bool\n\n\tAuthenticatorManager *authenticator.AuthenticatorManager\n}",
+    "items": [
+      {
+        "key": "isSmartAccountActiveBz",
+        "type": "[]byte"
+      },
+      {
+        "key": "isSmartAccountActiveVal",
+        "type": "bool"
+      },
+      {
+        "key": "AuthenticatorManager",
+        "type": "*authenticator.AuthenticatorManager"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "osmosis/repo/osmosis/x/poolmanager/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey storetypes.StoreKey\n\n\tgammKeeper           types.PoolModuleI\n\tconcentratedKeeper   types.ConcentratedI\n\tcosmwasmpoolKeeper   types.PoolModuleI\n\tpoolIncentivesKeeper types.PoolIncentivesKeeperI\n\tbankKeeper           types.BankI\n\taccountKeeper        types.AccountI\n\tcommunityPoolKeeper  types.CommunityPoolI\n\tstakingKeeper        types.StakingKeeper\n\tprotorevKeeper       types.ProtorevKeeper\n\twasmKeeper           types.WasmKeeper\n\n\t// routes is a map to get the pool module by id.\n\troutes map[types.PoolType]types.PoolModuleI\n\n\t// map from poolId to the swap module + Gas consumed amount\n\t// note that after getPoolModule doesn't return an error\n\t// it will always return the same result. Meaning its perfect for a sync.map cache.\n\tcachedPoolModules *sync.Map\n\n\t// poolModules is a list of all pool modules.\n\t// It is used when an operation has to be applied to all pool\n\t// modules. Since map iterations are non-deterministic, we\n\t// use this list to ensure deterministic iteration.\n\tpoolModules []types.PoolModuleI\n\n\tparamSpace paramtypes.Subspace\n\n\tdefaultTakerFeeBz  []byte\n\tdefaultTakerFeeVal osmomath.Dec\n\n\tcachedTakerFeeShareAgreementMap          map[string]types.TakerFeeShareAgreement\n\tcachedRegisteredAlloyPoolByAlloyDenomMap map[string]types.AlloyContractTakerFeeShareState\n}",
+    "items": [
+      {
+        "key": "cachedPoolModules",
+        "type": "*sync.Map"
+      },
+      {
+        "key": "defaultTakerFeeBz",
+        "type": "[]byte"
+      },
+      {
+        "key": "defaultTakerFeeVal",
+        "type": "osmomath.Dec"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "tgrade/repo/tgrade/x/poe/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcodec             codec.Codec\n\tstoreKey          sdk.StoreKey\n\tparamStore        paramtypes.Subspace\n\ttwasmKeeper       types.TWasmKeeper\n\tcontractAddrCache sync.Map\n\tvalidatorVotes    validatorVotes\n}",
+    "items": [
+      {
+        "key": "contractAddrCache",
+        "type": "sync.Map"
+      },
+      {
+        "key": "validatorVotes",
+        "type": "validatorVotes"
+      }
+    ],
+    "result": "mutation in beginbloc"
+  },
+  "provenance/repo/provenance/x/msgfees/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey         storetypes.StoreKey\n\tcdc              codec.BinaryCodec\n\tfeeCollectorName string // name of the FeeCollector ModuleAccount\n\tdefaultFeeDenom  string\n\tsimulateFunc     baseAppSimulateFunc\n\ttxDecoder        sdk.TxDecoder\n\tregistry         cdctypes.InterfaceRegistry\n\tauthority        string\n}",
+    "items": [
+      {
+        "key": "simulateFunc",
+        "type": "baseAppSimulateFunc"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "provenance/repo/provenance/x/sanction/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc      codec.BinaryCodec\n\tstoreKey storetypes.StoreKey\n\n\tgovKeeper sanction.GovKeeper\n\n\tauthority string\n\n\tunsanctionableAddrs map[string]bool\n\n\tmsgSanctionTypeURL          string\n\tmsgUnsanctionTypeURL        string\n\tmsgExecLegacyContentTypeURL string\n}",
+    "items": [
+      {
+        "key": "unsanctionableAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "dymension/repo/dymension/x/lightclient/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// if false, will not run the msg update client ante handler. Very hacky\n\t// use to avoid problems in ibctesting.\n\tenabled *enabled\n\n\tcdc             codec.BinaryCodec\n\tstoreKey        storetypes.Key\n\tibcKeeper       types.IBCKeeperExpected\n\tibcClientKeeper types.IBCClientKeeperExpected\n\tibcChannelK     types.IBCChannelKeeperExpected\n\tSeqK            types.SequencerKeeperExpected\n\trollappKeeper   types.RollappKeeperExpected\n\n\t// <sequencer addr,client ID, height>\n\theaderSigners collections.KeySet[collections.Triple[string, string, uint64]]\n\t// <client ID, height> -> <sequencer addr>\n\tclientHeightToSigner collections.Map[collections.Pair[string, uint64], string]\n}",
+    "items": [
+      {
+        "key": "enabled",
+        "type": "*enabled"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "dymension/repo/dymension/x/sequencer/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tauthority string // authority is the x/gov module account\n\n\tcdc            codec.BinaryCodec\n\tstoreKey       storetypes.Key\n\tbankKeeper     types.BankKeeper\n\taccountK       types.AccountKeeper\n\trollappKeeper  types.RollappKeeper\n\tunbondBlockers []UnbondBlocker\n\thooks          types.Hooks\n\n\tdymintProposerAddrToAccAddr collections.Map[[]byte, string]\n}",
+    "items": [
+      {
+        "key": "unbondBlockers",
+        "type": "[]UnbondBlocker"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "evmos/repo/evmos/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey storetypes.StoreKey\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey storetypes.StoreKey\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this should be the x/gov module account.\n\tauthority sdk.AccAddress\n\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\n\t// bankWrapper is used to convert the Cosmos SDK coin used in the EVM to the\n\t// proper decimal representation.\n\tbankWrapper types.BankWrapper\n\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\t// fetch EIP1559 base fee and parameters\n\tfeeMarketWrapper *wrappers.FeeMarketWrapper\n\t// erc20Keeper interface needed to instantiate erc20 precompiles\n\terc20Keeper types.Erc20Keeper\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// Legacy subspace\n\tss paramstypes.Subspace\n\n\t// precompiles defines the map of all available precompiled smart contracts.\n\t// Some of these precompiled contracts might not be active depending on the EVM\n\t// parameters.\n\tprecompiles map[common.Address]vm.PrecompiledContract\n}",
+    "items": [
+      {
+        "key": "feeMarketWrapper",
+        "type": "*wrappers.FeeMarketWrapper"
+      },
+      {
+        "key": "precompiles",
+        "type": "map[common.Address]vm.PrecompiledContract"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "self/repo/evmos/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey storetypes.StoreKey\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey storetypes.StoreKey\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this should be the x/gov module account.\n\tauthority sdk.AccAddress\n\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\n\t// bankWrapper is used to convert the Cosmos SDK coin used in the EVM to the\n\t// proper decimal representation.\n\tbankWrapper types.BankWrapper\n\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\t// fetch EIP1559 base fee and parameters\n\tfeeMarketWrapper *wrappers.FeeMarketWrapper\n\t// erc20Keeper interface needed to instantiate erc20 precompiles\n\terc20Keeper types.Erc20Keeper\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// Legacy subspace\n\tss paramstypes.Subspace\n\n\t// precompiles defines the map of all available precompiled smart contracts.\n\t// Some of these precompiled contracts might not be active depending on the EVM\n\t// parameters.\n\tprecompiles map[common.Address]vm.PrecompiledContract\n}",
+    "items": [
+      {
+        "key": "feeMarketWrapper",
+        "type": "*wrappers.FeeMarketWrapper"
+      },
+      {
+        "key": "precompiles",
+        "type": "map[common.Address]vm.PrecompiledContract"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "planq/repo/planq/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey storetypes.StoreKey\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey storetypes.StoreKey\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this should be the x/gov module account.\n\tauthority sdk.AccAddress\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\t// update balance and accounting operations with coins\n\tbankKeeper types.BankKeeper\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\t// fetch EIP1559 base fee and parameters\n\tfeeMarketKeeper types.FeeMarketKeeper\n\n\t// chain ID number obtained from the context's chain id\n\teip155ChainID *big.Int\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// EVM Hooks for tx post-processing\n\thooks types.EvmHooks\n\t// Legacy subspace\n\tss paramstypes.Subspace\n}",
+    "items": [
+      {
+        "key": "eip155ChainID",
+        "type": "*big.Int"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "coreum/repo/coreum/x/feemodel/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreService          sdkstore.KVStoreService\n\ttransientStoreService sdkstore.TransientStoreService\n\tcdc                   codec.BinaryCodec\n\tauthority             string\n}",
+    "items": [
+      {
+        "key": "transientStoreService",
+        "type": "sdkstore.TransientStoreService"
+      }
+    ],
+    "result": "invalid:also ctx.storage"
+  },
+  "canto/repo/Canto/x/coinswap/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc              codec.BinaryCodec\n\tstoreService     store.KVStoreService\n\tbk               types.BankKeeper\n\tak               types.AccountKeeper\n\tparamSpace       paramstypes.Subspace\n\tfeeCollectorName string\n\tblockedAddrs     map[string]bool\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "blockedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "crescent/repo/crescent/x/exchange/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc        codec.BinaryCodec\n\tstoreKey   sdk.StoreKey\n\tparamSpace paramstypes.Subspace\n\n\tbankKeeper  types.BankKeeper\n\tsources     map[string]types.OrderSource\n\tsourceNames []string\n}",
+    "items": [
+      {
+        "key": "sourceNames",
+        "type": "[]string"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "crescent/repo/crescent/x/budget/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey   sdk.StoreKey\n\tcdc        codec.BinaryCodec\n\tparamSpace paramtypes.Subspace\n\n\tbankKeeper    types.BankKeeper\n\taccountKeeper types.AccountKeeper\n\n\tblockedAddrs map[string]bool\n}",
+    "items": [
+      {
+        "key": "blockedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "lambda/repo/lambdavm/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey sdk.StoreKey\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey sdk.StoreKey\n\n\t// module specific parameter space that can be configured through governance\n\tparamSpace paramtypes.Subspace\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\t// update balance and accounting operations with coins\n\tbankKeeper types.BankKeeper\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\t// fetch EIP1559 base fee and parameters\n\tfeeMarketKeeper types.FeeMarketKeeper\n\n\t// chain ID number obtained from the context's chain id\n\teip155ChainID *big.Int\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// EVM Hooks for tx post-processing\n\thooks types.EvmHooks\n}",
+    "items": [
+      {
+        "key": "eip155ChainID",
+        "type": "*big.Int"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "secretnetwork/repo/SecretNetwork/x/registration/internal/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreService store.KVStoreService\n\tcdc          codec.Codec\n\tenclave      EnclaveInterface\n\trouter       baseapp.MessageRouter\n}",
+    "items": [
+      {
+        "key": "enclave",
+        "type": "EnclaveInterface"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreService     store.KVStoreService\n\tcdc              codec.BinaryCodec\n\tlegacyAmino      codec.LegacyAmino\n\taccountKeeper    authkeeper.AccountKeeper\n\tbankKeeper       bankkeeper.Keeper\n\tportKeeper       portkeeper.Keeper\n\tcapabilityKeeper capabilitykeeper.ScopedKeeper\n\twasmer           wasm.Wasmer\n\tqueryPlugins     QueryPlugins\n\tmessenger        Messenger\n\t// queryGasLimit is the max wasm gas that can be spent on executing a query with a contract\n\tqueryGasLimit uint64\n\tmaxCallDepth  uint32\n\tHomeDir       string\n\t// authZPolicy   AuthorizationPolicy\n\t// paramSpace    subspace.Subspace\n\tLastMsgManager *baseapp.LastMsgMarkerContainer\n\tauthority      string\n}",
+    "items": [
+      {
+        "key": "legacyAmino",
+        "type": "codec.LegacyAmino"
+      },
+      {
+        "key": "wasmer",
+        "type": "wasm.Wasmer"
+      },
+      {
+        "key": "queryPlugins",
+        "type": "QueryPlugins"
+      },
+      {
+        "key": "messenger",
+        "type": "Messenger"
+      },
+      {
+        "key": "queryGasLimit",
+        "type": "uint64"
+      },
+      {
+        "key": "maxCallDepth",
+        "type": "uint32"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "quicksilver/repo/quicksilver/x/participationrewards/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc           codec.BinaryCodec\n\tstoreKey      storetypes.StoreKey\n\tparamSpace    paramtypes.Subspace\n\taccountKeeper types.AccountKeeper\n\tbankKeeper    types.BankKeeper\n\tstakingKeeper types.StakingKeeper\n\n\tIBCKeeper           *ibckeeper.Keeper\n\tIcqKeeper           types.InterchainQueryKeeper\n\ticsKeeper           types.InterchainStakingKeeper\n\tepochsKeeper        epochskeeper.Keeper\n\tClaimsManagerKeeper types.ClaimsManagerKeeper\n\n\tfeeCollectorName     string\n\tPrSubmodules         map[cmtypes.ClaimType]Submodule\n\tValidateProofOps     utils.ProofOpsFn\n\tValidateSelfProofOps utils.SelfProofOpsFn\n\tgovAuthority         string\n}",
+    "items": [
+      {
+        "key": "ValidateProofOps",
+        "type": "utils.ProofOpsFn"
+      },
+      {
+        "key": "ValidateSelfProofOps",
+        "type": "utils.SelfProofOpsFn"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "quicksilver/repo/quicksilver/x/supply/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc             codec.BinaryCodec\n\tstoreKey        storetypes.StoreKey\n\taccountKeeper   types.AccountKeeper\n\tbankKeeper      types.BankKeeper\n\tstakingKeeper   types.StakingKeeper\n\tgovAuthority    string\n\tmoduleAccounts  []string\n\tendpointEnabled bool\n}",
+    "items": [
+      {
+        "key": "moduleAccounts",
+        "type": "[]string"
+      },
+      {
+        "key": "endpointEnabled",
+        "type": "bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "quicksilver/repo/quicksilver/x/interchainstaking/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc                 codec.Codec\n\tstoreKey            storetypes.StoreKey\n\tICAControllerKeeper icacontrollerkeeper.Keeper\n\tICQKeeper           interchainquerykeeper.Keeper\n\tAccountKeeper       types.AccountKeeper\n\tAuthzKeeper         types.AuthzKeeper\n\tBankKeeper          types.BankKeeper\n\tIBCKeeper           *ibckeeper.Keeper\n\tTransferKeeper      ibctransferkeeper.Keeper\n\tClaimsManagerKeeper types.ClaimsManagerKeeper\n\tEpochsKeeper        types.EpochsKeeper\n\tIr                  codectypes.InterfaceRegistry\n\thooks               types.IcsHooks\n\tparamStore          paramtypes.Subspace\n\ttxSubmit            TxSubmitFn\n\tgovAuthority        string\n}",
+    "items": [
+      {
+        "key": "txSubmit",
+        "type": "TxSubmitFn"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "dydx/repo/v4-chain/protocol/x/accountplus/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc      codec.BinaryCodec\n\tstoreKey storetypes.StoreKey\n\n\tauthenticatorManager *authenticator.AuthenticatorManager\n\tauthorities          map[string]struct{}",
+    "items": [
+      {
+        "key": "authenticatorManager",
+        "type": "*authenticator.AuthenticatorManager"
+      },
+      {
+        "key": "authorities",
+        "type": "map[string]struct{}"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "stratos/repo/stratos-chain/x/pot/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey       storetypes.StoreKey\n\tcdc            codec.Codec\n\taccountKeeper  types.AccountKeeper\n\tbankKeeper     types.BankKeeper\n\tdistrKeeper    types.DistrKeeper\n\tregisterKeeper types.RegisterKeeper\n\tstakingKeeper  types.StakingKeeper\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n\t// cache store\n\tcache *keeperMCache\n}",
+    "items": [
+      {
+        "key": "cache",
+        "type": "*keeperMCache"
+      }
+    ],
+    "result": "unknown"
+  },
+  "stratos/repo/stratos-chain/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey storetypes.StoreKey\n\n\t// LEGACY: Required for <v012 data read\n\t// module specific parameter space that can be configured through governance\n\tparamSpace paramtypes.Subspace\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey storetypes.StoreKey\n\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\t// update balance and accounting operations with coins\n\tbankKeeper types.BankKeeper\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// genesisContractVerifier verifies is contract is trusted in order to allow curtain opcodes\n\tverifier *vm.GenesisContractVerifier\n\n\t// EVM Hooks for tx post-processing\n\thooks types.EvmHooks\n\n\tmsgServiceRouter *baseapp.MsgServiceRouter\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n\t// cosmos events to execute when all execution passed\n\tevents sdk.Events\n}",
+    "items": [
+      {
+        "key": "verifier",
+        "type": "*vm.GenesisContractVerifier"
+      },
+      {
+        "key": "events",
+        "type": "sdk.Events"
+      }
+    ],
+    "result": "invalid：not used"
+  },
+  "injective/repo/injective-core/injective-chain/modules/wasmx/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey storetypes.StoreKey\n\tcdc      codec.BinaryCodec\n\n\taccountKeeper         authkeeper.AccountKeeper\n\tbankKeeper            types.BankKeeper\n\twasmKeeper            wasmkeeper.Keeper\n\twasmViewKeeper        types.WasmViewKeeper\n\twasmContractOpsKeeper types.WasmContractOpsKeeper\n\tfeeGrantKeeper        feegrantkeeper.Keeper\n\n\tsvcTags metrics.Tags\n\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "svcTags",
+        "type": "metrics.Tags"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/exchange/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey  storetypes.StoreKey\n\ttStoreKey storetypes.StoreKey\n\tcdc       codec.BinaryCodec\n\n\tDistributionKeeper   distrkeeper.Keeper\n\tStakingKeeper        types.StakingKeeper\n\tAccountKeeper        authkeeper.AccountKeeper\n\tbankKeeper           bankkeeper.Keeper\n\tOracleKeeper         types.OracleKeeper\n\tinsuranceKeeper      types.InsuranceKeeper\n\tgovKeeper            govkeeper.Keeper\n\twasmViewKeeper       types.WasmViewKeeper\n\twasmxExecutionKeeper types.WasmxExecutionKeeper\n\n\tsvcTags   metrics.Tags\n\tauthority string\n\n\t// cached value from params (false by default)\n\tfixedGas bool\n}",
+    "items": [
+      {
+        "key": "svcTags",
+        "type": "metrics.Tags"
+      },
+      {
+        "key": "fixedGas",
+        "type": "bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/auction/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey storetypes.StoreKey\n\tcdc      codec.BinaryCodec\n\n\taccountKeeper authkeeper.AccountKeeper\n\tbankKeeper    types.BankKeeper\n\n\tsvcTags metrics.Tags\n\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "svcTags",
+        "type": "metrics.Tags"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/oracle/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tBandKeeper\n\tBandIBCKeeper\n\tPriceFeederKeeper\n\tCoinbaseKeeper\n\tProviderKeeper\n\ttypes.QueryServer\n\n\tstoreKey storetypes.StoreKey\n\tcdc      codec.BinaryCodec\n\tmemKey   storetypes.StoreKey\n\n\taccountKeeper authkeeper.AccountKeeper\n\tbankKeeper    types.BankKeeper\n\n\tchannelKeeper types.ChannelKeeper\n\tportKeeper    types.PortKeeper\n\tscopedKeeper  capabilitykeeper.ScopedKeeper\n\n\tocrKeeper types.OcrKeeper\n\n\tsvcTags metrics.Tags\n\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "svcTags",
+        "type": "metrics.Tags"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/ocr/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\ttypes.QueryServer\n\n\tOcrParams\n\tOcrConfig\n\tOcrReporting\n\tRewardPool\n\tFeedObservations\n\tFeedTransmissions\n\tOcrHooks\n\n\tbankKeeper types.BankKeeper\n\n\tstoreKey  storetypes.StoreKey\n\ttStoreKey storetypes.StoreKey\n\tcdc       codec.BinaryCodec\n\thooks     types.OcrHooks\n\n\tsvcTags metrics.Tags\n\n\tauthority     string\n\taccountKeeper authkeeper.AccountKeeper\n}",
+    "items": [
+      {
+        "key": "svcTags",
+        "type": "metrics.Tags"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/permissions/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey storetypes.StoreKey\n\n\tbankKeeper types.BankKeeper\n\ttfKeeper   types.TokenFactoryKeeper\n\twasmKeeper types.WasmKeeper\n\n\ttfModuleAddress string\n\tmoduleAccounts  map[string]bool\n\tauthority       string\n}",
+    "items": [
+      {
+        "key": "moduleAccounts",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/txfees/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey storetypes.StoreKey\n\tcdc      codec.BinaryCodec\n\n\tconsensusKeeper  types.ConsensusKeeper\n\tdataDir          string\n\tcachedConsParams cmtproto.ConsensusParams\n\tCurFeeState      *mempool1559.FeeState\n\n\tsvcTags   metrics.Tags\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "cachedConsParams",
+        "type": "cmtproto.ConsensusParams"
+      },
+      {
+        "key": "CurFeeState",
+        "type": "*mempool1559.FeeState"
+      },
+      {
+        "key": "svcTags",
+        "type": "metrics.Tags"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/tokenfactory/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey       storetypes.StoreKey\n\tmoduleAccounts map[string]bool\n\n\taccountKeeper       types.AccountKeeper\n\tbankKeeper          types.BankKeeper\n\tpermissionsKeeper   types.PermissionsKeeper\n\tcommunityPoolKeeper types.CommunityPoolKeeper\n\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "moduleAccounts",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "injective/repo/injective-core/injective-chain/modules/insurance/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey storetypes.StoreKey\n\tcdc      codec.BinaryCodec\n\n\taccountKeeper  authkeeper.AccountKeeper\n\tbankKeeper     types.BankKeeper\n\texchangeKeeper *exchangekeeper.Keeper\n\n\tsvcTags metrics.Tags\n\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "svcTags",
+        "type": "metrics.Tags"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "emoney/repo/em-ledger/x/market/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tkey        sdk.StoreKey\n\tkeyIndices sdk.StoreKey\n\tcdc        codec.BinaryCodec\n\t// instruments types.Instruments\n\tak types.AccountKeeper\n\tbk types.BankKeeper\n\n\t// accountOrders types.Orders\n\tappstateInit *sync.Once\n}",
+    "items": [
+      {
+        "key": "appstateInit",
+        "type": "*sync.Once"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "emoney/repo/em-ledger/x/authority/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc           codec.BinaryCodec\n\tstoreKey      sdk.StoreKey\n\tik            issuer.Keeper\n\tbankKeeper    types.BankKeeper\n\tupgradeKeeper types.UpgradeKeeper\n\tparamsKeeper  types.ParamsKeeper\n\tgpk           types.GasPricesKeeper\n\n\tgasPricesInit *sync.Once\n}",
+    "items": [
+      {
+        "key": "gasPricesInit",
+        "type": "*sync.Once"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "chimba/repo/chimba/x/wasm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey              sdk.StoreKey\n\tcdc                   codec.Codec\n\taccountKeeper         types.AccountKeeper\n\tbank                  CoinTransferrer\n\tportKeeper            types.PortKeeper\n\tcapabilityKeeper      types.CapabilityKeeper\n\twasmVM                types.WasmerEngine\n\twasmVMQueryHandler    WasmVMQueryHandler\n\twasmVMResponseHandler WasmVMResponseHandler\n\tmessenger             Messenger\n\t// queryGasLimit is the max wasmvm gas that can be spent on executing a query with a contract\n\tqueryGasLimit uint64\n\tparamSpace    paramtypes.Subspace\n\tgasRegister   GasRegister\n}",
+    "items": [
+      {
+        "key": "bank",
+        "type": "CoinTransferrer"
+      },
+      {
+        "key": "messenger",
+        "type": "Messenger"
+      },
+      {
+        "key": "queryGasLimit",
+        "type": "uint64"
+      },
+      {
+        "key": "gasRegister",
+        "type": "GasRegister"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "sei/repo/sei-chain/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey          sdk.StoreKey\n\ttransientStoreKey sdk.StoreKey\n\n\tParamstore paramtypes.Subspace\n\n\ttxResults []*abci.ExecTxResult\n\tmsgs      []*types.MsgEVMTransaction\n\n\tbankKeeper     bankkeeper.Keeper\n\taccountKeeper  *authkeeper.AccountKeeper\n\tstakingKeeper  *stakingkeeper.Keeper\n\ttransferKeeper ibctransferkeeper.Keeper\n\twasmKeeper     *wasmkeeper.PermissionedKeeper\n\twasmViewKeeper *wasmkeeper.Keeper\n\tctKeeper       *ctkeeper.Keeper\n\tupgradeKeeper  *upgradekeeper.Keeper\n\n\tcachedFeeCollectorAddressMtx *sync.RWMutex\n\tcachedFeeCollectorAddress    *common.Address\n\tnonceMx                      *sync.RWMutex\n\tpendingTxs                   map[string][]*PendingTx\n\tkeyToNonce                   map[tmtypes.TxKey]*AddressNoncePair\n\n\tQueryConfig *querier.Config\n\n\t// only used during ETH replay. Not used in chain critical path.\n\tEthClient       *ethclient.Client\n\tEthReplayConfig replay.Config\n\n\t// only used during blocktest. Not used in chain critical path.\n\tEthBlockTestConfig blocktest.Config\n\tBlockTest          *tests.BlockTest\n\n\t// used for both ETH replay and block tests. Not used in chain critical path.\n\tTrie        ethstate.Trie\n\tDB          ethstate.Database\n\tRoot        common.Hash\n\tReplayBlock *ethtypes.Block\n\n\treceiptStore seidbtypes.StateStore\n\n\tcustomPrecompiles       map[common.Address]precompiles.VersionedPrecompiles\n\tlatestCustomPrecompiles map[common.Address]vm.PrecompiledContract\n\tlatestUpgrade           string\n}",
+    "items": [
+      {
+        "key": "txResults",
+        "type": "[]*abci.ExecTxResult"
+      },
+      {
+        "key": "cachedFeeCollectorAddressMtx",
+        "type": "*sync.RWMutex"
+      },
+      {
+        "key": "cachedFeeCollectorAddress",
+        "type": "*common.Address"
+      },
+      {
+        "key": "nonceMx",
+        "type": "*sync.RWMutex"
+      },
+      {
+        "key": "pendingTxs",
+        "type": "map[string][]*PendingTx"
+      },
+      {
+        "key": "QueryConfig",
+        "type": "*querier.Config"
+      },
+      {
+        "key": "EthReplayConfig",
+        "type": "replay.Config"
+      },
+      {
+        "key": "EthBlockTestConfig",
+        "type": "blocktest.Config"
+      },
+      {
+        "key": "BlockTest",
+        "type": "*tests.BlockTest"
+      },
+      {
+        "key": "Trie",
+        "type": "ethstate.Trie"
+      },
+      {
+        "key": "DB",
+        "type": "ethstate.Database"
+      },
+      {
+        "key": "Root",
+        "type": "common.Hash"
+      },
+      {
+        "key": "customPrecompiles",
+        "type": "map[common.Address]precompiles.VersionedPrecompiles"
+      },
+      {
+        "key": "latestCustomPrecompiles",
+        "type": "map[common.Address]vm.PrecompiledContract"
+      }
+    ],
+    "result": "safe"
+  },
+  "odin/repo/odin-core/x/oracle/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc              codec.BinaryCodec\n\tfileCache        filecache.Cache\n\tfeeCollectorName string\n\towasmVM          *owasm.Vm\n\n\tAuthKeeper            types.AccountKeeper\n\tBankKeeper            types.BankKeeper\n\tstakingKeeper         types.StakingKeeper\n\tdistrKeeper           types.DistrKeeper\n\tauthzKeeper           types.AuthzKeeper\n\tchannelKeeper         types.ChannelKeeper\n\tportKeeper            types.PortKeeper\n\tscopedKeeper          capabilitykeeper.ScopedKeeper\n\tvalidatorAddressCodec addresscodec.Codec\n\taddressCodec          addresscodec.Codec\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n\n\t// The (unexposed) keys used to access the stores from the Context.\n\tstoreService corestoretypes.KVStoreService\n\n\tSchema                          collections.Schema\n\tParams                          collections.Item[types.Params]\n\tDataSources                     collections.Map[uint64, types.DataSource]\n\tOracleScripts                   collections.Map[uint64, types.OracleScript]\n\tRequests                        collections.Map[uint64, types.Request]\n\tPendingResolveList              collections.Item[types.PendingResolveList]\n\tReports                         collections.Map[collections.Pair[uint64, []byte], types.Report]\n\tResults                         collections.Map[uint64, types.Result]\n\tValidatorStatuses               collections.Map[[]byte, types.ValidatorStatus]\n\tRequestID                       collections.Sequence\n\tDataSourceID                    collections.Sequence\n\tOracleScriptID                  collections.Sequence\n\tRollingSeed                     collections.Item[[]byte]\n\tRequestLastExpired              collections.Item[uint64]\n\tDataProviderAccumulatedRewards  collections.Map[[]byte, types.DataProviderAccumulatedReward]\n\tAccumulatedDataProvidersRewards collections.Item[types.DataProvidersAccumulatedRewards]\n\tAccumulatedPaymentsForData      collections.Item[types.AccumulatedPaymentsForData]\n}",
+    "items": [
+      {
+        "key": "fileCache",
+        "type": "filecache.Cache"
+      },
+      {
+        "key": "owasmVM",
+        "type": "*owasm.Vm"
+      }
+    ],
+    "result": "valid but not accessable"
+  },
+  "fxcore/repo/fx-core/x/erc20/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\taccountKeeper types.AccountKeeper\n\tbankKeeper    types.BankKeeper\n\tevmKeeper     types.EVMKeeper\n\n\tcontractOwner common.Address\n\n\tauthority string\n\n\tSchema      collections.Schema\n\tParams      collections.Item[types.Params]\n\tERC20Token  collections.Map[string, types.ERC20Token]                            // baseDenom -> ERC20Token\n\tBridgeToken collections.Map[collections.Pair[string, string], types.BridgeToken] // baseDenom -> BridgeToken\n\tIBCToken    collections.Map[collections.Pair[string, string], types.IBCToken]    // baseDenom -> IBCToken\n\tDenomIndex  collections.Map[string, string]                                      // bridgeDenom/erc20_contract/ibc_denom -> baseDenom\n\tCache       collections.Map[string, sdkmath.Int]                                 // crosschain cache\n}",
+    "items": [
+      {
+        "key": "contractOwner",
+        "type": "common.Address"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "fxcore/repo/fx-core/x/crosschain/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tmoduleName string\n\tcdc        codec.BinaryCodec   // The wire codec for binary encoding/decoding.\n\tstoreKey   storetypes.StoreKey // Unexposed key to access store from sdk.Context\n\n\tstakingKeeper      types.StakingKeeper\n\tstakingMsgServer   types.StakingMsgServer\n\tdistributionKeeper types.DistributionMsgServer\n\tbankKeeper         types.BankKeeper\n\tak                 types.AccountKeeper\n\tibcTransferKeeper  types.IBCTransferKeeper\n\terc20Keeper        types.Erc20Keeper\n\tevmKeeper          types.EVMKeeper\n\n\tauthority          string\n\tsender             common.Address\n\tbridgeFeeCollector sdk.AccAddress\n}",
+    "items": [
+      {
+        "key": "sender",
+        "type": "common.Address"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "fxcore/repo/fx-core/x/migrate/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the Fee Market Prefix KVStore.\n\tstoreKey storetypes.StoreKey\n\t// account keeper\n\taccountKeeper types.AccountKeeper\n\t// Migrate handlers\n\tmigrates []MigrateI\n}",
+    "items": [
+      {
+        "key": "migrates",
+        "type": "[]MigrateI"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "fxcore/repo/fx-core/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t*evmkeeper.Keeper\n\n\t// access to account state\n\taccountKeeper fxevmtypes.AccountKeeper\n\tmodule        common.Address\n}",
+    "items": [
+      {
+        "key": "module",
+        "type": "common.Address"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "unicorn/repo/fx-core/x/erc20/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\taccountKeeper types.AccountKeeper\n\tbankKeeper    types.BankKeeper\n\tevmKeeper     types.EVMKeeper\n\n\tcontractOwner common.Address\n\n\tauthority string\n\n\tSchema      collections.Schema\n\tParams      collections.Item[types.Params]\n\tERC20Token  collections.Map[string, types.ERC20Token]                            // baseDenom -> ERC20Token\n\tBridgeToken collections.Map[collections.Pair[string, string], types.BridgeToken] // baseDenom -> BridgeToken\n\tIBCToken    collections.Map[collections.Pair[string, string], types.IBCToken]    // baseDenom -> IBCToken\n\tDenomIndex  collections.Map[string, string]                                      // bridgeDenom/erc20_contract/ibc_denom -> baseDenom\n\tCache       collections.Map[string, sdkmath.Int]                                 // crosschain cache\n}",
+    "items": [
+      {
+        "key": "contractOwner",
+        "type": "common.Address"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "unicorn/repo/fx-core/x/crosschain/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tmoduleName string\n\tcdc        codec.BinaryCodec   // The wire codec for binary encoding/decoding.\n\tstoreKey   storetypes.StoreKey // Unexposed key to access store from sdk.Context\n\n\tstakingKeeper      types.StakingKeeper\n\tstakingMsgServer   types.StakingMsgServer\n\tdistributionKeeper types.DistributionMsgServer\n\tbankKeeper         types.BankKeeper\n\tak                 types.AccountKeeper\n\tibcTransferKeeper  types.IBCTransferKeeper\n\terc20Keeper        types.Erc20Keeper\n\tevmKeeper          types.EVMKeeper\n\n\tauthority          string\n\tsender             common.Address\n\tbridgeFeeCollector sdk.AccAddress\n}",
+    "items": [
+      {
+        "key": "sender",
+        "type": "common.Address"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "unicorn/repo/fx-core/x/migrate/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the Fee Market Prefix KVStore.\n\tstoreKey storetypes.StoreKey\n\t// account keeper\n\taccountKeeper types.AccountKeeper\n\t// Migrate handlers\n\tmigrates []MigrateI\n}",
+    "items": [
+      {
+        "key": "migrates",
+        "type": "[]MigrateI"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "unicorn/repo/fx-core/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t*evmkeeper.Keeper\n\n\t// access to account state\n\taccountKeeper fxevmtypes.AccountKeeper\n\tmodule        common.Address\n}",
+    "items": [
+      {
+        "key": "module",
+        "type": "common.Address"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "juno/repo/juno/x/tokenfactory/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc          codec.BinaryCodec\n\tstoreService storetypes.KVStoreService\n\tpermAddrs    map[string]authtypes.PermissionsForAddress\n\tpermAddrMap  map[string]bool\n\n\taccountKeeper      authkeeper.AccountKeeper\n\tbankKeeper         bankkeeper.Keeper\n\tdistributionKeeper distrkeeper.Keeper\n\n\tenabledCapabilities []string\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "permAddrMap",
+        "type": "map[string]bool"
+      },
+      {
+        "key": "enabledCapabilities",
+        "type": "[]string"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "mars/repo/hub/x/envoy/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc codec.Codec\n\n\taccountKeeper       authkeeper.AccountKeeper\n\tbankKeeper          bankkeeper.Keeper\n\tdistrKeeper         distrkeeper.Keeper\n\tchannelKeeper       ibcchannelkeeper.Keeper\n\ticaControllerKeeper icacontrollerkeeper.Keeper\n\n\t// The baseapp's message service router.\n\t// We use this to dispatch messages upon successful governance proposals.\n\trouter *baseapp.MsgServiceRouter\n\n\t// Accounts who can execute envoy module messages.\n\t// Typically, this includes the gov module or other module accounts.\n\tauthorities []string\n}",
+    "items": [
+      {
+        "key": "authorities",
+        "type": "[]string"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "desmos/repo/desmos/x/profiles/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey      storetypes.StoreKey\n\tcdc           codec.Codec\n\tlegacyAmino   *codec.LegacyAmino\n\tparamSubspace paramstypes.Subspace\n\thooks         types.ProfilesHooks\n\n\tak authkeeper.AccountKeeper\n\trk types.RelationshipsKeeper\n\n\tChannelKeeper types.ChannelKeeper\n\tPortKeeper    types.PortKeeper\n\tScopedKeeper  types.ScopedKeeper\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n}",
+    "items": [
+      {
+        "key": "legacyAmino",
+        "type": "*codec.LegacyAmino"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "odin1/repo/odin-core/x/oracle/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc              codec.BinaryCodec\n\tfileCache        filecache.Cache\n\tfeeCollectorName string\n\towasmVM          *owasm.Vm\n\n\tAuthKeeper            types.AccountKeeper\n\tBankKeeper            types.BankKeeper\n\tstakingKeeper         types.StakingKeeper\n\tdistrKeeper           types.DistrKeeper\n\tauthzKeeper           types.AuthzKeeper\n\tchannelKeeper         types.ChannelKeeper\n\tportKeeper            types.PortKeeper\n\tscopedKeeper          capabilitykeeper.ScopedKeeper\n\tvalidatorAddressCodec addresscodec.Codec\n\taddressCodec          addresscodec.Codec\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this\n\t// should be the x/gov module account.\n\tauthority string\n\n\t// The (unexposed) keys used to access the stores from the Context.\n\tstoreService corestoretypes.KVStoreService\n\n\tSchema                          collections.Schema\n\tParams                          collections.Item[types.Params]\n\tDataSources                     collections.Map[uint64, types.DataSource]\n\tOracleScripts                   collections.Map[uint64, types.OracleScript]\n\tRequests                        collections.Map[uint64, types.Request]\n\tPendingResolveList              collections.Item[types.PendingResolveList]\n\tReports                         collections.Map[collections.Pair[uint64, []byte], types.Report]\n\tResults                         collections.Map[uint64, types.Result]\n\tValidatorStatuses               collections.Map[[]byte, types.ValidatorStatus]\n\tRequestID                       collections.Sequence\n\tDataSourceID                    collections.Sequence\n\tOracleScriptID                  collections.Sequence\n\tRollingSeed                     collections.Item[[]byte]\n\tRequestLastExpired              collections.Item[uint64]\n\tDataProviderAccumulatedRewards  collections.Map[[]byte, types.DataProviderAccumulatedReward]\n\tAccumulatedDataProvidersRewards collections.Item[types.DataProvidersAccumulatedRewards]\n\tAccumulatedPaymentsForData      collections.Item[types.AccumulatedPaymentsForData]\n}",
+    "items": [
+      {
+        "key": "fileCache",
+        "type": "filecache.Cache"
+      },
+      {
+        "key": "owasmVM",
+        "type": "*owasm.Vm"
+      }
+    ],
+    "result": "valid but not accessable"
+  },
+  "regen/repo/regen-ledger/x/ecocredit/basket/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstateStore    api.StateStore\n\tbaseStore     baseapi.StateStore\n\tbankKeeper    ecocredit.BankKeeper\n\tmoduleAddress sdk.AccAddress\n\tauthority     sdk.AccAddress\n}",
+    "items": [
+      {
+        "key": "stateStore",
+        "type": "api.StateStore"
+      },
+      {
+        "key": "baseStore",
+        "type": "baseapi.StateStore"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "regen/repo/regen-ledger/x/ecocredit/marketplace/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstateStore  marketapi.StateStore\n\tbaseStore   baseapi.StateStore\n\tbankKeeper  ecocredit.BankKeeper\n\tauthority   sdk.AccAddress\n\tfeePoolName string\n}",
+    "items": [
+      {
+        "key": "stateStore",
+        "type": "marketapi.StateStore"
+      },
+      {
+        "key": "baseStore",
+        "type": "baseapi.StateStore"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "regen/repo/regen-ledger/x/ecocredit/base/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t*types.UnimplementedMsgServer\n\t*types.UnimplementedQueryServer\n\n\tstateStore    api.StateStore\n\tbankKeeper    ecocredit.BankKeeper\n\tmoduleAddress sdk.AccAddress\n\n\tbasketStore basketapi.StateStore\n\tmarketStore marketplaceapi.StateStore\n\n\t// the address capable of executing ecocredit params messages. Typically, this\n\t// should be the x/gov module account.\n\tauthority sdk.AccAddress\n}",
+    "items": [
+      {
+        "key": "stateStore",
+        "type": "api.StateStore"
+      },
+      {
+        "key": "basketStore",
+        "type": "basketapi.StateStore"
+      },
+      {
+        "key": "marketStore",
+        "type": "marketplaceapi.StateStore"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "conscious/repo/cvn/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Protobuf codec\n\tcdc codec.BinaryCodec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing account's Storage State\n\t// - storing account's Code\n\t// - storing transaction Logs\n\t// - storing Bloom filters by block height. Needed for the Web3 API.\n\tstoreKey storetypes.StoreKey\n\n\t// key to access the transient store, which is reset on every block during Commit\n\ttransientKey storetypes.StoreKey\n\n\t// the address capable of executing a MsgUpdateParams message. Typically, this should be the x/gov module account.\n\tauthority sdk.AccAddress\n\t// access to account state\n\taccountKeeper types.AccountKeeper\n\t// update balance and accounting operations with coins\n\tbankKeeper types.BankKeeper\n\t// access historical headers for EVM state transition execution\n\tstakingKeeper types.StakingKeeper\n\t// fetch EIP1559 base fee and parameters\n\tfeeMarketKeeper types.FeeMarketKeeper\n\n\t// chain ID number obtained from the context's chain id\n\teip155ChainID *big.Int\n\n\t// Tracer used to collect execution traces from the EVM transaction execution\n\ttracer string\n\n\t// EVM Hooks for tx post-processing\n\thooks types.EvmHooks\n\t// Legacy subspace\n\tss paramstypes.Subspace\n}",
+    "items": [
+      {
+        "key": "eip155ChainID",
+        "type": "*big.Int"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/libs/ibc-go/modules/apps/transfer/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey   sdk.StoreKey\n\tcdc        *codec.CodecProxy\n\tparamSpace paramtypes.Subspace\n\n\tchannelKeeper types.ChannelKeeper\n\tportKeeper    types.PortKeeper\n\tauthKeeper    types.AccountKeeper\n\tbankKeeper    types.BankKeeper\n\tscopedKeeper  capabilitykeeper.ScopedKeeper\n\n\thooks     types.TransferHooks\n\tibcFactor int64\n}",
+    "items": [
+      {
+        "key": "ibcFactor",
+        "type": "int64"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/libs/cosmos-sdk/x/upgrade/internal/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tskipUpgradeHeights map[int64]bool\n\tstoreKey           sdk.StoreKey\n\tcdc                *codec.Codec\n\tupgradeHandlers    map[string]types.UpgradeHandler\n}",
+    "items": [
+      {
+        "key": "skipUpgradeHeights",
+        "type": "map[int64]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/libs/cosmos-sdk/x/mint/internal/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc              *codec.Codec\n\tstoreKey         sdk.StoreKey\n\tparamSpace       params.Subspace\n\tsk               types.StakingKeeper\n\tsupplyKeeper     types.SupplyKeeper\n\tfeeCollectorName string\n\n\tfarmModuleName         string\n\toriginalMintedPerBlock sdk.Dec\n\tgovKeeper              types.GovKeeper\n}",
+    "items": [
+      {
+        "key": "originalMintedPerBlock",
+        "type": "sdk.Dec"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/libs/cosmos-sdk/x/distribution/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey      sdk.StoreKey\n\tcdc           *codec.Codec\n\tparamSpace    params.Subspace\n\tstakingKeeper types.StakingKeeper\n\tsupplyKeeper  types.SupplyKeeper\n\n\tblacklistedAddrs map[string]bool\n\n\tfeeCollectorName string // name of the FeeCollector ModuleAccount\n}",
+    "items": [
+      {
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/libs/cosmos-sdk/x/crisis/internal/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\troutes         []types.InvarRoute\n\tparamSpace     params.Subspace\n\tinvCheckPeriod uint\n\n\tsupplyKeeper types.SupplyKeeper\n\n\tfeeCollectorName string // name of the FeeCollector ModuleAccount\n}",
+    "items": [
+      {
+        "key": "invCheckPeriod",
+        "type": "uint"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/libs/cosmos-sdk/x/staking/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey           sdk.StoreKey\n\tcdc                *codec.Codec\n\tsupplyKeeper       types.SupplyKeeper\n\thooks              types.StakingHooks\n\tparamstore         params.Subspace\n\tvalidatorCache     map[string]cachedValidator\n\tvalidatorCacheList *list.List\n}",
+    "items": [
+      {
+        "key": "validatorCache",
+        "type": "map[string]cachedValidator"
+      },
+      {
+        "key": "validatorCacheList",
+        "type": "*list.List"
+      }
+    ]
+  },
+  "okexchain/repo/exchain/x/token/keeper.go": {
+    "source": "type Keeper struct {\n\tbankKeeper       bank.Keeper\n\tsupplyKeeper     SupplyKeeper\n\taccountKeeper    types.AccountKeeper\n\tfeeCollectorName string // name of the FeeCollector ModuleAccount\n\n\t// The reference to the Paramstore to get and set gov specific params\n\tparamSpace    params.Subspace\n\ttokenStoreKey sdk.StoreKey // Unexposed key to access name store from sdk.Context\n\tlockStoreKey  sdk.StoreKey\n\t//TokenPairNewSignalChan chan types.TokenPair\n\n\tcdc *codec.Codec // The wire codec for binary encoding/decoding.\n\n\tenableBackend bool // whether open backend plugin\n\n\t// cache data in memory to avoid marshal/unmarshal too frequently\n\t// reset cache data in BeginBlock\n\tcache *Cache\n}",
+    "items": [
+      {
+        "key": "enableBackend",
+        "type": "bool"
+      },
+      {
+        "key": "cache",
+        "type": "*Cache"
+      }
+    ],
+    "result": "unknown"
+  },
+  "okexchain/repo/exchain/x/order/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// The reference to the TokenKeeper to modify balances\n\ttokenKeeper TokenKeeper\n\t// The reference to the Paramstore to get and set gov specific params\n\tparamSpace params.Subspace\n\n\tdexKeeper DexKeeper\n\n\tsupplyKeeper     SupplyKeeper\n\tfeeCollectorName string\n\n\t// Unexposed key to access name store from sdk.Context\n\torderStoreKey sdk.StoreKey\n\n\tcdc           *codec.Codec // The wire codec for binary encoding/decoding.\n\tenableBackend bool         // whether open backend plugin\n\tmetric        *monitor.OrderMetric\n\n\t// cache data in memory to avoid marshal/unmarshal too frequently\n\t// reset cache data in BeginBlock\n\tcache     *Cache\n\tdiskCache *DiskCache\n}",
+    "items": [
+      {
+        "key": "enableBackend",
+        "type": "bool"
+      },
+      {
+        "key": "metric",
+        "type": "*monitor.OrderMetric"
+      },
+      {
+        "key": "cache",
+        "type": "*Cache"
+      },
+      {
+        "key": "diskCache",
+        "type": "*DiskCache"
+      }
+    ],
+    "result": "unknown"
+  },
+  "okexchain/repo/exchain/x/infura/keeper.go": {
+    "source": "type Keeper struct {\n\tmetric *monitor.StreamMetrics\n\tstream *Stream\n}",
+    "items": [
+      {
+        "key": "metric",
+        "type": "*monitor.StreamMetrics"
+      },
+      {
+        "key": "stream",
+        "type": "*Stream"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/x/wasm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey              sdk.StoreKey\n\tcdc                   *codec.CodecProxy\n\taccountKeeper         types.AccountKeeper\n\tbank                  CoinTransferrer\n\tportKeeper            types.PortKeeper\n\tcapabilityKeeper      types.CapabilityKeeper\n\twasmVM                types.WasmerEngine\n\twasmVMQueryHandler    WasmVMQueryHandler\n\twasmVMResponseHandler WasmVMResponseHandler\n\tmessenger             Messenger\n\tinnertxKeeper         innertx.InnerTxKeeper\n\n\t// queryGasLimit is the max wasmvm gas that can be spent on executing a query with a contract\n\tqueryGasLimit     uint64\n\tparamSpace        types.Subspace\n\tgasRegister       GasRegister\n\tmaxQueryStackSize uint32\n\tada               types.DBAdapter\n}",
+    "items": [
+      {
+        "key": "bank",
+        "type": "CoinTransferrer"
+      },
+      {
+        "key": "messenger",
+        "type": "Messenger"
+      },
+      {
+        "key": "queryGasLimit",
+        "type": "uint64"
+      },
+      {
+        "key": "gasRegister",
+        "type": "GasRegister"
+      },
+      {
+        "key": "maxQueryStackSize",
+        "type": "uint32"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/x/distribution/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tstoreKey      sdk.StoreKey\n\tcdc           *codec.Codec\n\tparamSpace    params.Subspace\n\tstakingKeeper types.StakingKeeper\n\tsupplyKeeper  types.SupplyKeeper\n\tgovKeeper     types.GovKeeper\n\n\tblacklistedAddrs map[string]bool\n\n\tfeeCollectorName string // name of the FeeCollector ModuleAccount\n}",
+    "items": [
+      {
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/x/params/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc *codec.Codec\n\tsdkparams.Keeper\n\t// the reference to the Paramstore to get and set gov specific params\n\tparamSpace sdkparams.Subspace\n\t// the reference to the DelegationSet and ValidatorSet to get information about validators and delegators\n\tsk StakingKeeper\n\t// the reference to the CoinKeeper to modify balances\n\tck BankKeeper\n\t// the reference to the GovKeeper to insert waiting queue\n\tgk      GovKeeper\n\tsignals []func()\n\n\tlogger log.Logger\n\n\tupgradeCache *types.UpgradeCache\n}",
+    "items": [
+      {
+        "key": "signals",
+        "type": "[]func()"
+      }
+    ],
+    "result": "not mutation"
+  },
+  "okexchain/repo/exchain/x/evm/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\t// Amino codec\n\tcdc *codec.Codec\n\t// Store key required for the EVM Prefix KVStore. It is required by:\n\t// - storing Account's Storage State\n\t// - storing Account's Code\n\t// - storing transaction Logs\n\t// - storing block height -> bloom filter map. Needed for the Web3 API.\n\t// - storing block hash -> block height map. Needed for the Web3 API.\n\tstoreKey sdk.StoreKey\n\n\t// Account Keeper for fetching accounts\n\taccountKeeper types.AccountKeeper\n\tparamSpace    types.Subspace\n\tsupplyKeeper  types.SupplyKeeper\n\tbankKeeper    types.BankKeeper\n\tgovKeeper     GovKeeper\n\tstakingKeeper types.StakingKeeper\n\n\t// Transaction counter in a block. Used on StateSB's Prepare function.\n\t// It is reset to 0 every block on BeginBlock so there's no point in storing the counter\n\t// on the KVStore or adding it as a field on the EVM genesis state.\n\tTxCount int\n\tBloom   *big.Int\n\tBhash   ethcmn.Hash\n\tLogSize uint\n\tAda     types.DbAdapter\n\n\tLogsManages *LogsManager\n\n\t// add inner block data\n\tinnerBlockData BlockInnerData\n\n\tdb          ethstate.Database\n\trootTrie    ethstate.Trie\n\trootHash    ethcmn.Hash\n\tstartHeight uint64\n\ttriegc      *prque.Prque\n\tstateCache  *fastcache.Cache\n\tcmLock      sync.Mutex\n\n\tEvmStateDb     *types.CommitStateDB\n\tUpdatedAccount []ethcmn.Address\n\n\t// cache chain config\n\tcci *chainConfigInfo\n\n\thooks   types.EvmHooks\n\tlogger  log.Logger\n\tWatcher *watcher.Watcher\n\n\theightCache *lru.Cache // Cache for the most recent block heights\n\thashCache   *lru.Cache // Cache for the most recent block hash\n\tcallToCM    vm.CallToWasmByPrecompile\n}",
+    "items": [
+      {
+        "key": "TxCount",
+        "type": "int"
+      },
+      {
+        "key": "Bloom",
+        "type": "*big.Int"
+      },
+      {
+        "key": "Bhash",
+        "type": "ethcmn.Hash"
+      },
+      {
+        "key": "LogSize",
+        "type": "uint"
+      },
+      {
+        "key": "LogsManages",
+        "type": "*LogsManager"
+      },
+      {
+        "key": "innerBlockData",
+        "type": "BlockInnerData"
+      },
+      {
+        "key": "db",
+        "type": "ethstate.Database"
+      },
+      {
+        "key": "rootTrie",
+        "type": "ethstate.Trie"
+      },
+      {
+        "key": "rootHash",
+        "type": "ethcmn.Hash"
+      },
+      {
+        "key": "startHeight",
+        "type": "uint64"
+      },
+      {
+        "key": "triegc",
+        "type": "*prque.Prque"
+      },
+      {
+        "key": "stateCache",
+        "type": "*fastcache.Cache"
+      },
+      {
+        "key": "cmLock",
+        "type": "sync.Mutex"
+      },
+      {
+        "key": "UpdatedAccount",
+        "type": "[]ethcmn.Address"
+      },
+      {
+        "key": "cci",
+        "type": "*chainConfigInfo"
+      },
+      {
+        "key": "Watcher",
+        "type": "*watcher.Watcher"
+      },
+      {
+        "key": "heightCache",
+        "type": "*lru.Cache"
+      },
+      {
+        "key": "hashCache",
+        "type": "*lru.Cache"
+      },
+      {
+        "key": "callToCM",
+        "type": "vm.CallToWasmByPrecompile"
+      }
+    ],
+    "result": "fixed"
+  },
+  "gateway/repo/wormhole/wormchain/x/ibc-composability-mw/keeper/keeper.go": {
+    "source": "type Keeper struct {\n\tcdc            codec.BinaryCodec\n\tstoreKey       storetypes.StoreKey\n\twasmKeeper     *wasmkeeper.Keeper\n\twormholeKeeper *wormholekeeper.Keeper\n\n\tretriesOnTimeout uint8\n\tforwardTimeout   time.Duration\n}",
+    "items": [
+      {
+        "key": "retriesOnTimeout",
+        "type": "uint8"
+      },
+      {
+        "key": "forwardTimeout",
+        "type": "time.Duration"
+      }
+    ],
+    "result": "not mutation"
+  }
+}

@@ -1,0 +1,899 @@
+{
+  "zetachain": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/zetachain/repo/node/app/ante/handler_options.go",
+        "line": 234,
+        "content": "ctx.WithGasMeter(ethermint.NewInfiniteGasMeterWithLimit(gasLimit))"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "disable"
+  },
+  "decentr": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/app/ante/fixedgastx.go",
+        "line": 64,
+        "content": "ctx := ctx.WithGasMeter(NewFixedGasMeter(consumed, limit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/auth/ante/setup.go",
+        "line": 73,
+        "content": "return ctx.WithGasMeter(sdk.NewGasMeter(gasLimit))"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "enable"
+  },
+  "milkyway": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/milkyway/repo/milkyway/x/tokenfactory/keeper/before_send.go",
+        "line": 172,
+        "content": "childCtx := ctx.WithGasMeter(storetypes.NewGasMeter(types.BeforeSendHookGasLimit))"
+      }
+    ],
+    "result": "valid : tokenfactory",
+    "handlerenable": "enable"
+  },
+  "scorum": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/scorum/repo/cosmos-network/app/ante/zero-gas.go",
+        "line": 45,
+        "content": "zeroGasCtx := ctx.WithGasMeter(NewZeroGasMeter())"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "disable"
+  },
+  "meme": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/legacy_querier.go",
+        "line": 110,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeter(gasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/ante.go",
+        "line": 88,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(*d.gasLimit)), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/ante.go",
+        "line": 93,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(sdk.Gas(maxGas))), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/query_plugins.go",
+        "line": 51,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/querier.go",
+        "line": 175,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(sdk.NewGasMeter(q.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/msg_dispatcher.go",
+        "line": 52,
+        "content": "subCtx := ctx.WithGasMeter(limitedMeter)"
+      }
+    ],
+    "result": "invalid:safe",
+    "handlerenable": "enable"
+  },
+  "chronicnetwork": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/legacy_querier.go",
+        "line": 110,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeter(gasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/ante.go",
+        "line": 88,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(*d.gasLimit)), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/ante.go",
+        "line": 93,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(sdk.Gas(maxGas))), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/query_plugins.go",
+        "line": 48,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/querier.go",
+        "line": 175,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(sdk.NewGasMeter(q.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/msg_dispatcher.go",
+        "line": 52,
+        "content": "subCtx := ctx.WithGasMeter(limitedMeter)"
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "enable"
+  },
+  "archway": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/archway/repo/archway/pkg/utils.go",
+        "line": 18,
+        "content": "branchedCtx = branchedCtx.WithGasMeter(limitedGasMeter)"
+      }
+    ],
+    "result":  "invalid : R1 R2 safe",
+    "handlerenable": "enable"
+  },
+  "nibiru": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/app/ante/fixed_gas.go",
+        "line": 43,
+        "content": "ctx = ctx.WithGasMeter(NewFixedGasMeter(OracleMessageGas))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/app/ante/fixed_gas.go",
+        "line": 49,
+        "content": "ctx = ctx.WithGasMeter(NewFixedGasMeter(OracleMessageGas))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/x/evm/precompile/precompile.go",
+        "line": 206,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(sdk.NewGasMeter(gasLimit))."
+      },
+      {
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/x/evm/keeper/grpc_query.go",
+        "line": 416,
+        "content": "tmpCtx = tmpCtx.WithGasMeter(gasMeter)."
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "enable"
+  },
+  "aura1": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/aura1/repo/aura/x/smartaccount/ante.go",
+        "line": 201,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(sdk.NewGasMeter(params.MaxGasExecute))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/aura1/repo/aura/x/smartaccount/ante.go",
+        "line": 432,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(sdk.NewGasMeter(maxGas))"
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "enable"
+  },
+  "haqq": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/haqq/repo/haqq/precompiles/common/precompile.go",
+        "line": 99,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeter(contract.Gas))."
+      },
+      {
+        "file": "/Cosmos/chain-registry/haqq/repo/haqq/x/evm/keeper/grpc_query.go",
+        "line": 371,
+        "content": "tmpCtx = tmpCtx.WithGasMeter(gasMeter)."
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "disable"
+  },
+  "dyson": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/dyson/repo/dyson/chain/x/dyson/keeper/keeper.go",
+        "line": 187,
+        "content": "cachedCtx = cachedCtx.WithGasMeter(sdk.NewGasMeter(scheduledRun.Gas))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dyson/repo/dyson/chain/x/dyson/keeper/grpc_query_script.go",
+        "line": 81,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeter(MAX_QUERY_GAS))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dyson/repo/dyson/chain/x/dyson/keeper/grpc_query_script.go",
+        "line": 96,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeter(MAX_QUERY_GAS))"
+      }
+    ],
+    "result": "invalid : used in blockhook",
+    "handlerenable": "enable"
+  },
+  "quasar": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/quasar/repo/quasar/x/tokenfactory/keeper/before_send.go",
+        "line": 161,
+        "content": "childCtx := ctx.WithGasMeter(storetypes.NewGasMeter(types.BeforeSendHookGasLimit))"
+      }
+    ],
+    "result": "valid : tokenfactory",
+    "handlerenable": "enable"
+  },
+  "starname": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/legacy_querier.go",
+        "line": 110,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeter(gasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/ante.go",
+        "line": 88,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(*d.gasLimit)), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/ante.go",
+        "line": 93,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(sdk.Gas(maxGas))), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/query_plugins.go",
+        "line": 48,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/querier.go",
+        "line": 175,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(sdk.NewGasMeter(q.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/msg_dispatcher.go",
+        "line": 54,
+        "content": "subCtx := ctx.WithGasMeter(limitedMeter)"
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "enable"
+  },
+  "axelar": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/ante/limit_simulation_gas.go",
+        "line": 39,
+        "content": "ctx = ctx.WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid : in design",
+    "handlerenable": "enable"
+  },
+  "neutron": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/neutron/repo/neutron/x/contractmanager/ibc_middleware.go",
+        "line": 88,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(gasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/neutron/repo/neutron/x/tokenfactory/keeper/before_send.go",
+        "line": 173,
+        "content": "childCtx := c.WithGasMeter(types2.NewGasMeter(types.TrackBeforeSendGasLimit))"
+      }
+    ],
+    "result": "valid : tokenfactory",
+    "handlerenable": "enable"
+  },
+  "nolus": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/nolus/repo/nolus-core/x/contractmanager/ibc_middleware.go",
+        "line": 93,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "unknow:used in ibc",
+    "handlerenable": "enable"
+  },
+  "paloma": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/paloma/repo/paloma/x/paloma/ante.go",
+        "line": 204,
+        "content": "ctx = ctx.WithGasMeter(&freeGasMeter{})"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "disable"
+  },
+  "impacthub": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/smart-account/ante/ante.go",
+        "line": 81,
+        "content": "ctx = ctx.WithGasMeter(payerGasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/smart-account/ante/ante.go",
+        "line": 208,
+        "content": "ctx = ctx.WithGasMeter(originalGasMeter)"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "enable"
+  },
+  "bostrom": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/bostrom/repo/go-cyber/x/dmn/keeper/keeper.go",
+        "line": 440,
+        "content": "cacheContext = cacheContext.WithGasMeter(sdk.NewGasMeter(sdk.Gas(maxGasPerThought)))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/bostrom/repo/go-cyber/x/clock/abci.go",
+        "line": 63,
+        "content": "childCtx := ctx.WithGasMeter(sdk.NewGasMeter(p.ContractGasLimit))"
+      }
+    ],
+    "result": "invalid : used in blockhook",
+    "handlerenable": "enable"
+  },
+  "bitsong": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/bitsong/repo/go-bitsong/x/smart-account/ante/ante.go",
+        "line": 83,
+        "content": "ctx = ctx.WithGasMeter(payerGasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/bitsong/repo/go-bitsong/x/smart-account/ante/ante.go",
+        "line": 212,
+        "content": "ctx = ctx.WithGasMeter(originalGasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/bitsong/repo/go-bitsong/x/cadance/abci.go",
+        "line": 53,
+        "content": "childCtx := ctx.WithGasMeter(storetypes.NewGasMeter(p.ContractGasLimit))"
+      }
+    ],
+    "result": "invalid : used in blockhook & antehandler",
+    "handlerenable": "enable"
+  },
+  "osmosis": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/protorev/keeper/posthandler.go",
+        "line": 50,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(upperGasLimitMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/protorev/keeper/posthandler.go",
+        "line": 73,
+        "content": "protoRevDec.ProtoRevKeeper.DeleteSwapsToBackrun(ctx.WithGasMeter(storetypes.NewGasMeter(storetypes.Gas(50_000_000))))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/smart-account/ante/ante.go",
+        "line": 84,
+        "content": "ctx = ctx.WithGasMeter(payerGasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/smart-account/ante/ante.go",
+        "line": 213,
+        "content": "ctx = ctx.WithGasMeter(originalGasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/concentrated-liquidity/pool_hooks.go",
+        "line": 129,
+        "content": "childCtx := ctx.WithGasMeter(storetypes.NewGasMeter(k.GetParams(ctx).HookGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/tokenfactory/keeper/before_send.go",
+        "line": 165,
+        "content": "childCtx := ctx.WithGasMeter(storetypes.NewGasMeter(types.BeforeSendHookGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/osmoutils/cosmwasm/helpers.go",
+        "line": 61,
+        "content": "childCtx := ctx.WithGasMeter(storetypes.NewGasMeter(wasmKeeper.QueryGasLimit()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/osmoutils/cosmwasm/helpers.go",
+        "line": 136,
+        "content": "childCtx := ctx.WithGasMeter(storetypes.NewGasMeter(gasLimit))"
+      }
+    ],
+    "result": "valid : tokenfactory",
+    "handlerenable": "enable"
+  },
+  "terpnetwork": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/terpnetwork/repo/terp-core/x/clock/abci.go",
+        "line": 31,
+        "content": "childCtx := ctx.WithGasMeter(sdk.NewGasMeter(p.ContractGasLimit))"
+      }
+    ],
+    "result": "invalid : used in blockhook",
+    "handlerenable": "enable"
+  },
+  "provenance": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/internal/antewrapper/ante.go",
+        "line": 25,
+        "content": "newCtx := ctx.WithGasMeter(NewFeeGasMeterWrapper(ctx.Logger(), ctx.GasMeter(), simulate))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/x/trigger/keeper/trigger_dispatcher.go",
+        "line": 52,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "enable"
+  },
+  "evmos": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/evmos/repo/evmos/precompiles/common/precompile.go",
+        "line": 147,
+        "content": "ctx = ctx.WithGasMeter(storetypes.NewGasMeter(contract.Gas))."
+      },
+      {
+        "file": "/Cosmos/chain-registry/evmos/repo/evmos/x/evm/keeper/grpc_query.go",
+        "line": 399,
+        "content": "tmpCtx = evmante.BuildEvmExecutionCtx(tmpCtx).WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid",
+    "handlerenable": "disable"
+  },
+  "self": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/self/repo/evmos/precompiles/common/precompile.go",
+        "line": 147,
+        "content": "ctx = ctx.WithGasMeter(storetypes.NewGasMeter(contract.Gas))."
+      },
+      {
+        "file": "/Cosmos/chain-registry/self/repo/evmos/x/evm/keeper/grpc_query.go",
+        "line": 399,
+        "content": "tmpCtx = evmante.BuildEvmExecutionCtx(tmpCtx).WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid",
+    "handlerenable": "disable"
+  },
+  "coreum": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/x/deterministicgas/types/gas.go",
+        "line": 174,
+        "content": "ctx = ctx.WithGasMeter(storetypes.NewGasMeter(gasMultiplier * gasRequired))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/x/deterministicgas/types/gas.go",
+        "line": 241,
+        "content": "ctxWithUntrackedGas := ctx.WithGasMeter(storetypes.NewGasMeter(fuseGasMultiplier * untrackedMaxGasForQueries))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/x/deterministicgas/ante/ante.go",
+        "line": 73,
+        "content": "return next(ctx.WithGasMeter(gasMeter), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/x/deterministicgas/ante/ante.go",
+        "line": 119,
+        "content": "return next(ctx.WithGasMeter(gasMeter), tx, simulate)"
+      }
+    ],
+    "result": "invalid",
+    "handlerenable": "enable"
+  },
+  "lava": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/lava/repo/lava/x/dualstaking/keeper/hooks.go",
+        "line": 55,
+        "content": "ctx = ctx.WithGasMeter(originalGasMeter)"
+      }
+    ],
+    "result": "invalid : in design",
+    "handlerenable": "disable"
+  },
+  "kujira": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/kujira/repo/core/x/cw-ica/keeper/ibc_handlers.go",
+        "line": 69,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid :used in ibc",
+    "handlerenable": "enable"
+  },
+  "commercionetwork": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/commercionetwork/repo/commercionetwork/x/ante/ante.go",
+        "line": 189,
+        "content": "return ctx.WithGasMeter(sdk.NewGasMeter(gasLimit))"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "enable"
+  },
+  "secretnetwork": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go",
+        "line": 789,
+        "content": "ctx = ctx.WithGasMeter(storetypes.NewGasMeter(k.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/query_plugins.go",
+        "line": 44,
+        "content": "subctx := q.Ctx.WithGasMeter(storetypes.NewGasMeter(sdkGas))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/querier.go",
+        "line": 95,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(storetypes.NewGasMeter(q.keeper.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/querier.go",
+        "line": 144,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(storetypes.NewGasMeter(q.keeper.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/querier.go",
+        "line": 160,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(storetypes.NewGasMeter(q.keeper.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/querier.go",
+        "line": 181,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(storetypes.NewGasMeter(q.keeper.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/querier.go",
+        "line": 197,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(storetypes.NewGasMeter(q.keeper.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/msg_dispatcher.go",
+        "line": 84,
+        "content": "subCtx := ctx.WithGasMeter(limitedMeter)"
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "enable"
+  },
+  "dydx": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/app/app.go",
+        "line": 1812,
+        "content": "ctx = ctx.WithGasMeter(antetypes.NewFreeInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/app/ante/gas.go",
+        "line": 38,
+        "content": "newCtx = ctx.WithGasMeter(types.NewFreeInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/streaming/full_node_streaming_manager.go",
+        "line": 1197,
+        "content": "ctx = ctx.WithGasMeter(ante_types.NewFreeInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/finalizeblock/event_stager.go",
+        "line": 43,
+        "content": "noGasCtx := ctx.WithGasMeter(ante_types.NewFreeInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/finalizeblock/event_stager.go",
+        "line": 73,
+        "content": "noGasCtx := ctx.WithGasMeter(ante_types.NewFreeInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/indexer/indexer_manager/events.go",
+        "line": 111,
+        "content": "noGasCtx := ctx.WithGasMeter(ante_types.NewFreeInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/indexer/indexer_manager/events.go",
+        "line": 128,
+        "content": "noGasCtx := ctx.WithGasMeter(ante_types.NewFreeInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/indexer/indexer_manager/events.go",
+        "line": 136,
+        "content": "noGasCtx := ctx.WithGasMeter(ante_types.NewFreeInfiniteGasMeter())"
+      }
+    ],
+    "result": "invalid : in design",
+    "handlerenable": "enable"
+  },
+  "bluzelle": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/bluzelle/repo/bluzelle-public/curium/app/ante/NewSetupContextDecorator.go",
+        "line": 141,
+        "content": "return options.Ctx.WithGasMeter(gm), nil"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "disable"
+  },
+  "injective": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/wasmx/keeper/wasm.go",
+        "line": 63,
+        "content": "meteredCtx := ctx.WithGasMeter(storetypes.NewGasMeter(params.MaxBeginBlockTotalGas))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/wasmx/keeper/wasm.go",
+        "line": 95,
+        "content": "deactivateMeteredCtx := ctx.WithGasMeter("
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/wasmx/keeper/wasm.go",
+        "line": 180,
+        "content": "subCtx = subCtx.WithGasMeter(limitedMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/exchange/abci.go",
+        "line": 61,
+        "content": "ctx = ctx.WithGasMeter(chaintypes.NewThreadsafeInfiniteGasMeter())."
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/exchange/keeper/markets_settlement.go",
+        "line": 625,
+        "content": "ctx = ctx.WithGasMeter(chaintypes.NewThreadsafeInfiniteGasMeter())."
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/permissions/keeper/contract_hook.go",
+        "line": 38,
+        "content": "sdkCtxMetered := sdkCtx.WithGasMeter(storetypes.NewGasMeter(k.GetParams(sdkCtx).WasmHookQueryMaxGas))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/permissions/keeper/contract_hook.go",
+        "line": 67,
+        "content": "sdkCtxMetered := sdkCtx.WithGasMeter(storetypes.NewGasMeter(params.WasmHookQueryMaxGas))"
+      }
+    ],
+    "result": "valid : this shouble also been avlivable for R1",
+    "handlerenable": "enable"
+  },
+  "chimba": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/legacy_querier.go",
+        "line": 112,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeter(gasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/ante.go",
+        "line": 88,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(*d.gasLimit)), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/ante.go",
+        "line": 93,
+        "content": "return next(ctx.WithGasMeter(sdk.NewGasMeter(sdk.Gas(maxGas))), tx, simulate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/query_plugins.go",
+        "line": 50,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/querier.go",
+        "line": 175,
+        "content": "ctx := sdk.UnwrapSDKContext(c).WithGasMeter(sdk.NewGasMeter(q.queryGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/msg_dispatcher.go",
+        "line": 50,
+        "content": "subCtx := ctx.WithGasMeter(limitedMeter)"
+      }
+    ],
+    "result": "invalid : safe",
+    "handlerenable": "enable"
+  },
+  "titan": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/titan/repo/titan/app/posthandler/refund_gas_remaining.go",
+        "line": 87,
+        "content": "defer ctx.WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid : in design",
+    "handlerenable": "disable"
+  },
+  "mantrachain": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/mantrachain/repo/mantrachain/x/xfeemarket/post/suite/suite.go",
+        "line": 231,
+        "content": "s.Ctx = s.Ctx.WithGasMeter(storetypes.NewGasMeter(NewTestGasLimit()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/mantrachain/repo/mantrachain/x/tokenfactory/keeper/before_send.go",
+        "line": 130,
+        "content": "childCtx := c.WithGasMeter(types2.NewGasMeter(types.BeforeSendHookGasLimit))"
+      }
+    ],
+    "result": "valid : tokenfactory",
+    "handlerenable": "enable"
+  },
+  "sei": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/app/receipt.go",
+        "line": 55,
+        "content": "wasmToEvmEventCtx := ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, wasmToEvmEventGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/app/antedecorators/gas.go",
+        "line": 15,
+        "content": "return ctx.WithGasMeter(types.NewInfiniteMultiplierGasMeter(cosmosGasParams.CosmosGasMultiplierNumerator, cosmosGasParams.CosmosGasMultiplierDenominator))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/app/antedecorators/gas.go",
+        "line": 18,
+        "content": "return ctx.WithGasMeter(types.NewMultiplierGasMeter(gasLimit, cosmosGasParams.CosmosGasMultiplierNumerator, cosmosGasParams.CosmosGasMultiplierDenominator))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/app/antedecorators/gasless.go",
+        "line": 30,
+        "content": "ctx = ctx.WithGasMeter(storetypes.NewNoConsumptionInfiniteGasMeter())"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/app/antedecorators/gasless.go",
+        "line": 37,
+        "content": "ctx = ctx.WithGasMeter(originalGasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/wasmd/legacy/v555/wasmd.go",
+        "line": 150,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimitBigInt.Uint64()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/wasmd/legacy/v552/wasmd.go",
+        "line": 150,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimitBigInt.Uint64()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/distribution/legacy/v555/distribution.go",
+        "line": 131,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimitBigInt.Uint64()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/ibc/legacy/v555/ibc.go",
+        "line": 138,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimitBigInt.Uint64()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/ibc/legacy/v552/ibc.go",
+        "line": 138,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimitBigInt.Uint64()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/precompiles.go",
+        "line": 168,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v575/precompiles.go",
+        "line": 168,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimitBigInt.Uint64()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v580/precompiles.go",
+        "line": 162,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, d.executor.EVMKeeper().GetCosmosGasLimitFromEVMGas(ctx, suppliedGas)))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v600/precompiles.go",
+        "line": 163,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, d.executor.EVMKeeper().GetCosmosGasLimitFromEVMGas(ctx, suppliedGas)))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v562/precompiles.go",
+        "line": 157,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, gasLimitBigInt.Uint64()))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/x/evm/ante/gas.go",
+        "line": 31,
+        "content": "ctx = ctx.WithGasMeter(gasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/x/evm/keeper/grpc_query.go",
+        "line": 72,
+        "content": "ctx = ctx.WithGasMeter(sdk.NewGasMeterWithMultiplier(ctx, q.QueryConfig.GasLimit))"
+      }
+    ],
+    "result": "invalid",
+    "handlerenable": "enable"
+  },
+  "aura": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/aura/repo/aura/x/smartaccount/ante.go",
+        "line": 201,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(sdk.NewGasMeter(params.MaxGasExecute))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/aura/repo/aura/x/smartaccount/ante.go",
+        "line": 432,
+        "content": "cacheCtx = cacheCtx.WithGasMeter(sdk.NewGasMeter(maxGas))"
+      }
+    ],
+    "result": "invalid : used in Anthandler",
+    "handlerenable": "enable"
+  },
+  "fxcore": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/evm/keeper/keeper.go",
+        "line": 97,
+        "content": "ctx.WithGasMeter(gasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/evm/keeper/keeper.go",
+        "line": 188,
+        "content": "ctx.WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid",
+    "handlerenable": "disable"
+  },
+  "unicorn": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/evm/keeper/keeper.go",
+        "line": 97,
+        "content": "ctx.WithGasMeter(gasMeter)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/evm/keeper/keeper.go",
+        "line": 188,
+        "content": "ctx.WithGasMeter(gasMeter)"
+      }
+    ],
+    "result": "invalid",
+    "handlerenable": "disable"
+  },
+  "juno": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/juno/repo/juno/x/cw-hooks/keeper/contracts.go",
+        "line": 75,
+        "content": "gasLimitCtx := sdkCtx.WithGasMeter(storetypes.NewGasMeter(p.ContractGasLimit))"
+      },
+      {
+        "file": "/Cosmos/chain-registry/juno/repo/juno/x/clock/keeper/abci.go",
+        "line": 54,
+        "content": "childCtx := sdkCtx.WithGasMeter(storetypes.NewGasMeter(p.ContractGasLimit))"
+      }
+    ],
+    "result": "valid : cw-hook",
+    "handlerenable": "enable"
+  },
+  "terra2": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/terra2/repo/core/x/tokenfactory/keeper/before_send.go",
+        "line": 144,
+        "content": "childCtx := ctx.WithGasMeter(sdk.NewGasMeter(types.TrackBeforeSendGasLimit))"
+      }
+    ],
+    "result": "valid : tokenfactory",
+    "handlerenable": "enable"
+  }
+}

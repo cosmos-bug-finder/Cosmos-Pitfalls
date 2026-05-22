@@ -1,0 +1,180 @@
+{
+  "axelar": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/auxiliary/keeper/msg_server.go",
+        "line": 59,
+        "content": "handler := s.router.Handler(message)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.16"
+  },
+  "impacthub": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 182,
+        "content": "handler := k.router.Handler(msgDelegate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 237,
+        "content": "handler := k.router.Handler(lsmTokenizeMsg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 285,
+        "content": "handler = k.router.Handler(lsmRedeemMsg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 328,
+        "content": "handler = k.router.Handler(unstakeMsg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 387,
+        "content": "handler := k.router.Handler(msgRedelegate)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 745,
+        "content": "handler := k.router.Handler(msgWithdraw)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/claims/keeper/claims.go",
+        "line": 334,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "sentinel": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/plan/keeper/hooks.go",
+        "line": 44,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/plan/keeper/hooks.go",
+        "line": 80,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/hooks.go",
+        "line": 25,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/hooks.go",
+        "line": 55,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/abci.go",
+        "line": 26,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/abci.go",
+        "line": 128,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/subscription/keeper/abci.go",
+        "line": 31,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/subscription/keeper/abci.go",
+        "line": 108,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/node/keeper/abci.go",
+        "line": 25,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/hooks.go",
+        "line": 31,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/hooks.go",
+        "line": 66,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/hooks.go",
+        "line": 101,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/abci.go",
+        "line": 31,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.17"
+  },
+  "provenance": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/x/trigger/keeper/trigger_dispatcher.go",
+        "line": 86,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "coreum": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/x/delay/keeper/keeper.go",
+        "line": 335,
+        "content": "handler, err := k.router.Handler(data)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.13"
+  },
+  "secretnetwork": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/handler_plugin.go",
+        "line": 578,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.50.9"
+  },
+  "dydx": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/x/delaymsg/keeper/delayed_message.go",
+        "line": 201,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "mars": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/mars/repo/hub/x/envoy/keeper/keeper.go",
+        "line": 94,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid: limit msg type",
+    "sdk_version": "0.46.13"
+  }
+}

@@ -1,0 +1,837 @@
+{
+  "zetachain": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/zetachain/repo/node/x/fungible/keeper/msg_server_update_system_contract.go",
+        "line": 48,
+        "content": "tmpCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/zetachain/repo/node/x/fungible/keeper/msg_server_update_zrc20_withdraw_fee.go",
+        "line": 57,
+        "content": "tmpCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/zetachain/repo/node/x/crosschain/keeper/evm_deposit.go",
+        "line": 106,
+        "content": "tmpCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/zetachain/repo/node/x/crosschain/keeper/msg_server_whitelist_erc20.go",
+        "line": 89,
+        "content": "tmpCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/zetachain/repo/node/x/crosschain/keeper/abort.go",
+        "line": 49,
+        "content": "tmpCtx, commit := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.13"
+  },
+  "highbury": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/highbury/repo/fury/x/committee/keeper/proposal.go",
+        "line": 105,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.46.11"
+  },
+  "atomone": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/atomone/repo/atomone/x/gov/abci.go",
+        "line": 151,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/atomone/repo/atomone/x/gov/keeper/proposal.go",
+        "line": 71,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "valid",
+    "sdk_version": "0.47.17"
+  },
+  "milkyway": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/milkyway/repo/milkyway/x/tokenfactory/keeper/before_send.go",
+        "line": 33,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.50.13"
+  },
+  "arkeo": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/arkeo/repo/arkeo/x/arkeo/keeper/msg_server_open_contract.go",
+        "line": 32,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.11"
+  },
+  "agoric": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/agoric/repo/agoric-sdk/golang/cosmos/x/vlocalchain/keeper/keeper.go",
+        "line": 212,
+        "content": "cacheCtx, writeCache := origCtx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.46.16"
+  },
+  "umee": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/umee/repo/umee/x/uibc/uics20/ibc_module.go",
+        "line": 96,
+        "content": "transferCtx, transferCtxFlush = ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/umee/repo/umee/x/uibc/uics20/ibc_module.go",
+        "line": 98,
+        "content": "execCtx, execCtxFlush := transferCtx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.17"
+  },
+  "nibiru": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/x/evm/statedb/statedb.go",
+        "line": 63,
+        "content": "// `s.evmTxCtx.CacheContext()`. It saves mutations on s.cacheCtx to the StateDB's"
+      },
+      {
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/x/evm/statedb/statedb.go",
+        "line": 590,
+        "content": "s.cacheCtx, s.writeToCommitCtxFromCacheCtx = s.evmTxCtx.CacheContext()"
+      }
+    ],
+    "result": "invalid : rewrite",
+    "sdk_version": "0.47.11"
+  },
+  "aura1": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/aura1/repo/aura/x/smartaccount/ante.go",
+        "line": 200,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/aura1/repo/aura/x/smartaccount/ante.go",
+        "line": 431,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.47.12"
+  },
+  "bandchain": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/bandchain/repo/chain/x/oracle/keeper/result.go",
+        "line": 117,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/bandchain/repo/chain/x/tunnel/keeper/keeper_packet.go",
+        "line": 56,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/bandchain/repo/chain/x/bandtss/keeper/tss_callback.go",
+        "line": 50,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/bandchain/repo/chain/x/bandtss/keeper/keeper_signing.go",
+        "line": 103,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/bandchain/repo/chain/x/tss/keeper/keeper_signing_endblock.go",
+        "line": 32,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.13"
+  },
+  "genesisl1": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/genesisl1/repo/genesis-crypto/x/cronos/keeper/gravity_hooks.go",
+        "line": 43,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.46.15"
+  },
+  "thorchain": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/thorchain/repo/thornode/x/thorchain/manager_txout_current.go",
+        "line": 156,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.11"
+  },
+  "stride": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/stride/repo/stride/utils/cache_ctx.go",
+        "line": 38,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.47.16"
+  },
+  "furya": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/furya/repo/furya-chain/app/fee.go",
+        "line": 75,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.47.8"
+  },
+  "dyson": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/dyson/repo/dyson/chain/x/dyson/keeper/script.go",
+        "line": 276,
+        "content": "cachedCtx, Write := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.46.7"
+  },
+  "quasar": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/quasar/repo/quasar/x/tokenfactory/keeper/before_send.go",
+        "line": 30,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "kava": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/kava/repo/kava/x/committee/keeper/proposal.go",
+        "line": 105,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.47.10"
+  },
+  "sunrise": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/sunrise/repo/sunrise/x/liquiditypool/keeper/keeper_fee.go",
+        "line": 156,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sunrise/repo/sunrise/x/liquiditypool/keeper/keeper_swap.go",
+        "line": 227,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sunrise/repo/sunrise/x/liquiditypool/keeper/keeper_swap.go",
+        "line": 249,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sunrise/repo/sunrise/x/liquiditypool/keeper/keeper_swap.go",
+        "line": 664,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.52.0"
+  },
+  "neutron": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/neutron/repo/neutron/x/contractmanager/ibc_middleware.go",
+        "line": 86,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/neutron/repo/neutron/x/dex/keeper/liquidity.go",
+        "line": 99,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.11"
+  },
+  "nolus": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/nolus/repo/nolus-core/x/contractmanager/ibc_middleware.go",
+        "line": 91,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.13"
+  },
+  "paloma": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/paloma/repo/paloma/x/skyway/keeper/batch.go",
+        "line": 111,
+        "content": "ctx, commit := sdk.UnwrapSDKContext(c).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/paloma/repo/paloma/x/skyway/keeper/batch.go",
+        "line": 180,
+        "content": "ctx, commit := sdk.UnwrapSDKContext(c).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/paloma/repo/paloma/x/skyway/keeper/batch.go",
+        "line": 293,
+        "content": "ctx, commit := sdk.UnwrapSDKContext(c).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/paloma/repo/paloma/x/skyway/keeper/msg_server.go",
+        "line": 437,
+        "content": "ctx, commit := sdk.UnwrapSDKContext(ctx).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/paloma/repo/paloma/x/skyway/keeper/msg_server.go",
+        "line": 531,
+        "content": "ctx, commit := sdk.UnwrapSDKContext(ctx).CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.13"
+  },
+  "impacthub": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 699,
+        "content": "cachedCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/rebalancing.go",
+        "line": 51,
+        "content": "cachedCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/rebalancing.go",
+        "line": 267,
+        "content": "cachedCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "bostrom": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/bostrom/repo/go-cyber/x/liquidity/keeper/liquidity_pool.go",
+        "line": 62,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.12"
+  },
+  "saga": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/saga/repo/ssc/x/epochs/types/hooks.go",
+        "line": 70,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.50.11"
+  },
+  "sentinel": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/abci.go",
+        "line": 134,
+        "content": "cc, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/subscription/keeper/abci.go",
+        "line": 114,
+        "content": "cc, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid : handler case",
+    "sdk_version": "0.47.17"
+  },
+  "osmosis": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/concentrated-liquidity/incentives.go",
+        "line": 927,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/concentrated-liquidity/spread_rewards.go",
+        "line": 214,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/tokenfactory/keeper/before_send.go",
+        "line": 33,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.50.12"
+  },
+  "provenance": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/x/trigger/keeper/trigger_dispatcher.go",
+        "line": 50,
+        "content": "cacheCtx, flush := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid : handler case",
+    "sdk_version": "0.50.10"
+  },
+  "uptick": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/uptick/repo/uptick/x/erc20/keeper/ibc_hook.go",
+        "line": 30,
+        "content": "cctx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/uptick/repo/uptick/x/evmIBC/keeper/ibc_hook.go",
+        "line": 36,
+        "content": "cctx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.47.5"
+  },
+  "blockx": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/blockx/repo/uptick/x/erc20/keeper/ibc_hook.go",
+        "line": 30,
+        "content": "cctx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/blockx/repo/uptick/x/evmIBC/keeper/ibc_hook.go",
+        "line": 36,
+        "content": "cctx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.47.5"
+  },
+  "planq": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/planq/repo/planq/x/evm/keeper/state_transition.go",
+        "line": 176,
+        "content": "tmpCtx, commit = ctx.CacheContext()"
+      }
+    ],
+    "result": "valid : evm",
+    "sdk_version": "0.47.16"
+  },
+  "lava": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/lava/repo/lava/x/subscription/keeper/grpc_query_estimated_pools.go",
+        "line": 18,
+        "content": "ctx, _ := oldCtx.CacheContext() // verify the original ctx is not changed"
+      },
+      {
+        "file": "/Cosmos/chain-registry/lava/repo/lava/x/subscription/keeper/grpc_query_estimated_rewards.go",
+        "line": 25,
+        "content": "ctx, _ := oldCtx.CacheContext() // verify the original ctx is not changed"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.47.13"
+  },
+  "canto": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/canto/repo/Canto/x/onboarding/keeper/ibc_callbacks.go",
+        "line": 139,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.8"
+  },
+  "kujira": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/kujira/repo/core/x/cw-ica/keeper/ibc_handlers.go",
+        "line": 43,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.12"
+  },
+  "ununifi": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/ununifi/repo/chain/x/nftbackedloan/keeper/nft_listing.go",
+        "line": 360,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/ununifi/repo/chain/x/nftbackedloan/keeper/nft_listing.go",
+        "line": 386,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/ununifi/repo/chain/x/nftbackedloan/keeper/liquidation.go",
+        "line": 74,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/ununifi/repo/chain/x/nftbackedloan/keeper/liquidation.go",
+        "line": 150,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/ununifi/repo/chain/x/nftbackedloan/keeper/sell.go",
+        "line": 66,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.5"
+  },
+  "secretnetwork": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/msg_dispatcher.go",
+        "line": 215,
+        "content": "subCtx, commit := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.9"
+  },
+  "lumnetwork": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/lumnetwork/repo/chain/x/millions/keeper/keeper_blockers.go",
+        "line": 21,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/lumnetwork/repo/chain/x/millions/keeper/keeper_blockers.go",
+        "line": 132,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/lumnetwork/repo/chain/x/millions/keeper/keeper_draw.go",
+        "line": 337,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.11"
+  },
+  "dydx": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/x/clob/keeper/keeper.go",
+        "line": 202,
+        "content": "checkCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/x/clob/keeper/orders.go",
+        "line": 1158,
+        "content": "placeOrderCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "stratos": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/stratos/repo/stratos-chain/x/evm/keeper/state_transition.go",
+        "line": 336,
+        "content": "tmpCtx, commit = ctx.CacheContext()"
+      }
+    ],
+    "result": "valid: evm",
+    "sdk_version": "0.47.11"
+  },
+  "injective": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/wasmx/keeper/wasm.go",
+        "line": 179,
+        "content": "subCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/exchange/keeper/derivative_liquidations.go",
+        "line": 217,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/insurance/keeper/insurance.go",
+        "line": 609,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.9"
+  },
+  "titan": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/titan/repo/titan/x/gov/abci.go",
+        "line": 77,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.47.8"
+  },
+  "irisnet": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/irisnet/repo/irishub/modules/evm/state_transition.go",
+        "line": 67,
+        "content": "tmpCtx, commit = ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.50.11"
+  },
+  "aura": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/aura/repo/aura/x/smartaccount/ante.go",
+        "line": 200,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/aura/repo/aura/x/smartaccount/ante.go",
+        "line": 431,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.47.12"
+  },
+  "elys": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/tradeshield/keeper/msg_server_execute_orders.go",
+        "line": 30,
+        "content": "cachedCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/tradeshield/keeper/msg_server_execute_orders.go",
+        "line": 37,
+        "content": "cachedCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/tradeshield/keeper/msg_server_execute_orders.go",
+        "line": 44,
+        "content": "cachedCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/tradeshield/keeper/msg_server_execute_orders.go",
+        "line": 51,
+        "content": "cachedCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/tradeshield/keeper/msg_server_execute_orders.go",
+        "line": 80,
+        "content": "cachedCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/amm/keeper/msg_server_swap_exact_amount_in.go",
+        "line": 37,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/amm/keeper/msg_server_swap_exact_amount_out.go",
+        "line": 35,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/leveragelp/keeper/begin_blocker.go",
+        "line": 48,
+        "content": "cacheContextForUnhealthy, writeForUnhealthy := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/leveragelp/keeper/begin_blocker.go",
+        "line": 60,
+        "content": "cacheContextForStopLoss, writeForStopLoss := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/leveragelp/keeper/msg_server_close_positions.go",
+        "line": 28,
+        "content": "cachedCtx, write := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/leveragelp/keeper/msg_server_close_positions.go",
+        "line": 56,
+        "content": "cachedCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.13"
+  },
+  "fxcore": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/crosschain/keeper/bridge_call_in.go",
+        "line": 65,
+        "content": "cacheCtx, commit := sdk.UnwrapSDKContext(ctx).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/crosschain/keeper/send_to_fx.go",
+        "line": 63,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/gov/abci.go",
+        "line": 70,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/gov/abci.go",
+        "line": 163,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/gov/abci.go",
+        "line": 239,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.11"
+  },
+  "unicorn": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/crosschain/keeper/bridge_call_in.go",
+        "line": 65,
+        "content": "cacheCtx, commit := sdk.UnwrapSDKContext(ctx).CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/crosschain/keeper/send_to_fx.go",
+        "line": 63,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/gov/abci.go",
+        "line": 70,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/gov/abci.go",
+        "line": 163,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/gov/abci.go",
+        "line": 239,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.11"
+  },
+  "mars": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/mars/repo/hub/x/gov/abci.go",
+        "line": 77,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid : del",
+    "sdk_version": "0.46.13"
+  },
+  "teritori": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/teritori/repo/teritori-chain/app/fee.go",
+        "line": 75,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result":  "invalid",
+    "sdk_version": "0.47.8"
+  },
+  "conscious": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/conscious/repo/cvn/x/evm/keeper/state_transition.go",
+        "line": 158,
+        "content": "tmpCtx, commit = ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.46.13"
+  },
+  "shentu": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/shentu/repo/shentu/x/gov/abci.go",
+        "line": 207,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "file": "/Cosmos/chain-registry/shentu/repo/shentu/x/gov/abci.go",
+        "line": 371,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.50.11"
+  },
+  "kyve": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/kyve/repo/chain/x/stakers/keeper/exported_functions.go",
+        "line": 360,
+        "content": "ctx, _ := orgCtx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.12"
+  }
+}

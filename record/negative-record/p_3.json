@@ -1,0 +1,1598 @@
+{
+  "terra": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/terra/repo/core/custom/wasm/keeper/handler_plugin.go",
+        "line": 117,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      }
+    ],
+    "result": "invalid : emit after execution",
+    "sdk_version": "0.47.17"
+  },
+  "decentr": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 498,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 516,
+        "content": "cacheCtx, writeFn = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 576,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 644,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 715,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/types/module/module.go",
+        "line": 486,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/types/module/module.go",
+        "line": 504,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/baseapp/msg_service_router.go",
+        "line": 110,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 133,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 167,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 205,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 233,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/distribution/keeper/invariants.go",
+        "line": 68,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/crisis/keeper/msg_server.go",
+        "line": 25,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/authz/keeper/keeper.go",
+        "line": 113,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/gov/abci.go",
+        "line": 60,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/gov/keeper/proposal.go",
+        "line": 21,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.9"
+  },
+  "atomone": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/atomone/repo/atomone/x/gov/keeper/proposal.go",
+        "line": 60,
+        "content": "handler := keeper.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid : simulation",
+    "sdk_version": "0.47.17"
+  },
+  "milkyway": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/milkyway/repo/milkyway/x/tokenfactory/keeper/before_send.go",
+        "line": 173,
+        "content": "_, err = k.contractKeeper.Sudo(childCtx.WithEventManager(em), cwAddr, msgBz)"
+      }
+    ],
+    "result": "valid: tokenfactory",
+    "sdk_version": "0.50.13"
+  },
+  "meme": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/handler_plugin.go",
+        "line": 96,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/keeper.go",
+        "line": 1012,
+        "content": "ctx := parentCtx.WithEventManager(em)"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/query_plugins.go",
+        "line": 51,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/query_plugins.go",
+        "line": 470,
+        "content": "cache, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/msg_dispatcher.go",
+        "line": 87,
+        "content": "subCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/meme/repo/meme/x/wasm/keeper/msg_dispatcher.go",
+        "line": 89,
+        "content": "subCtx = subCtx.WithEventManager(em)"
+      }
+    ],
+    "result": "invalid : emit after execution",
+    "sdk_version": "0.45.12"
+  },
+  "chronicnetwork": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/handler_plugin.go",
+        "line": 96,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/keeper.go",
+        "line": 1022,
+        "content": "ctx := parentCtx.WithEventManager(em)"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/query_plugins.go",
+        "line": 48,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/query_plugins.go",
+        "line": 443,
+        "content": "cache, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/msg_dispatcher.go",
+        "line": 87,
+        "content": "subCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/chronicnetwork/repo/cht/x/cht/keeper/msg_dispatcher.go",
+        "line": 89,
+        "content": "subCtx = subCtx.WithEventManager(em)"
+      }
+    ],
+    "result": "invalid : emit after execution",
+    "sdk_version": "0.45.4"
+  },
+  "archway": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/archway/repo/archway/x/genmsg/genesis.go",
+        "line": 51,
+        "content": "handler := router.Handler(msg)"
+      }
+    ],
+    "result": "invalid : in design",
+    "sdk_version": "0.50.10"
+  },
+  "agoric": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/agoric/repo/agoric-sdk/golang/cosmos/x/vlocalchain/keeper/keeper.go",
+        "line": 235,
+        "content": "handler := k.msgRouter.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.46.16"
+  },
+  "nibiru": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/app/wasmext/wasm.go",
+        "line": 58,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/x/genmsg/genesis.go",
+        "line": 57,
+        "content": "handler := router.Handler(msg)"
+      }
+    ],
+    "result": "invalid : in design",
+    "sdk_version": "0.47.11"
+  },
+  "haqq": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/haqq/repo/haqq/testutil/abci.go",
+        "line": 51,
+        "content": "newCtx = newCtx.WithEventManager(ctx.EventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/haqq/repo/haqq/testutil/integration/haqq/network/abci.go",
+        "line": 37,
+        "content": "newCtx = newCtx.WithEventManager(n.ctx.EventManager())"
+      }
+    ],
+    "result": "invalid : test path",
+    "sdk_version": "0.47.12"
+  },
+  "thorchain": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/thorchain/repo/thornode/x/thorchain/querier.go",
+        "line": 3276,
+        "content": "ctx = ctx.WithMultiStore(cms).WithEventManager(em)"
+      }
+    ],
+    "result": "invalid : simulation",
+    "sdk_version": "0.50.11"
+  },
+  "dyson": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/dyson/repo/dyson/chain/x/dyson/keeper/msg_server_run.go",
+        "line": 68,
+        "content": "handler := rpcservice.k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid : comment",
+    "sdk_version": "0.46.7"
+  },
+  "quasar": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/quasar/repo/quasar/x/tokenfactory/keeper/before_send.go",
+        "line": 162,
+        "content": "_, err = k.contractKeeper.Sudo(childCtx.WithEventManager(em), cwAddr, msgBz)"
+      }
+    ],
+    "result": "valid: tokenfactory",
+    "sdk_version": "0.50.10"
+  },
+  "kava": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/kava/repo/kava/x/pricefeed/testutil/helpers.go",
+        "line": 192,
+        "content": "ctx = ctx.WithBlockTime(blockTime).WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/kava/repo/kava/x/pricefeed/testutil/helpers.go",
+        "line": 203,
+        "content": "ctx = ctx.WithBlockTime(blockTime).WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/kava/repo/kava/x/pricefeed/testutil/helpers.go",
+        "line": 218,
+        "content": "ctx = ctx.WithBlockTime(blockTime).WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid : test path",
+    "sdk_version": "0.47.10"
+  },
+  "starname": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/handler_plugin.go",
+        "line": 96,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/keeper.go",
+        "line": 1120,
+        "content": "ctx := parentCtx.WithEventManager(em)"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/query_plugins.go",
+        "line": 48,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/query_plugins.go",
+        "line": 454,
+        "content": "cache, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/msg_dispatcher.go",
+        "line": 89,
+        "content": "subCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/starname/repo/starnamed/x/wasm/keeper/msg_dispatcher.go",
+        "line": 91,
+        "content": "subCtx = subCtx.WithEventManager(em)"
+      }
+    ],
+    "result": "invalid : emit after execution",
+    "sdk_version": "0.45.9"
+  },
+  "axelar": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/utils/abci.go",
+        "line": 20,
+        "content": "ctx, writeCache := c.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/vote/types/vote_router.go",
+        "line": 98,
+        "content": "cachedCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/reward/keeper/msg_server.go",
+        "line": 69,
+        "content": "if handler := s.msgSvcRouter.Handler(msg); handler != nil {"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/auxiliary/keeper/msg_server.go",
+        "line": 34,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/auxiliary/keeper/msg_server.go",
+        "line": 59,
+        "content": "handler := s.router.Handler(message)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.16"
+  },
+  "acrechain": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/acrechain/repo/acrechain/ethermint/x/evm/keeper/state_transition.go",
+        "line": 220,
+        "content": "tmpCtx, commit = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/acrechain/repo/acrechain/ethermint/x/evm/keeper/msg_server.go",
+        "line": 34,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/acrechain/repo/acrechain/ethermint/x/evm/keeper/msg_server.go",
+        "line": 142,
+        "content": "cacheCtx, _ = ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.10"
+  },
+  "sunrise": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sunrise/repo/sunrise/app/abci_proposal.go",
+        "line": 127,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "valid : unknow",
+    "sdk_version": "0.52.0"
+  },
+  "impacthub": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 182,
+        "content": "handler := k.router.Handler(msgDelegate)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 237,
+        "content": "handler := k.router.Handler(lsmTokenizeMsg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 285,
+        "content": "handler = k.router.Handler(lsmRedeemMsg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 328,
+        "content": "handler = k.router.Handler(unstakeMsg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 387,
+        "content": "handler := k.router.Handler(msgRedelegate)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/liquidstake/keeper/liquidstake.go",
+        "line": 745,
+        "content": "handler := k.router.Handler(msgWithdraw)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/claims/keeper/claims.go",
+        "line": 334,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "sentinel": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/plan/keeper/hooks.go",
+        "line": 44,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/plan/keeper/hooks.go",
+        "line": 80,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/hooks.go",
+        "line": 25,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/hooks.go",
+        "line": 55,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/abci.go",
+        "line": 26,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/lease/keeper/abci.go",
+        "line": 128,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/subscription/keeper/abci.go",
+        "line": 31,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/subscription/keeper/abci.go",
+        "line": 108,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/node/keeper/abci.go",
+        "line": 25,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/hooks.go",
+        "line": 31,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/hooks.go",
+        "line": 66,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/hooks.go",
+        "line": 101,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sentinel/repo/hub/x/session/keeper/abci.go",
+        "line": 31,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.17"
+  },
+  "osmosis": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/concentrated-liquidity/pool_hooks.go",
+        "line": 130,
+        "content": "_, err = k.contractKeeper.Sudo(childCtx.WithEventManager(em), cwAddr, msgBz)"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/tokenfactory/keeper/before_send.go",
+        "line": 166,
+        "content": "_, err = k.contractKeeper.Sudo(childCtx.WithEventManager(em), cwAddr, msgBz)"
+      }
+    ],
+    "result": "valid: tokenfactory",
+    "sdk_version": "0.50.12"
+  },
+  "tgrade": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/tgrade/repo/tgrade/x/poe/abci.go",
+        "line": 36,
+        "content": "ctx, commit := parentCtx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/tgrade/repo/tgrade/x/poe/contract/contractio.go",
+        "line": 117,
+        "content": "if _, err = k.Execute(ctx.WithEventManager(&em), contractAddr, operatorAddress, msgBz, nil); err != nil {"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/tgrade/repo/tgrade/x/twasm/abci.go",
+        "line": 85,
+        "content": "ctx, commit := parentCtx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/tgrade/repo/tgrade/x/twasm/keeper/handler_plugin.go",
+        "line": 84,
+        "content": "ctx = ctx.WithEventManager(em)"
+      }
+    ],
+    "result": "valid: CacheContext",
+    "sdk_version": "0.45.9"
+  },
+  "beezee": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/beezee/repo/bze/bzeutils/safe_ctx_write.go",
+        "line": 43,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.16"
+  },
+  "ethos": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/ethos/repo/bze/bzeutils/safe_ctx_write.go",
+        "line": 43,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.16"
+  },
+  "provenance": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/app/app.go",
+        "line": 588,
+        "content": "return pioMsgFeesRouter.Handler(msg)"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/internal/handlers/msg_service_router.go",
+        "line": 166,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/internal/handlers/msg_fee_invoker.go",
+        "line": 85,
+        "content": "eventCtx := ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/x/trigger/keeper/trigger_dispatcher.go",
+        "line": 86,
+        "content": "handler := k.router.Handler(msg)"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/x/sanction/keeper/genesis.go",
+        "line": 18,
+        "content": "ctx := origCtx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/provenance/repo/provenance/x/hold/keeper/genesis.go",
+        "line": 19,
+        "content": "ctx := origCtx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.10"
+  },
+  "evmos": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/evmos/repo/evmos/testutil/abci.go",
+        "line": 52,
+        "content": "newCtx = newCtx.WithEventManager(ctx.EventManager())"
+      }
+    ],
+    "result":  "invalid : test path",
+    "sdk_version": "0.50.11"
+  },
+  "self": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/self/repo/evmos/testutil/abci.go",
+        "line": 52,
+        "content": "newCtx = newCtx.WithEventManager(ctx.EventManager())"
+      }
+    ],
+    "result": "invalid : test path",
+    "sdk_version": "0.50.11"
+  },
+  "mayachain": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/mayachain/repo/mayanode/x/mayachain/manager_txout_v113.go",
+        "line": 150,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/mayachain/repo/mayanode/x/mayachain/handler.go",
+        "line": 107,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/mayachain/repo/mayanode/x/mayachain/manager_txout_v112.go",
+        "line": 150,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/mayachain/repo/mayanode/x/mayachain/manager_txout_current.go",
+        "line": 150,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/mayachain/repo/mayanode/x/mayachain/querier.go",
+        "line": 2870,
+        "content": "ctx = ctx.WithMultiStore(cms).WithEventManager(em)"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/mayachain/repo/mayanode/x/mayachain/manager_txout_v111.go",
+        "line": 138,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/mayachain/repo/mayanode/x/mayachain/manager_txout_v110.go",
+        "line": 120,
+        "content": "cacheCtx, commit := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.9"
+  },
+  "coreum": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/x/delay/keeper/keeper.go",
+        "line": 335,
+        "content": "handler, err := k.router.Handler(data)"
+      }
+    ],
+    "result": "valid : handler",
+    "sdk_version": "0.50.13"
+  },
+  "lava": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/lava/repo/lava/x/subscription/keeper/grpc_query_estimated_pools.go",
+        "line": 24,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/lava/repo/lava/x/subscription/keeper/grpc_query_estimated_rewards.go",
+        "line": 84,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid : in grpc path",
+    "sdk_version": "0.47.13"
+  },
+  "crescent": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/app/upgrades/mainnet/v5/upgrade.go",
+        "line": 62,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/exchange/abci.go",
+        "line": 33,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/exchange/simulation/operations.go",
+        "line": 468,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/exchange/keeper/matching.go",
+        "line": 52,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/exchange/keeper/invariants.go",
+        "line": 43,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/marketmaker/keeper/genesis.go",
+        "line": 15,
+        "content": "ctx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/lpfarm/keeper/farm.go",
+        "line": 138,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/lpfarm/keeper/farm.go",
+        "line": 147,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/lpfarm/keeper/invariants.go",
+        "line": 120,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/liquidstaking/simulation/proposals.go",
+        "line": 172,
+        "content": "cachedCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/liquidstaking/keeper/liquidstaking.go",
+        "line": 271,
+        "content": "cachedCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/liquidstaking/keeper/rebalancing.go",
+        "line": 41,
+        "content": "cachedCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/liquidstaking/keeper/rebalancing.go",
+        "line": 159,
+        "content": "cachedCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/liquidstaking/keeper/rebalancing.go",
+        "line": 216,
+        "content": "cachedCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/amm/keeper/position.go",
+        "line": 206,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/amm/keeper/position.go",
+        "line": 220,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/amm/keeper/invariants.go",
+        "line": 100,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/crescent/repo/crescent/x/farming/keeper/genesis.go",
+        "line": 18,
+        "content": "ctx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid : in design",
+    "sdk_version": "0.45.10"
+  },
+  "lambda": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/lambda/repo/lambdavm/x/evm/keeper/state_transition.go",
+        "line": 220,
+        "content": "tmpCtx, commit = ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.11"
+  },
+  "secretnetwork": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/handler_plugin.go",
+        "line": 578,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/msg_dispatcher.go",
+        "line": 217,
+        "content": "subCtx = subCtx.WithEventManager(em)"
+      }
+    ],
+    "result": "invalid : emit after execution",
+    "sdk_version": "0.50.9"
+  },
+  "dydx": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/dydx/repo/v4-chain/protocol/x/delaymsg/keeper/delayed_message.go",
+        "line": 201,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid : simulation",
+    "sdk_version": "0.50.10"
+  },
+  "stratos": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/stratos/repo/stratos-chain/x/evm/keeper/state_transition.go",
+        "line": 263,
+        "content": "handler := k.msgServiceRouter.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.47.11"
+  },
+  "injective": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/wasmbinding/message_plugin.go",
+        "line": 90,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/wasmbinding/message_plugin.go",
+        "line": 230,
+        "content": "if handler := m.router.Handler(msg); handler != nil {"
+      }
+    ],
+    "result": "invalid : emit after execution",
+    "sdk_version": "0.50.9"
+  },
+  "emoney": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/emoney/repo/em-ledger/app.go",
+        "line": 612,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/emoney/repo/em-ledger/x/market/keeper/keeper.go",
+        "line": 150,
+        "content": "ctx, commitTrade := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/emoney/repo/em-ledger/x/market/keeper/keeper.go",
+        "line": 338,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid : rewrite handler",
+    "sdk_version": "0.45.9"
+  },
+  "chimba": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/handler_plugin.go",
+        "line": 96,
+        "content": "if handler := h.router.Handler(msg); handler != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/keeper.go",
+        "line": 987,
+        "content": "ctx := parentCtx.WithEventManager(em)"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/query_plugins.go",
+        "line": 50,
+        "content": "subCtx, _ := q.Ctx.WithGasMeter(sdk.NewGasMeter(sdkGas)).CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/query_plugins.go",
+        "line": 451,
+        "content": "cache, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/msg_dispatcher.go",
+        "line": 85,
+        "content": "subCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/chimba/repo/chimba/x/wasm/keeper/msg_dispatcher.go",
+        "line": 87,
+        "content": "subCtx = subCtx.WithEventManager(em)"
+      }
+    ],
+    "result": "invalid : emit after execution",
+    "sdk_version": "0.45.4"
+  },
+  "lorenzo": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/lorenzo/repo/lorenzo/testutil/abci.go",
+        "line": 50,
+        "content": "newCtx = newCtx.WithEventManager(ctx.EventManager())"
+      }
+    ],
+    "result": "valid : unused",
+    "sdk_version": "0.47.11"
+  },
+  "mantrachain": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/mantrachain/repo/mantrachain/x/tokenfactory/keeper/before_send.go",
+        "line": 131,
+        "content": "_, err = k.contractKeeper.Sudo(childCtx.WithEventManager(em), cwAddr, msgBz)"
+      }
+    ],
+    "result": "valid: tokenfactory",
+    "sdk_version": "0.50.11"
+  },
+  "sei": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/precompiles.go",
+        "line": 79,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/precompiles.go",
+        "line": 171,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/precompiles.go",
+        "line": 212,
+        "content": "if err := bankKeeper.SendCoins(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, sdk.NewCoins(coin)); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/precompiles.go",
+        "line": 222,
+        "content": "if err := bankKeeper.SendCoinsAndWei(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, usei, wei); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v575/precompiles.go",
+        "line": 76,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v575/precompiles.go",
+        "line": 172,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v575/precompiles.go",
+        "line": 212,
+        "content": "if err := bankKeeper.SendCoins(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, sdk.NewCoins(coin)); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v575/precompiles.go",
+        "line": 222,
+        "content": "if err := bankKeeper.SendCoinsAndWei(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, usei, wei); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v580/precompiles.go",
+        "line": 75,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v580/precompiles.go",
+        "line": 166,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v580/precompiles.go",
+        "line": 206,
+        "content": "if err := bankKeeper.SendCoins(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, sdk.NewCoins(coin)); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v580/precompiles.go",
+        "line": 216,
+        "content": "if err := bankKeeper.SendCoinsAndWei(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, usei, wei); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v600/precompiles.go",
+        "line": 75,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v600/precompiles.go",
+        "line": 167,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v600/precompiles.go",
+        "line": 208,
+        "content": "if err := bankKeeper.SendCoins(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, sdk.NewCoins(coin)); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v600/precompiles.go",
+        "line": 218,
+        "content": "if err := bankKeeper.SendCoinsAndWei(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, usei, wei); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v555/precompiles.go",
+        "line": 86,
+        "content": "if err := bankKeeper.SendCoins(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, sdk.NewCoins(coin)); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v555/precompiles.go",
+        "line": 96,
+        "content": "if err := bankKeeper.SendCoinsAndWei(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, usei, wei); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v552/precompiles.go",
+        "line": 86,
+        "content": "if err := bankKeeper.SendCoins(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, sdk.NewCoins(coin)); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v552/precompiles.go",
+        "line": 96,
+        "content": "if err := bankKeeper.SendCoinsAndWei(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, usei, wei); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v562/precompiles.go",
+        "line": 69,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v562/precompiles.go",
+        "line": 161,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v562/precompiles.go",
+        "line": 201,
+        "content": "if err := bankKeeper.SendCoins(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, sdk.NewCoins(coin)); err != nil {"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/precompiles/common/legacy/v562/precompiles.go",
+        "line": 211,
+        "content": "if err := bankKeeper.SendCoinsAndWei(ctx.WithEventManager(sdk.NewEventManager()), precompileAddr, payer, usei, wei); err != nil {"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/wasmbinding/message_plugin.go",
+        "line": 33,
+        "content": "return r.MessageRouter.Handler(msg)"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/x/epoch/types/hooks.go",
+        "line": 46,
+        "content": "cacheCtx, write := ctx.CacheContext()"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/x/evm/state/state.go",
+        "line": 96,
+        "content": "newCtx := s.ctx.WithMultiStore(s.ctx.MultiStore().CacheMultiStore()).WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/x/evm/state/balance.go",
+        "line": 26,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/x/evm/state/balance.go",
+        "line": 66,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/x/evm/state/statedb.go",
+        "line": 146,
+        "content": "newCtx := s.ctx.WithMultiStore(s.ctx.MultiStore().CacheMultiStore()).WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "valid : cachecontext",
+    "sdk_version": "0.45.10"
+  },
+  "six": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/six/repo/six-protocol/precompiles/common/precompiles.go",
+        "line": 57,
+        "content": "ctx = ctx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid : in design",
+    "sdk_version": "0.45.9"
+  },
+  "elys": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/elys/repo/elys/app/preblocker.go",
+        "line": 15,
+        "content": "//\tctx = ctx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid : comment",
+    "sdk_version": "0.50.13"
+  },
+  "fxcore": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/ibc/middleware/keeper/relay_with_router.go",
+        "line": 34,
+        "content": "onRecvPacketCtxWithNewEvent := ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/fxcore/repo/fx-core/x/ibc/middleware/keeper/relay_with_router.go",
+        "line": 59,
+        "content": "routerCtxWithNewEvent := ctx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.11"
+  },
+  "unicorn": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/ibc/middleware/keeper/relay_with_router.go",
+        "line": 34,
+        "content": "onRecvPacketCtxWithNewEvent := ctx.WithEventManager(sdk.NewEventManager())"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/unicorn/repo/fx-core/x/ibc/middleware/keeper/relay_with_router.go",
+        "line": 59,
+        "content": "routerCtxWithNewEvent := ctx.WithEventManager(sdk.NewEventManager())"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.50.11"
+  },
+  "mars": {
+    "items": [
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/mars/repo/hub/x/envoy/keeper/keeper.go",
+        "line": 94,
+        "content": "handler := k.router.Handler(msg)"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.46.13"
+  },
+  "terra2": {
+    "items": [
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/terra2/repo/core/x/tokenfactory/keeper/before_send.go",
+        "line": 139,
+        "content": "_, err = k.contractKeeper.Sudo(ctx.WithEventManager(em), cwAddr, msgBz)"
+      },
+      {
+        "tag": "WithEventManager",
+        "file": "/Cosmos/chain-registry/terra2/repo/core/x/tokenfactory/keeper/before_send.go",
+        "line": 145,
+        "content": "_, err = k.contractKeeper.Sudo(childCtx.WithEventManager(em), cwAddr, msgBz)"
+      }
+    ],
+    "result": "valid: tokenfactory",
+    "sdk_version": "0.47.5"
+  },
+  "okexchain": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/v4_keeper.go",
+        "line": 232,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/v4_keeper.go",
+        "line": 250,
+        "content": "cacheCtx, writeFn = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/v4_keeper.go",
+        "line": 296,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/v4_keeper.go",
+        "line": 344,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/v4_keeper.go",
+        "line": 397,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 495,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 513,
+        "content": "cacheCtx, writeFn = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 560,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 614,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/core/keeper/msg_server.go",
+        "line": 671,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/apps/27-interchain-accounts/host/keeper/relay.go",
+        "line": 62,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/apps/29-fee/keeper/escrow.go",
+        "line": 52,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/apps/29-fee/keeper/escrow.go",
+        "line": 111,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/apps/29-fee/keeper/escrow.go",
+        "line": 161,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/modules/apps/29-fee/keeper/escrow.go",
+        "line": 195,
+        "content": "cacheCtx, writeFn := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 133,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 167,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 204,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/distribution/keeper/querier.go",
+        "line": 232,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/distribution/keeper/invariants.go",
+        "line": 69,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/crisis/handler.go",
+        "line": 35,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/gov/abci.go",
+        "line": 52,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/cosmos-sdk/x/gov/keeper/proposal.go",
+        "line": 21,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "RouterHandler",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/wasm/keeper/handler_plugin.go",
+        "line": 98,
+        "content": "if handler := h.router.Handler(msgUrl); handler != nil {"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/wasm/keeper/query_plugins.go",
+        "line": 48,
+        "content": "subCtx, _ := q.Ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/wasm/keeper/query_plugins.go",
+        "line": 473,
+        "content": "cache, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/wasm/keeper/msg_dispatcher.go",
+        "line": 89,
+        "content": "subCtx, commit := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/distribution/keeper/querier_distr_proposal.go",
+        "line": 26,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/distribution/keeper/querier_distr_proposal.go",
+        "line": 85,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/distribution/keeper/querier_distr_proposal.go",
+        "line": 162,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/distribution/keeper/querier.go",
+        "line": 114,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/distribution/keeper/invariants.go",
+        "line": 49,
+        "content": "ctx, _ = ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/params/proposal_handler.go",
+        "line": 137,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/gov/handler.go",
+        "line": 159,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/x/gov/endblocker.go",
+        "line": 30,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.39.2"
+  },
+  "govgen": {
+    "items": [
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/govgen/repo/govgen/x/gov/abci.go",
+        "line": 61,
+        "content": "cacheCtx, writeCache := ctx.CacheContext()"
+      },
+      {
+        "tag": "CacheContext",
+        "file": "/Cosmos/chain-registry/govgen/repo/govgen/x/gov/keeper/proposal.go",
+        "line": 25,
+        "content": "cacheCtx, _ := ctx.CacheContext()"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.16"
+  }
+}

@@ -1,0 +1,1673 @@
+{
+  "pocket": {
+    "items": [
+      {
+        "file": "pocket/repo/poktroll/x/tokenomics/keeper/keeper.go",
+        "key": "tokenLogicModules",
+        "type": "[]tlm.TokenLogicModule",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "decentr": {
+    "items": [
+      {
+        "file": "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/upgrade/keeper/keeper.go",
+        "key": "skipUpgradeHeights",
+        "type": "map[int64]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/upgrade/keeper/keeper.go",
+        "key": "versionSetter",
+        "type": "xp.ProtocolVersionSetter",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/upgrade/keeper/keeper.go",
+        "key": "downgradeVerified",
+        "type": "bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/distribution/keeper/keeper.go",
+        "key": "blockedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/crisis/keeper/keeper.go",
+        "key": "invCheckPeriod",
+        "type": "uint",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "decentr/repo/decentr/vendor/github.com/cosmos/cosmos-sdk/x/params/keeper/keeper.go",
+        "key": "legacyAmino",
+        "type": "*codec.LegacyAmino",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "realio": {
+    "items": [
+      {
+        "file": "realio/repo/realio-network/x/asset/keeper/keeper.go",
+        "key": "allowAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "highbury": {
+    "items": [
+      {
+        "file": "highbury/repo/fury/x/cdp/keeper/keeper.go",
+        "key": "maccPerms",
+        "type": "map[string][]string",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "highbury/repo/fury/x/bep3/keeper/keeper.go",
+        "key": "Maccs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "highbury/repo/fury/x/furydist/keeper/keeper.go",
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "cudos": {
+    "items": [
+      {
+        "file": "cudos/repo/cudos-node/x/bank/keeper/keeper.go",
+        "key": "dkSet",
+        "type": "bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "sifchain": {
+    "items": [
+      {
+        "file": "sifchain/repo/sifnode/x/oracle/keeper/keeper.go",
+        "key": "consensusNeeded",
+        "type": "float64",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "meme": {
+    "items": [
+      {
+        "file": "meme/repo/meme/x/wasm/keeper/keeper.go",
+        "key": "bank",
+        "type": "CoinTransferrer",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "meme/repo/meme/x/wasm/keeper/keeper.go",
+        "key": "messenger",
+        "type": "Messenger",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "meme/repo/meme/x/wasm/keeper/keeper.go",
+        "key": "queryGasLimit",
+        "type": "uint64",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "meme/repo/meme/x/wasm/keeper/keeper.go",
+        "key": "gasRegister",
+        "type": "GasRegister",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "chronicnetwork": {
+    "items": [
+      {
+        "file": "chronicnetwork/repo/cht/x/cht/keeper/keeper.go",
+        "key": "bank",
+        "type": "CoinTransferrer",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "chronicnetwork/repo/cht/x/cht/keeper/keeper.go",
+        "key": "messenger",
+        "type": "Messenger",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "chronicnetwork/repo/cht/x/cht/keeper/keeper.go",
+        "key": "queryGasLimit",
+        "type": "uint64",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "chronicnetwork/repo/cht/x/cht/keeper/keeper.go",
+        "key": "gasRegister",
+        "type": "GasRegister",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "archway": {
+    "items": [
+      {
+        "file": "archway/repo/archway/x/rewards/keeper/keeper.go",
+        "key": "contractInfoView",
+        "type": "ContractInfoReaderExpected",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "archway/repo/archway/x/rewards/keeper/keeper.go",
+        "key": "trackingKeeper",
+        "type": "TrackingKeeperExpected",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "archway/repo/archway/x/rewards/keeper/keeper.go",
+        "key": "authKeeper",
+        "type": "AuthKeeperExpected",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "archway/repo/archway/x/rewards/keeper/keeper.go",
+        "key": "bankKeeper",
+        "type": "BankKeeperExpected",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "archway/repo/archway/x/rewards/mintbankkeeper/keeper.go",
+        "key": "rewardsKeeper",
+        "type": "RewardsKeeperExpected",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "archway/repo/archway/x/tracking/keeper/keeper.go",
+        "key": "state",
+        "type": "State",
+        "source_result": "mutation in beginblock"
+      }
+    ],
+    "result": "invalid : mutation in beginblock"
+  },
+  "agoric": {
+    "items": [
+      {
+        "file": "agoric/repo/agoric-sdk/golang/cosmos/x/vstorage/keeper/keeper.go",
+        "key": "changeManager",
+        "type": "ChangeManager",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "agoric/repo/agoric-sdk/golang/cosmos/x/swingset/keeper/keeper.go",
+        "key": "callToController",
+        "type": "func(ctx sdk.Context, str string) (string, error)",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "agoric/repo/agoric-sdk/golang/cosmos/x/vibc/keeper/keeper.go",
+        "key": "pushAction",
+        "type": "vm.ActionPusher",
+        "source_result": "unknown"
+      },
+      {
+        "file": "agoric/repo/agoric-sdk/golang/cosmos/x/vbank/keeper/keeper.go",
+        "key": "PushAction",
+        "type": "vm.ActionPusher",
+        "source_result": "unknown"
+      },
+      {
+        "file": "agoric/repo/agoric-sdk/golang/cosmos/x/vtransfer/keeper/keeper.go",
+        "key": "debug",
+        "type": "*KeeperDebugOptions",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : unknown"
+  },
+  "umee": {
+    "items": [
+      {
+        "file": "umee/repo/umee/x/auction/keeper/keeper.go",
+        "key": "accs",
+        "type": "SubAccounts",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "umee/repo/umee/x/auction/keeper/keeper.go",
+        "key": "ugov",
+        "type": "ugov.WithEmergencyGroup",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "umee/repo/umee/x/auction/keeper/keeper.go",
+        "key": "ctx",
+        "type": "*sdk.Context",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "umee/repo/umee/x/metoken/keeper/keeper.go",
+        "key": "ugov",
+        "type": "ugov.EmergencyGroupBuilder",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "umee/repo/umee/x/metoken/keeper/keeper.go",
+        "key": "ctx",
+        "type": "*sdk.Context",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "umee/repo/umee/x/uibc/quota/keeper.go",
+        "key": "leverage",
+        "type": "uibc.Leverage",
+        "source_result": "unknown"
+      },
+      {
+        "file": "umee/repo/umee/x/uibc/quota/keeper.go",
+        "key": "oracle",
+        "type": "uibc.Oracle",
+        "source_result": "unknown"
+      },
+      {
+        "file": "umee/repo/umee/x/uibc/quota/keeper.go",
+        "key": "ugov",
+        "type": "ugov.WithEmergencyGroup",
+        "source_result": "unknown"
+      },
+      {
+        "file": "umee/repo/umee/x/uibc/quota/keeper.go",
+        "key": "gasMeter",
+        "type": "sdk.GasMeter",
+        "source_result": "unknown"
+      },
+      {
+        "file": "umee/repo/umee/x/uibc/quota/keeper.go",
+        "key": "serialized",
+        "type": "directly using `bz := protoObject.Marshal()`.",
+        "source_result": "unknown"
+      },
+      {
+        "file": "umee/repo/umee/x/uibc/quota/keeper.go",
+        "key": "blockTime",
+        "type": "time.Time",
+        "source_result": "unknown"
+      },
+      {
+        "file": "umee/repo/umee/x/uibc/quota/keeper.go",
+        "key": "ctx",
+        "type": "*sdk.Context",
+        "source_result": "unknown"
+      },
+      {
+        "file": "umee/repo/umee/x/leverage/keeper/keeper.go",
+        "key": "ugov",
+        "type": "ugov.EmergencyGroupBuilder",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "umee/repo/umee/x/leverage/keeper/keeper.go",
+        "key": "liquidatorQueryEnabled",
+        "type": "bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : unknown"
+  },
+  "nibiru": {
+    "items": [
+      {
+        "file": "nibiru/repo/nibiru/x/evm/keeper/keeper.go",
+        "key": "EvmState",
+        "type": "EvmState",
+        "source_result": "invalid: also ctx.storage"
+      },
+      {
+        "file": "nibiru/repo/nibiru/x/evm/keeper/keeper.go",
+        "key": "FunTokens",
+        "type": "FunTokenState",
+        "source_result": "invalid: also ctx.storage"
+      },
+      {
+        "file": "nibiru/repo/nibiru/x/evm/keeper/keeper.go",
+        "key": "precompiles",
+        "type": "omap.SortedMap[gethcommon.Address, vm.PrecompiledContract]",
+        "source_result": "invalid: also ctx.storage"
+      }
+    ],
+    "result": "invalid : invalid: also ctx.storage"
+  },
+  "bandchain": {
+    "items": [
+      {
+        "file": "bandchain/repo/chain/x/oracle/keeper/keeper.go",
+        "key": "fileCache",
+        "type": "filecache.Cache",
+        "source_result": "valid but not accessable"
+      },
+      {
+        "file": "bandchain/repo/chain/x/oracle/keeper/keeper.go",
+        "key": "owasmVM",
+        "type": "*owasm.Vm",
+        "source_result": "valid but not accessable"
+      }
+    ],
+    "result": "valid but not accessable"
+  },
+  "comdex": {
+    "items": [
+      {
+        "file": "comdex/repo/comdex/x/asset/keeper/keeper.go",
+        "key": "bandoracle",
+        "type": "expected.Bandoraclekeeper",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "qfs": {
+    "items": [
+      {
+        "file": "qfs/repo/comdex/x/asset/keeper/keeper.go",
+        "key": "bandoracle",
+        "type": "expected.Bandoraclekeeper",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "haqq": {
+    "items": [
+      {
+        "file": "haqq/repo/haqq/x/evm/keeper/keeper.go",
+        "key": "eip155ChainID",
+        "type": "*big.Int",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "haqq/repo/haqq/x/evm/keeper/keeper.go",
+        "key": "precompiles",
+        "type": "map[common.Address]vm.PrecompiledContract",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "kava": {
+    "items": [
+      {
+        "file": "kava/repo/kava/x/cdp/keeper/keeper.go",
+        "key": "maccPerms",
+        "type": "map[string][]string",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "kava/repo/kava/x/kavadist/keeper/keeper.go",
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "kava/repo/kava/x/bep3/keeper/keeper.go",
+        "key": "Maccs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "starname": {
+    "items": [
+      {
+        "file": "starname/repo/starnamed/x/wasm/keeper/keeper.go",
+        "key": "bank",
+        "type": "CoinTransferrer",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "starname/repo/starnamed/x/wasm/keeper/keeper.go",
+        "key": "messenger",
+        "type": "Messenger",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "starname/repo/starnamed/x/wasm/keeper/keeper.go",
+        "key": "queryGasLimit",
+        "type": "uint64",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "starname/repo/starnamed/x/wasm/keeper/keeper.go",
+        "key": "gasRegister",
+        "type": "GasRegister",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "starname/repo/starnamed/x/wasm/keeper/keeper.go",
+        "key": "maxQueryStackSize",
+        "type": "uint32",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "starname/repo/starnamed/x/wasm/keeper/keeper.go",
+        "key": "acceptedAccountTypes",
+        "type": "map[reflect.Type]struct{}",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "starname/repo/starnamed/x/starname/keeper/keeper.go",
+        "key": "cms",
+        "type": "sdk.CommitMultiStore",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "starname/repo/starnamed/x/escrow/keeper/keeper.go",
+        "key": "blockedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "acrechain": {
+    "items": [
+      {
+        "file": "acrechain/repo/acrechain/ethermint/x/evm/keeper/keeper.go",
+        "key": "eip155ChainID",
+        "type": "*big.Int",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "sommelier": {
+    "items": [
+      {
+        "file": "sommelier/repo/sommelier/x/auction/keeper/keeper.go",
+        "key": "fundingModuleAccounts",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "sommelier/repo/sommelier/x/auction/keeper/keeper.go",
+        "key": "proceedsModuleAccounts",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "sunrise": {
+    "items": [
+      {
+        "file": "sunrise/repo/sunrise/x/tokenconverter/keeper/keeper.go",
+        "key": "authority",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "sunrise/repo/sunrise/x/fee/keeper/keeper.go",
+        "key": "authority",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "sunrise/repo/sunrise/x/da/keeper/keeper.go",
+        "key": "authority",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "sunrise/repo/sunrise/x/swap/keeper/keeper.go",
+        "key": "authority",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "sunrise/repo/sunrise/x/liquidityincentive/keeper/keeper.go",
+        "key": "authority",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "sunrise/repo/sunrise/x/selfdelegation/keeper/keeper.go",
+        "key": "authority",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "sunrise/repo/sunrise/x/liquiditypool/keeper/keeper.go",
+        "key": "authority",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "paloma": {
+    "items": [
+      {
+        "file": "paloma/repo/paloma/x/scheduler/keeper/keeper.go",
+        "key": "ider",
+        "type": "keeperutil.IDGenerator",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "paloma/repo/paloma/x/scheduler/keeper/keeper.go",
+        "key": "Chains",
+        "type": "map[xchain.Type]xchain.Bridge",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "paloma/repo/paloma/x/evm/keeper/keeper.go",
+        "key": "ider",
+        "type": "keeperutil.IDGenerator",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "paloma/repo/paloma/x/evm/keeper/keeper.go",
+        "key": "consensusChecker",
+        "type": "*libcons.ConsensusChecker",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "paloma/repo/paloma/x/treasury/keeper/keeper.go",
+        "key": "Chains",
+        "type": "[]xchain.FundCollecter",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "paloma/repo/paloma/x/valset/keeper/keeper.go",
+        "key": "ider",
+        "type": "keeperutil.IDGenerator",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "paloma/repo/paloma/x/valset/keeper/keeper.go",
+        "key": "powerReduction",
+        "type": "sdkmath.Int",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "impacthub": {
+    "items": [
+      {
+        "file": "impacthub/repo/ixo-blockchain/x/smart-account/keeper/keeper.go",
+        "key": "isSmartAccountActiveBz",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "impacthub/repo/ixo-blockchain/x/smart-account/keeper/keeper.go",
+        "key": "isSmartAccountActiveVal",
+        "type": "bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "impacthub/repo/ixo-blockchain/x/smart-account/keeper/keeper.go",
+        "key": "AuthenticatorManager",
+        "type": "*authenticator.AuthenticatorManager",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "imversed": {
+    "items": [
+      {
+        "file": "imversed/repo/imversed/x/xverse/keeper/keeper.go",
+        "key": "rnd",
+        "type": "*rand.Rand",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "bostrom": {
+    "items": [
+      {
+        "file": "bostrom/repo/go-cyber/x/resources/keeper/keeper.go",
+        "key": "bandwidthMeter",
+        "type": "*bandwithkeeper.BandwidthMeter",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "bitsong": {
+    "items": [
+      {
+        "file": "bitsong/repo/go-bitsong/x/smart-account/keeper/keeper.go",
+        "key": "isSmartAccountActiveBz",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "bitsong/repo/go-bitsong/x/smart-account/keeper/keeper.go",
+        "key": "isSmartAccountActiveVal",
+        "type": "bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "bitsong/repo/go-bitsong/x/smart-account/keeper/keeper.go",
+        "key": "AuthenticatorManager",
+        "type": "*authenticator.AuthenticatorManager",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "bitsong/repo/go-bitsong/x/fantoken/keeper/keeper.go",
+        "key": "blockedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "saga": {
+    "items": [
+      {
+        "file": "saga/repo/ssc/x/chainlet/keeper/keeper.go",
+        "key": "stackVersions",
+        "type": "map[string]*versions.Versions",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "osmosis": {
+    "items": [
+      {
+        "file": "osmosis/repo/osmosis/x/smart-account/keeper/keeper.go",
+        "key": "isSmartAccountActiveBz",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "osmosis/repo/osmosis/x/smart-account/keeper/keeper.go",
+        "key": "isSmartAccountActiveVal",
+        "type": "bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "osmosis/repo/osmosis/x/smart-account/keeper/keeper.go",
+        "key": "AuthenticatorManager",
+        "type": "*authenticator.AuthenticatorManager",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "osmosis/repo/osmosis/x/poolmanager/keeper.go",
+        "key": "cachedPoolModules",
+        "type": "*sync.Map",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "osmosis/repo/osmosis/x/poolmanager/keeper.go",
+        "key": "defaultTakerFeeBz",
+        "type": "[]byte",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "osmosis/repo/osmosis/x/poolmanager/keeper.go",
+        "key": "defaultTakerFeeVal",
+        "type": "osmomath.Dec",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "tgrade": {
+    "items": [
+      {
+        "file": "tgrade/repo/tgrade/x/poe/keeper/keeper.go",
+        "key": "contractAddrCache",
+        "type": "sync.Map",
+        "source_result": "mutation in beginbloc"
+      },
+      {
+        "file": "tgrade/repo/tgrade/x/poe/keeper/keeper.go",
+        "key": "validatorVotes",
+        "type": "validatorVotes",
+        "source_result": "mutation in beginbloc"
+      }
+    ],
+    "result": "invalid : mutation in beginbloc"
+  },
+  "provenance": {
+    "items": [
+      {
+        "file": "provenance/repo/provenance/x/msgfees/keeper/keeper.go",
+        "key": "simulateFunc",
+        "type": "baseAppSimulateFunc",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "provenance/repo/provenance/x/sanction/keeper/keeper.go",
+        "key": "unsanctionableAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "dymension": {
+    "items": [
+      {
+        "file": "dymension/repo/dymension/x/lightclient/keeper/keeper.go",
+        "key": "enabled",
+        "type": "*enabled",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "dymension/repo/dymension/x/sequencer/keeper/keeper.go",
+        "key": "unbondBlockers",
+        "type": "[]UnbondBlocker",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "evmos": {
+    "items": [
+      {
+        "file": "evmos/repo/evmos/x/evm/keeper/keeper.go",
+        "key": "feeMarketWrapper",
+        "type": "*wrappers.FeeMarketWrapper",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "evmos/repo/evmos/x/evm/keeper/keeper.go",
+        "key": "precompiles",
+        "type": "map[common.Address]vm.PrecompiledContract",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "self": {
+    "items": [
+      {
+        "file": "self/repo/evmos/x/evm/keeper/keeper.go",
+        "key": "feeMarketWrapper",
+        "type": "*wrappers.FeeMarketWrapper",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "self/repo/evmos/x/evm/keeper/keeper.go",
+        "key": "precompiles",
+        "type": "map[common.Address]vm.PrecompiledContract",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "planq": {
+    "items": [
+      {
+        "file": "planq/repo/planq/x/evm/keeper/keeper.go",
+        "key": "eip155ChainID",
+        "type": "*big.Int",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "coreum": {
+    "items": [
+      {
+        "file": "coreum/repo/coreum/x/feemodel/keeper/keeper.go",
+        "key": "transientStoreService",
+        "type": "sdkstore.TransientStoreService",
+        "source_result": "invalid:also ctx.storage"
+      }
+    ],
+    "result": "invalid : invalid:also ctx.storage"
+  },
+  "canto": {
+    "items": [
+      {
+        "file": "canto/repo/Canto/x/coinswap/keeper/keeper.go",
+        "key": "blockedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "crescent": {
+    "items": [
+      {
+        "file": "crescent/repo/crescent/x/exchange/keeper/keeper.go",
+        "key": "sourceNames",
+        "type": "[]string",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "crescent/repo/crescent/x/budget/keeper/keeper.go",
+        "key": "blockedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "lambda": {
+    "items": [
+      {
+        "file": "lambda/repo/lambdavm/x/evm/keeper/keeper.go",
+        "key": "eip155ChainID",
+        "type": "*big.Int",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "secretnetwork": {
+    "items": [
+      {
+        "file": "secretnetwork/repo/SecretNetwork/x/registration/internal/keeper/keeper.go",
+        "key": "enclave",
+        "type": "EnclaveInterface",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go",
+        "key": "legacyAmino",
+        "type": "codec.LegacyAmino",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go",
+        "key": "wasmer",
+        "type": "wasm.Wasmer",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go",
+        "key": "queryPlugins",
+        "type": "QueryPlugins",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go",
+        "key": "messenger",
+        "type": "Messenger",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go",
+        "key": "queryGasLimit",
+        "type": "uint64",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "secretnetwork/repo/SecretNetwork/x/compute/internal/keeper/keeper.go",
+        "key": "maxCallDepth",
+        "type": "uint32",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "quicksilver": {
+    "items": [
+      {
+        "file": "quicksilver/repo/quicksilver/x/participationrewards/keeper/keeper.go",
+        "key": "ValidateProofOps",
+        "type": "utils.ProofOpsFn",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "quicksilver/repo/quicksilver/x/participationrewards/keeper/keeper.go",
+        "key": "ValidateSelfProofOps",
+        "type": "utils.SelfProofOpsFn",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "quicksilver/repo/quicksilver/x/supply/keeper/keeper.go",
+        "key": "moduleAccounts",
+        "type": "[]string",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "quicksilver/repo/quicksilver/x/supply/keeper/keeper.go",
+        "key": "endpointEnabled",
+        "type": "bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "quicksilver/repo/quicksilver/x/interchainstaking/keeper/keeper.go",
+        "key": "txSubmit",
+        "type": "TxSubmitFn",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "dydx": {
+    "items": [
+      {
+        "file": "dydx/repo/v4-chain/protocol/x/accountplus/keeper/keeper.go",
+        "key": "authenticatorManager",
+        "type": "*authenticator.AuthenticatorManager",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "dydx/repo/v4-chain/protocol/x/accountplus/keeper/keeper.go",
+        "key": "authorities",
+        "type": "map[string]struct{}",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "stratos": {
+    "items": [
+      {
+        "file": "stratos/repo/stratos-chain/x/pot/keeper/keeper.go",
+        "key": "cache",
+        "type": "*keeperMCache",
+        "source_result": "unknown"
+      },
+      {
+        "file": "stratos/repo/stratos-chain/x/evm/keeper/keeper.go",
+        "key": "verifier",
+        "type": "*vm.GenesisContractVerifier",
+        "source_result": "invalid：not used"
+      },
+      {
+        "file": "stratos/repo/stratos-chain/x/evm/keeper/keeper.go",
+        "key": "events",
+        "type": "sdk.Events",
+        "source_result": "invalid：not used"
+      }
+    ],
+    "result": "invalid : invalid：not used"
+  },
+  "injective": {
+    "items": [
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/wasmx/keeper/keeper.go",
+        "key": "svcTags",
+        "type": "metrics.Tags",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/exchange/keeper/keeper.go",
+        "key": "svcTags",
+        "type": "metrics.Tags",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/exchange/keeper/keeper.go",
+        "key": "fixedGas",
+        "type": "bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/auction/keeper/keeper.go",
+        "key": "svcTags",
+        "type": "metrics.Tags",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/oracle/keeper/keeper.go",
+        "key": "svcTags",
+        "type": "metrics.Tags",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/ocr/keeper/keeper.go",
+        "key": "svcTags",
+        "type": "metrics.Tags",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/permissions/keeper/keeper.go",
+        "key": "moduleAccounts",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/txfees/keeper/keeper.go",
+        "key": "cachedConsParams",
+        "type": "cmtproto.ConsensusParams",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/txfees/keeper/keeper.go",
+        "key": "CurFeeState",
+        "type": "*mempool1559.FeeState",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/txfees/keeper/keeper.go",
+        "key": "svcTags",
+        "type": "metrics.Tags",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/tokenfactory/keeper/keeper.go",
+        "key": "moduleAccounts",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "injective/repo/injective-core/injective-chain/modules/insurance/keeper/keeper.go",
+        "key": "svcTags",
+        "type": "metrics.Tags",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "emoney": {
+    "items": [
+      {
+        "file": "emoney/repo/em-ledger/x/market/keeper/keeper.go",
+        "key": "appstateInit",
+        "type": "*sync.Once",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "emoney/repo/em-ledger/x/authority/keeper/keeper.go",
+        "key": "gasPricesInit",
+        "type": "*sync.Once",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "chimba": {
+    "items": [
+      {
+        "file": "chimba/repo/chimba/x/wasm/keeper/keeper.go",
+        "key": "bank",
+        "type": "CoinTransferrer",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "chimba/repo/chimba/x/wasm/keeper/keeper.go",
+        "key": "messenger",
+        "type": "Messenger",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "chimba/repo/chimba/x/wasm/keeper/keeper.go",
+        "key": "queryGasLimit",
+        "type": "uint64",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "chimba/repo/chimba/x/wasm/keeper/keeper.go",
+        "key": "gasRegister",
+        "type": "GasRegister",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "sei": {
+    "items": [
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "txResults",
+        "type": "[]*abci.ExecTxResult",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "cachedFeeCollectorAddressMtx",
+        "type": "*sync.RWMutex",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "cachedFeeCollectorAddress",
+        "type": "*common.Address",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "nonceMx",
+        "type": "*sync.RWMutex",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "pendingTxs",
+        "type": "map[string][]*PendingTx",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "QueryConfig",
+        "type": "*querier.Config",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "EthReplayConfig",
+        "type": "replay.Config",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "EthBlockTestConfig",
+        "type": "blocktest.Config",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "BlockTest",
+        "type": "*tests.BlockTest",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "Trie",
+        "type": "ethstate.Trie",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "DB",
+        "type": "ethstate.Database",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "Root",
+        "type": "common.Hash",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "customPrecompiles",
+        "type": "map[common.Address]precompiles.VersionedPrecompiles",
+        "source_result": "safe"
+      },
+      {
+        "file": "sei/repo/sei-chain/x/evm/keeper/keeper.go",
+        "key": "latestCustomPrecompiles",
+        "type": "map[common.Address]vm.PrecompiledContract",
+        "source_result": "safe"
+      }
+    ],
+    "result": "invalid : safe"
+  },
+  "odin": {
+    "items": [
+      {
+        "file": "odin/repo/odin-core/x/oracle/keeper/keeper.go",
+        "key": "fileCache",
+        "type": "filecache.Cache",
+        "source_result": "valid but not accessable"
+      },
+      {
+        "file": "odin/repo/odin-core/x/oracle/keeper/keeper.go",
+        "key": "owasmVM",
+        "type": "*owasm.Vm",
+        "source_result": "valid but not accessable"
+      }
+    ],
+    "result": "invalid : valid but not accessable"
+  },
+  "fxcore": {
+    "items": [
+      {
+        "file": "fxcore/repo/fx-core/x/erc20/keeper/keeper.go",
+        "key": "contractOwner",
+        "type": "common.Address",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "fxcore/repo/fx-core/x/crosschain/keeper/keeper.go",
+        "key": "sender",
+        "type": "common.Address",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "fxcore/repo/fx-core/x/migrate/keeper/keeper.go",
+        "key": "migrates",
+        "type": "[]MigrateI",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "fxcore/repo/fx-core/x/evm/keeper/keeper.go",
+        "key": "module",
+        "type": "common.Address",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "unicorn": {
+    "items": [
+      {
+        "file": "unicorn/repo/fx-core/x/erc20/keeper/keeper.go",
+        "key": "contractOwner",
+        "type": "common.Address",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "unicorn/repo/fx-core/x/crosschain/keeper/keeper.go",
+        "key": "sender",
+        "type": "common.Address",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "unicorn/repo/fx-core/x/migrate/keeper/keeper.go",
+        "key": "migrates",
+        "type": "[]MigrateI",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "unicorn/repo/fx-core/x/evm/keeper/keeper.go",
+        "key": "module",
+        "type": "common.Address",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "juno": {
+    "items": [
+      {
+        "file": "juno/repo/juno/x/tokenfactory/keeper/keeper.go",
+        "key": "permAddrMap",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "juno/repo/juno/x/tokenfactory/keeper/keeper.go",
+        "key": "enabledCapabilities",
+        "type": "[]string",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "mars": {
+    "items": [
+      {
+        "file": "mars/repo/hub/x/envoy/keeper/keeper.go",
+        "key": "authorities",
+        "type": "[]string",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "desmos": {
+    "items": [
+      {
+        "file": "desmos/repo/desmos/x/profiles/keeper/keeper.go",
+        "key": "legacyAmino",
+        "type": "*codec.LegacyAmino",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "odin1": {
+    "items": [
+      {
+        "file": "odin1/repo/odin-core/x/oracle/keeper/keeper.go",
+        "key": "fileCache",
+        "type": "filecache.Cache",
+        "source_result": "valid but not accessable"
+      },
+      {
+        "file": "odin1/repo/odin-core/x/oracle/keeper/keeper.go",
+        "key": "owasmVM",
+        "type": "*owasm.Vm",
+        "source_result": "valid but not accessable"
+      }
+    ],
+    "result": "invalid : valid but not accessable"
+  },
+  "regen": {
+    "items": [
+      {
+        "file": "regen/repo/regen-ledger/x/ecocredit/basket/keeper/keeper.go",
+        "key": "stateStore",
+        "type": "api.StateStore",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "regen/repo/regen-ledger/x/ecocredit/basket/keeper/keeper.go",
+        "key": "baseStore",
+        "type": "baseapi.StateStore",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "regen/repo/regen-ledger/x/ecocredit/marketplace/keeper/keeper.go",
+        "key": "stateStore",
+        "type": "marketapi.StateStore",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "regen/repo/regen-ledger/x/ecocredit/marketplace/keeper/keeper.go",
+        "key": "baseStore",
+        "type": "baseapi.StateStore",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "regen/repo/regen-ledger/x/ecocredit/base/keeper/keeper.go",
+        "key": "stateStore",
+        "type": "api.StateStore",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "regen/repo/regen-ledger/x/ecocredit/base/keeper/keeper.go",
+        "key": "basketStore",
+        "type": "basketapi.StateStore",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "regen/repo/regen-ledger/x/ecocredit/base/keeper/keeper.go",
+        "key": "marketStore",
+        "type": "marketplaceapi.StateStore",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "conscious": {
+    "items": [
+      {
+        "file": "conscious/repo/cvn/x/evm/keeper/keeper.go",
+        "key": "eip155ChainID",
+        "type": "*big.Int",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  },
+  "okexchain": {
+    "items": [
+      {
+        "file": "okexchain/repo/exchain/libs/ibc-go/modules/apps/transfer/keeper/keeper.go",
+        "key": "ibcFactor",
+        "type": "int64",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/libs/cosmos-sdk/x/upgrade/internal/keeper/keeper.go",
+        "key": "skipUpgradeHeights",
+        "type": "map[int64]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/libs/cosmos-sdk/x/mint/internal/keeper/keeper.go",
+        "key": "originalMintedPerBlock",
+        "type": "sdk.Dec",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/libs/cosmos-sdk/x/distribution/keeper/keeper.go",
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/libs/cosmos-sdk/x/crisis/internal/keeper/keeper.go",
+        "key": "invCheckPeriod",
+        "type": "uint",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/libs/cosmos-sdk/x/staking/keeper/keeper.go",
+        "key": "validatorCache",
+        "type": "map[string]cachedValidator",
+        "source_result": ""
+      },
+      {
+        "file": "okexchain/repo/exchain/libs/cosmos-sdk/x/staking/keeper/keeper.go",
+        "key": "validatorCacheList",
+        "type": "*list.List",
+        "source_result": ""
+      },
+      {
+        "file": "okexchain/repo/exchain/x/token/keeper.go",
+        "key": "enableBackend",
+        "type": "bool",
+        "source_result": "unknown"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/token/keeper.go",
+        "key": "cache",
+        "type": "*Cache",
+        "source_result": "unknown"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/order/keeper/keeper.go",
+        "key": "enableBackend",
+        "type": "bool",
+        "source_result": "unknown"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/order/keeper/keeper.go",
+        "key": "metric",
+        "type": "*monitor.OrderMetric",
+        "source_result": "unknown"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/order/keeper/keeper.go",
+        "key": "cache",
+        "type": "*Cache",
+        "source_result": "unknown"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/order/keeper/keeper.go",
+        "key": "diskCache",
+        "type": "*DiskCache",
+        "source_result": "unknown"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/infura/keeper.go",
+        "key": "metric",
+        "type": "*monitor.StreamMetrics",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/infura/keeper.go",
+        "key": "stream",
+        "type": "*Stream",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/wasm/keeper/keeper.go",
+        "key": "bank",
+        "type": "CoinTransferrer",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/wasm/keeper/keeper.go",
+        "key": "messenger",
+        "type": "Messenger",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/wasm/keeper/keeper.go",
+        "key": "queryGasLimit",
+        "type": "uint64",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/wasm/keeper/keeper.go",
+        "key": "gasRegister",
+        "type": "GasRegister",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/wasm/keeper/keeper.go",
+        "key": "maxQueryStackSize",
+        "type": "uint32",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/distribution/keeper/keeper.go",
+        "key": "blacklistedAddrs",
+        "type": "map[string]bool",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/params/keeper.go",
+        "key": "signals",
+        "type": "[]func()",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "TxCount",
+        "type": "int",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "Bloom",
+        "type": "*big.Int",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "Bhash",
+        "type": "ethcmn.Hash",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "LogSize",
+        "type": "uint",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "LogsManages",
+        "type": "*LogsManager",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "innerBlockData",
+        "type": "BlockInnerData",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "db",
+        "type": "ethstate.Database",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "rootTrie",
+        "type": "ethstate.Trie",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "rootHash",
+        "type": "ethcmn.Hash",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "startHeight",
+        "type": "uint64",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "triegc",
+        "type": "*prque.Prque",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "stateCache",
+        "type": "*fastcache.Cache",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "cmLock",
+        "type": "sync.Mutex",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "UpdatedAccount",
+        "type": "[]ethcmn.Address",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "cci",
+        "type": "*chainConfigInfo",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "Watcher",
+        "type": "*watcher.Watcher",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "heightCache",
+        "type": "*lru.Cache",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "hashCache",
+        "type": "*lru.Cache",
+        "source_result": "fixed"
+      },
+      {
+        "file": "okexchain/repo/exchain/x/evm/keeper/keeper.go",
+        "key": "callToCM",
+        "type": "vm.CallToWasmByPrecompile",
+        "source_result": "fixed"
+      }
+    ],
+    "result": "invalid : fixed"
+  },
+  "gateway": {
+    "items": [
+      {
+        "file": "gateway/repo/wormhole/wormchain/x/ibc-composability-mw/keeper/keeper.go",
+        "key": "retriesOnTimeout",
+        "type": "uint8",
+        "source_result": "not mutation"
+      },
+      {
+        "file": "gateway/repo/wormhole/wormchain/x/ibc-composability-mw/keeper/keeper.go",
+        "key": "forwardTimeout",
+        "type": "time.Duration",
+        "source_result": "not mutation"
+      }
+    ],
+    "result": "invalid : not mutation"
+  }
+}

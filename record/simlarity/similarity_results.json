@@ -1,0 +1,2043 @@
+{
+  "p1": {
+    "similarity_matrix": {
+      "jmes": {
+        "jmes": 1.0,
+        "juno": 0.2222,
+        "mantra": 0.7609,
+        "neutron": 0.7331,
+        "osmosis": 0.7135,
+        "phoneix": 0.869,
+        "symphony": 0.7198,
+        "tower": 0.7262
+      },
+      "juno": {
+        "jmes": 0.2222,
+        "juno": 1.0,
+        "mantra": 0.2456,
+        "neutron": 0.2206,
+        "osmosis": 0.2344,
+        "phoneix": 0.2322,
+        "symphony": 0.237,
+        "tower": 0.2322
+      },
+      "mantra": {
+        "jmes": 0.7609,
+        "juno": 0.2456,
+        "mantra": 1.0,
+        "neutron": 0.7791,
+        "osmosis": 0.7156,
+        "phoneix": 0.7103,
+        "symphony": 0.7222,
+        "tower": 0.7227
+      },
+      "neutron": {
+        "jmes": 0.7331,
+        "juno": 0.2206,
+        "mantra": 0.7791,
+        "neutron": 1.0,
+        "osmosis": 0.6146,
+        "phoneix": 0.6904,
+        "symphony": 0.6196,
+        "tower": 0.5863
+      },
+      "osmosis": {
+        "jmes": 0.7135,
+        "juno": 0.2344,
+        "mantra": 0.7156,
+        "neutron": 0.6146,
+        "osmosis": 1.0,
+        "phoneix": 0.6721,
+        "symphony": 0.981,
+        "tower": 0.8852
+      },
+      "phoneix": {
+        "jmes": 0.869,
+        "juno": 0.2322,
+        "mantra": 0.7103,
+        "neutron": 0.6904,
+        "osmosis": 0.6721,
+        "phoneix": 1.0,
+        "symphony": 0.6777,
+        "tower": 0.6778
+      },
+      "symphony": {
+        "jmes": 0.7198,
+        "juno": 0.237,
+        "mantra": 0.7222,
+        "neutron": 0.6196,
+        "osmosis": 0.981,
+        "phoneix": 0.6777,
+        "symphony": 1.0,
+        "tower": 0.8981
+      },
+      "tower": {
+        "jmes": 0.7262,
+        "juno": 0.2322,
+        "mantra": 0.7227,
+        "neutron": 0.5863,
+        "osmosis": 0.8852,
+        "phoneix": 0.6778,
+        "symphony": 0.8981,
+        "tower": 1.0
+      }
+    },
+    "clusters": {
+      "1": [
+        "juno"
+      ],
+      "2": [
+        "jmes",
+        "mantra",
+        "neutron",
+        "osmosis",
+        "phoneix",
+        "symphony",
+        "tower"
+      ]
+    },
+    "high_similarity_pairs": [
+      [
+        "osmosis",
+        "symphony",
+        0.981
+      ],
+      [
+        "symphony",
+        "tower",
+        0.8981
+      ],
+      [
+        "osmosis",
+        "tower",
+        0.8852
+      ],
+      [
+        "jmes",
+        "phoneix",
+        0.869
+      ],
+      [
+        "mantra",
+        "neutron",
+        0.7791
+      ],
+      [
+        "jmes",
+        "mantra",
+        0.7609
+      ],
+      [
+        "jmes",
+        "neutron",
+        0.7331
+      ],
+      [
+        "jmes",
+        "tower",
+        0.7262
+      ],
+      [
+        "mantra",
+        "tower",
+        0.7227
+      ],
+      [
+        "mantra",
+        "symphony",
+        0.7222
+      ],
+      [
+        "jmes",
+        "symphony",
+        0.7198
+      ],
+      [
+        "mantra",
+        "osmosis",
+        0.7156
+      ],
+      [
+        "jmes",
+        "osmosis",
+        0.7135
+      ],
+      [
+        "mantra",
+        "phoneix",
+        0.7103
+      ]
+    ]
+  },
+  "p2": {
+    "similarity_matrix": {
+      "jmes": {
+        "jmes": 1.0,
+        "juno": 0.2222,
+        "mantra": 0.7609,
+        "neutron": 0.7331,
+        "phoneix": 0.869,
+        "symphony": 0.7198,
+        "tower": 0.7262
+      },
+      "juno": {
+        "jmes": 0.2222,
+        "juno": 1.0,
+        "mantra": 0.2456,
+        "neutron": 0.2206,
+        "phoneix": 0.2322,
+        "symphony": 0.237,
+        "tower": 0.2322
+      },
+      "mantra": {
+        "jmes": 0.7609,
+        "juno": 0.2456,
+        "mantra": 1.0,
+        "neutron": 0.7791,
+        "phoneix": 0.7103,
+        "symphony": 0.7222,
+        "tower": 0.7227
+      },
+      "neutron": {
+        "jmes": 0.7331,
+        "juno": 0.2206,
+        "mantra": 0.7791,
+        "neutron": 1.0,
+        "phoneix": 0.6904,
+        "symphony": 0.6196,
+        "tower": 0.5863
+      },
+      "phoneix": {
+        "jmes": 0.869,
+        "juno": 0.2322,
+        "mantra": 0.7103,
+        "neutron": 0.6904,
+        "phoneix": 1.0,
+        "symphony": 0.6777,
+        "tower": 0.6778
+      },
+      "symphony": {
+        "jmes": 0.7198,
+        "juno": 0.237,
+        "mantra": 0.7222,
+        "neutron": 0.6196,
+        "phoneix": 0.6777,
+        "symphony": 1.0,
+        "tower": 0.8981
+      },
+      "tower": {
+        "jmes": 0.7262,
+        "juno": 0.2322,
+        "mantra": 0.7227,
+        "neutron": 0.5863,
+        "phoneix": 0.6778,
+        "symphony": 0.8981,
+        "tower": 1.0
+      }
+    },
+    "clusters": {
+      "1": [
+        "juno"
+      ],
+      "2": [
+        "jmes",
+        "mantra",
+        "neutron",
+        "phoneix",
+        "symphony",
+        "tower"
+      ]
+    },
+    "high_similarity_pairs": [
+      [
+        "symphony",
+        "tower",
+        0.8981
+      ],
+      [
+        "jmes",
+        "phoneix",
+        0.869
+      ],
+      [
+        "mantra",
+        "neutron",
+        0.7791
+      ],
+      [
+        "jmes",
+        "mantra",
+        0.7609
+      ],
+      [
+        "jmes",
+        "neutron",
+        0.7331
+      ],
+      [
+        "jmes",
+        "tower",
+        0.7262
+      ],
+      [
+        "mantra",
+        "tower",
+        0.7227
+      ],
+      [
+        "mantra",
+        "symphony",
+        0.7222
+      ],
+      [
+        "jmes",
+        "symphony",
+        0.7198
+      ],
+      [
+        "mantra",
+        "phoneix",
+        0.7103
+      ]
+    ]
+  },
+  "p3": {
+    "similarity_matrix": {
+      "jmes": {
+        "jmes": 1.0,
+        "juno": 0.2222,
+        "mantra": 0.7609,
+        "mitosis": 0.2778,
+        "neutron": 0.7331,
+        "osmosis": 0.7135,
+        "phoneix": 0.869,
+        "sei": 0.1756,
+        "symphony": 0.2241,
+        "tgrade": 0.1357,
+        "tower": 0.7262
+      },
+      "juno": {
+        "jmes": 0.2222,
+        "juno": 1.0,
+        "mantra": 0.2456,
+        "mitosis": 0.2842,
+        "neutron": 0.2206,
+        "osmosis": 0.2344,
+        "phoneix": 0.2322,
+        "sei": 0.25,
+        "symphony": 0.2083,
+        "tgrade": 0.25,
+        "tower": 0.2322
+      },
+      "mantra": {
+        "jmes": 0.7609,
+        "juno": 0.2456,
+        "mantra": 1.0,
+        "mitosis": 0.2869,
+        "neutron": 0.7791,
+        "osmosis": 0.7156,
+        "phoneix": 0.7103,
+        "sei": 0.1789,
+        "symphony": 0.2164,
+        "tgrade": 0.1359,
+        "tower": 0.7227
+      },
+      "mitosis": {
+        "jmes": 0.2778,
+        "juno": 0.2842,
+        "mantra": 0.2869,
+        "mitosis": 1.0,
+        "neutron": 0.2633,
+        "osmosis": 0.2553,
+        "phoneix": 0.2536,
+        "sei": 0.2483,
+        "symphony": 0.2559,
+        "tgrade": 0.1739,
+        "tower": 0.2536
+      },
+      "neutron": {
+        "jmes": 0.7331,
+        "juno": 0.2206,
+        "mantra": 0.7791,
+        "mitosis": 0.2633,
+        "neutron": 1.0,
+        "osmosis": 0.6146,
+        "phoneix": 0.6904,
+        "sei": 0.1538,
+        "symphony": 0.2332,
+        "tgrade": 0.128,
+        "tower": 0.5863
+      },
+      "osmosis": {
+        "jmes": 0.7135,
+        "juno": 0.2344,
+        "mantra": 0.7156,
+        "mitosis": 0.2553,
+        "neutron": 0.6146,
+        "osmosis": 1.0,
+        "phoneix": 0.6721,
+        "sei": 0.1447,
+        "symphony": 0.2171,
+        "tgrade": 0.1434,
+        "tower": 0.8852
+      },
+      "phoneix": {
+        "jmes": 0.869,
+        "juno": 0.2322,
+        "mantra": 0.7103,
+        "mitosis": 0.2536,
+        "neutron": 0.6904,
+        "osmosis": 0.6721,
+        "phoneix": 1.0,
+        "sei": 0.1572,
+        "symphony": 0.2415,
+        "tgrade": 0.1388,
+        "tower": 0.6778
+      },
+      "sei": {
+        "jmes": 0.1756,
+        "juno": 0.25,
+        "mantra": 0.1789,
+        "mitosis": 0.2483,
+        "neutron": 0.1538,
+        "osmosis": 0.1447,
+        "phoneix": 0.1572,
+        "sei": 1.0,
+        "symphony": 0.144,
+        "tgrade": 0.2281,
+        "tower": 0.1485
+      },
+      "symphony": {
+        "jmes": 0.2241,
+        "juno": 0.2083,
+        "mantra": 0.2164,
+        "mitosis": 0.2559,
+        "neutron": 0.2332,
+        "osmosis": 0.2171,
+        "phoneix": 0.2415,
+        "sei": 0.144,
+        "symphony": 1.0,
+        "tgrade": 0.1203,
+        "tower": 0.2205
+      },
+      "tgrade": {
+        "jmes": 0.1357,
+        "juno": 0.25,
+        "mantra": 0.1359,
+        "mitosis": 0.1739,
+        "neutron": 0.128,
+        "osmosis": 0.1434,
+        "phoneix": 0.1388,
+        "sei": 0.2281,
+        "symphony": 0.1203,
+        "tgrade": 1.0,
+        "tower": 0.1388
+      },
+      "tower": {
+        "jmes": 0.7262,
+        "juno": 0.2322,
+        "mantra": 0.7227,
+        "mitosis": 0.2536,
+        "neutron": 0.5863,
+        "osmosis": 0.8852,
+        "phoneix": 0.6778,
+        "sei": 0.1485,
+        "symphony": 0.2205,
+        "tgrade": 0.1388,
+        "tower": 1.0
+      }
+    },
+    "clusters": {
+      "1": [
+        "juno"
+      ],
+      "2": [
+        "mitosis"
+      ],
+      "3": [
+        "sei"
+      ],
+      "4": [
+        "symphony"
+      ],
+      "5": [
+        "tgrade"
+      ],
+      "6": [
+        "jmes",
+        "mantra",
+        "neutron",
+        "osmosis",
+        "phoneix",
+        "tower"
+      ]
+    },
+    "high_similarity_pairs": [
+      [
+        "osmosis",
+        "tower",
+        0.8852
+      ],
+      [
+        "jmes",
+        "phoneix",
+        0.869
+      ],
+      [
+        "mantra",
+        "neutron",
+        0.7791
+      ],
+      [
+        "jmes",
+        "mantra",
+        0.7609
+      ],
+      [
+        "jmes",
+        "neutron",
+        0.7331
+      ],
+      [
+        "jmes",
+        "tower",
+        0.7262
+      ],
+      [
+        "mantra",
+        "tower",
+        0.7227
+      ],
+      [
+        "mantra",
+        "osmosis",
+        0.7156
+      ],
+      [
+        "jmes",
+        "osmosis",
+        0.7135
+      ],
+      [
+        "mantra",
+        "phoneix",
+        0.7103
+      ]
+    ]
+  },
+  "p4": {
+    "similarity_matrix": {
+      "artela": {
+        "artela": 1.0,
+        "brcchain": 0.5921,
+        "bridgeless": 0.6095,
+        "cosmos-evm": 0.537,
+        "cvn": 0.6225,
+        "de-evm": 0.6143,
+        "egorasmarket": 0.5988,
+        "guru": 0.607,
+        "helios": 0.5735,
+        "hetu": 0.5965,
+        "irishub": 0.2623,
+        "kava": 0.6002,
+        "lambdavm": 0.4872,
+        "mezod": 0.5632,
+        "mtt": 0.5921,
+        "ollo": 0.0479,
+        "planq": 0.6068,
+        "rarimo": 0.5921,
+        "rollup-evm": 0.5921,
+        "ssc": 0.0818,
+        "stride": 0.0549,
+        "tenet": 0.5994,
+        "uptick": 0.111,
+        "xtelabs": 0.6015
+      },
+      "brcchain": {
+        "artela": 0.5921,
+        "brcchain": 1.0,
+        "bridgeless": 0.9421,
+        "cosmos-evm": 0.6772,
+        "cvn": 0.928,
+        "de-evm": 0.92,
+        "egorasmarket": 0.8896,
+        "guru": 0.9378,
+        "helios": 0.8193,
+        "hetu": 0.9133,
+        "irishub": 0.4204,
+        "kava": 0.9593,
+        "lambdavm": 0.7117,
+        "mezod": 0.7572,
+        "mtt": 0.9814,
+        "ollo": 0.0625,
+        "planq": 0.9642,
+        "rarimo": 0.9791,
+        "rollup-evm": 0.9838,
+        "ssc": 0.0977,
+        "stride": 0.0621,
+        "tenet": 0.9177,
+        "uptick": 0.1336,
+        "xtelabs": 0.961
+      },
+      "bridgeless": {
+        "artela": 0.6095,
+        "brcchain": 0.9421,
+        "bridgeless": 1.0,
+        "cosmos-evm": 0.7006,
+        "cvn": 0.9635,
+        "de-evm": 0.9549,
+        "egorasmarket": 0.9236,
+        "guru": 0.9862,
+        "helios": 0.8519,
+        "hetu": 0.9596,
+        "irishub": 0.4254,
+        "kava": 0.964,
+        "lambdavm": 0.7292,
+        "mezod": 0.7885,
+        "mtt": 0.9398,
+        "ollo": 0.0622,
+        "planq": 0.9596,
+        "rarimo": 0.9468,
+        "rollup-evm": 0.9421,
+        "ssc": 0.0974,
+        "stride": 0.0619,
+        "tenet": 0.9629,
+        "uptick": 0.1331,
+        "xtelabs": 0.9329
+      },
+      "cosmos-evm": {
+        "artela": 0.537,
+        "brcchain": 0.6772,
+        "bridgeless": 0.7006,
+        "cosmos-evm": 1.0,
+        "cvn": 0.7166,
+        "de-evm": 0.7014,
+        "egorasmarket": 0.6953,
+        "guru": 0.7064,
+        "helios": 0.7618,
+        "hetu": 0.6885,
+        "irishub": 0.2712,
+        "kava": 0.6932,
+        "lambdavm": 0.5558,
+        "mezod": 0.6485,
+        "mtt": 0.6772,
+        "ollo": 0.0559,
+        "planq": 0.6907,
+        "rarimo": 0.6818,
+        "rollup-evm": 0.6772,
+        "ssc": 0.0976,
+        "stride": 0.0597,
+        "tenet": 0.6872,
+        "uptick": 0.129,
+        "xtelabs": 0.6866
+      },
+      "cvn": {
+        "artela": 0.6225,
+        "brcchain": 0.928,
+        "bridgeless": 0.9635,
+        "cosmos-evm": 0.7166,
+        "cvn": 1.0,
+        "de-evm": 0.9599,
+        "egorasmarket": 0.9301,
+        "guru": 0.9566,
+        "helios": 0.8571,
+        "hetu": 0.9318,
+        "irishub": 0.4274,
+        "kava": 0.955,
+        "lambdavm": 0.7339,
+        "mezod": 0.7649,
+        "mtt": 0.928,
+        "ollo": 0.0645,
+        "planq": 0.9482,
+        "rarimo": 0.9327,
+        "rollup-evm": 0.928,
+        "ssc": 0.1006,
+        "stride": 0.064,
+        "tenet": 0.9358,
+        "uptick": 0.137,
+        "xtelabs": 0.9423
+      },
+      "de-evm": {
+        "artela": 0.6143,
+        "brcchain": 0.92,
+        "bridgeless": 0.9549,
+        "cosmos-evm": 0.7014,
+        "cvn": 0.9599,
+        "de-evm": 1.0,
+        "egorasmarket": 0.9561,
+        "guru": 0.9505,
+        "helios": 0.8552,
+        "hetu": 0.9238,
+        "irishub": 0.4261,
+        "kava": 0.9372,
+        "lambdavm": 0.7278,
+        "mezod": 0.7564,
+        "mtt": 0.9177,
+        "ollo": 0.0624,
+        "planq": 0.933,
+        "rarimo": 0.9247,
+        "rollup-evm": 0.92,
+        "ssc": 0.0976,
+        "stride": 0.062,
+        "tenet": 0.9392,
+        "uptick": 0.1333,
+        "xtelabs": 0.934
+      },
+      "egorasmarket": {
+        "artela": 0.5988,
+        "brcchain": 0.8896,
+        "bridgeless": 0.9236,
+        "cosmos-evm": 0.6953,
+        "cvn": 0.9301,
+        "de-evm": 0.9561,
+        "egorasmarket": 1.0,
+        "guru": 0.9284,
+        "helios": 0.8469,
+        "hetu": 0.9091,
+        "irishub": 0.4128,
+        "kava": 0.9107,
+        "lambdavm": 0.703,
+        "mezod": 0.7455,
+        "mtt": 0.8919,
+        "ollo": 0.0593,
+        "planq": 0.9068,
+        "rarimo": 0.8941,
+        "rollup-evm": 0.8896,
+        "ssc": 0.0968,
+        "stride": 0.0591,
+        "tenet": 0.9288,
+        "uptick": 0.1312,
+        "xtelabs": 0.9026
+      },
+      "guru": {
+        "artela": 0.607,
+        "brcchain": 0.9378,
+        "bridgeless": 0.9862,
+        "cosmos-evm": 0.7064,
+        "cvn": 0.9566,
+        "de-evm": 0.9505,
+        "egorasmarket": 0.9284,
+        "guru": 1.0,
+        "helios": 0.8571,
+        "hetu": 0.9552,
+        "irishub": 0.4227,
+        "kava": 0.9572,
+        "lambdavm": 0.724,
+        "mezod": 0.7873,
+        "mtt": 0.9355,
+        "ollo": 0.0617,
+        "planq": 0.9529,
+        "rarimo": 0.9424,
+        "rollup-evm": 0.9378,
+        "ssc": 0.0967,
+        "stride": 0.0614,
+        "tenet": 0.963,
+        "uptick": 0.1322,
+        "xtelabs": 0.9285
+      },
+      "helios": {
+        "artela": 0.5735,
+        "brcchain": 0.8193,
+        "bridgeless": 0.8519,
+        "cosmos-evm": 0.7618,
+        "cvn": 0.8571,
+        "de-evm": 0.8552,
+        "egorasmarket": 0.8469,
+        "guru": 0.8571,
+        "helios": 1.0,
+        "hetu": 0.8394,
+        "irishub": 0.3748,
+        "kava": 0.8383,
+        "lambdavm": 0.6499,
+        "mezod": 0.6966,
+        "mtt": 0.8193,
+        "ollo": 0.0616,
+        "planq": 0.8326,
+        "rarimo": 0.8239,
+        "rollup-evm": 0.8193,
+        "ssc": 0.1002,
+        "stride": 0.0613,
+        "tenet": 0.8389,
+        "uptick": 0.132,
+        "xtelabs": 0.8314
+      },
+      "hetu": {
+        "artela": 0.5965,
+        "brcchain": 0.9133,
+        "bridgeless": 0.9596,
+        "cosmos-evm": 0.6885,
+        "cvn": 0.9318,
+        "de-evm": 0.9238,
+        "egorasmarket": 0.9091,
+        "guru": 0.9552,
+        "helios": 0.8394,
+        "hetu": 1.0,
+        "irishub": 0.4247,
+        "kava": 0.935,
+        "lambdavm": 0.7137,
+        "mezod": 0.7733,
+        "mtt": 0.9156,
+        "ollo": 0.058,
+        "planq": 0.9309,
+        "rarimo": 0.9179,
+        "rollup-evm": 0.9133,
+        "ssc": 0.0972,
+        "stride": 0.0618,
+        "tenet": 0.9371,
+        "uptick": 0.1329,
+        "xtelabs": 0.9035
+      },
+      "irishub": {
+        "artela": 0.2623,
+        "brcchain": 0.4204,
+        "bridgeless": 0.4254,
+        "cosmos-evm": 0.2712,
+        "cvn": 0.4274,
+        "de-evm": 0.4261,
+        "egorasmarket": 0.4128,
+        "guru": 0.4227,
+        "helios": 0.3748,
+        "hetu": 0.4247,
+        "irishub": 1.0,
+        "kava": 0.4256,
+        "lambdavm": 0.4039,
+        "mezod": 0.3577,
+        "mtt": 0.4204,
+        "ollo": 0.1057,
+        "planq": 0.4184,
+        "rarimo": 0.4204,
+        "rollup-evm": 0.4204,
+        "ssc": 0.1678,
+        "stride": 0.121,
+        "tenet": 0.4104,
+        "uptick": 0.1863,
+        "xtelabs": 0.4307
+      },
+      "kava": {
+        "artela": 0.6002,
+        "brcchain": 0.9593,
+        "bridgeless": 0.964,
+        "cosmos-evm": 0.6932,
+        "cvn": 0.955,
+        "de-evm": 0.9372,
+        "egorasmarket": 0.9107,
+        "guru": 0.9572,
+        "helios": 0.8383,
+        "hetu": 0.935,
+        "irishub": 0.4256,
+        "kava": 1.0,
+        "lambdavm": 0.7246,
+        "mezod": 0.7719,
+        "mtt": 0.9616,
+        "ollo": 0.0629,
+        "planq": 0.9652,
+        "rarimo": 0.9616,
+        "rollup-evm": 0.9593,
+        "ssc": 0.0983,
+        "stride": 0.0625,
+        "tenet": 0.9389,
+        "uptick": 0.1342,
+        "xtelabs": 0.936
+      },
+      "lambdavm": {
+        "artela": 0.4872,
+        "brcchain": 0.7117,
+        "bridgeless": 0.7292,
+        "cosmos-evm": 0.5558,
+        "cvn": 0.7339,
+        "de-evm": 0.7278,
+        "egorasmarket": 0.703,
+        "guru": 0.724,
+        "helios": 0.6499,
+        "hetu": 0.7137,
+        "irishub": 0.4039,
+        "kava": 0.7246,
+        "lambdavm": 1.0,
+        "mezod": 0.6282,
+        "mtt": 0.7096,
+        "ollo": 0.0354,
+        "planq": 0.7221,
+        "rarimo": 0.7075,
+        "rollup-evm": 0.7117,
+        "ssc": 0.0972,
+        "stride": 0.0633,
+        "tenet": 0.7078,
+        "uptick": 0.1228,
+        "xtelabs": 0.7167
+      },
+      "mezod": {
+        "artela": 0.5632,
+        "brcchain": 0.7572,
+        "bridgeless": 0.7885,
+        "cosmos-evm": 0.6485,
+        "cvn": 0.7649,
+        "de-evm": 0.7564,
+        "egorasmarket": 0.7455,
+        "guru": 0.7873,
+        "helios": 0.6966,
+        "hetu": 0.7733,
+        "irishub": 0.3577,
+        "kava": 0.7719,
+        "lambdavm": 0.6282,
+        "mezod": 1.0,
+        "mtt": 0.7593,
+        "ollo": 0.0373,
+        "planq": 0.7733,
+        "rarimo": 0.7572,
+        "rollup-evm": 0.7572,
+        "ssc": 0.0872,
+        "stride": 0.0512,
+        "tenet": 0.7743,
+        "uptick": 0.1157,
+        "xtelabs": 0.7461
+      },
+      "mtt": {
+        "artela": 0.5921,
+        "brcchain": 0.9814,
+        "bridgeless": 0.9398,
+        "cosmos-evm": 0.6772,
+        "cvn": 0.928,
+        "de-evm": 0.9177,
+        "egorasmarket": 0.8919,
+        "guru": 0.9355,
+        "helios": 0.8193,
+        "hetu": 0.9156,
+        "irishub": 0.4204,
+        "kava": 0.9616,
+        "lambdavm": 0.7096,
+        "mezod": 0.7593,
+        "mtt": 1.0,
+        "ollo": 0.0625,
+        "planq": 0.9665,
+        "rarimo": 0.9768,
+        "rollup-evm": 0.9814,
+        "ssc": 0.0977,
+        "stride": 0.0621,
+        "tenet": 0.92,
+        "uptick": 0.1336,
+        "xtelabs": 0.9587
+      },
+      "ollo": {
+        "artela": 0.0479,
+        "brcchain": 0.0625,
+        "bridgeless": 0.0622,
+        "cosmos-evm": 0.0559,
+        "cvn": 0.0645,
+        "de-evm": 0.0624,
+        "egorasmarket": 0.0593,
+        "guru": 0.0617,
+        "helios": 0.0616,
+        "hetu": 0.058,
+        "irishub": 0.1057,
+        "kava": 0.0629,
+        "lambdavm": 0.0354,
+        "mezod": 0.0373,
+        "mtt": 0.0625,
+        "ollo": 1.0,
+        "planq": 0.0621,
+        "rarimo": 0.0625,
+        "rollup-evm": 0.0625,
+        "ssc": 0.16,
+        "stride": 0.1805,
+        "tenet": 0.0594,
+        "uptick": 0.1106,
+        "xtelabs": 0.0645
+      },
+      "planq": {
+        "artela": 0.6068,
+        "brcchain": 0.9642,
+        "bridgeless": 0.9596,
+        "cosmos-evm": 0.6907,
+        "cvn": 0.9482,
+        "de-evm": 0.933,
+        "egorasmarket": 0.9068,
+        "guru": 0.9529,
+        "helios": 0.8326,
+        "hetu": 0.9309,
+        "irishub": 0.4184,
+        "kava": 0.9652,
+        "lambdavm": 0.7221,
+        "mezod": 0.7733,
+        "mtt": 0.9665,
+        "ollo": 0.0621,
+        "planq": 1.0,
+        "rarimo": 0.9595,
+        "rollup-evm": 0.9642,
+        "ssc": 0.0972,
+        "stride": 0.0618,
+        "tenet": 0.9348,
+        "uptick": 0.1329,
+        "xtelabs": 0.9412
+      },
+      "rarimo": {
+        "artela": 0.5921,
+        "brcchain": 0.9791,
+        "bridgeless": 0.9468,
+        "cosmos-evm": 0.6818,
+        "cvn": 0.9327,
+        "de-evm": 0.9247,
+        "egorasmarket": 0.8941,
+        "guru": 0.9424,
+        "helios": 0.8239,
+        "hetu": 0.9179,
+        "irishub": 0.4204,
+        "kava": 0.9616,
+        "lambdavm": 0.7075,
+        "mezod": 0.7572,
+        "mtt": 0.9768,
+        "ollo": 0.0625,
+        "planq": 0.9595,
+        "rarimo": 1.0,
+        "rollup-evm": 0.9791,
+        "ssc": 0.0977,
+        "stride": 0.0621,
+        "tenet": 0.9222,
+        "uptick": 0.1336,
+        "xtelabs": 0.961
+      },
+      "rollup-evm": {
+        "artela": 0.5921,
+        "brcchain": 0.9838,
+        "bridgeless": 0.9421,
+        "cosmos-evm": 0.6772,
+        "cvn": 0.928,
+        "de-evm": 0.92,
+        "egorasmarket": 0.8896,
+        "guru": 0.9378,
+        "helios": 0.8193,
+        "hetu": 0.9133,
+        "irishub": 0.4204,
+        "kava": 0.9593,
+        "lambdavm": 0.7117,
+        "mezod": 0.7572,
+        "mtt": 0.9814,
+        "ollo": 0.0625,
+        "planq": 0.9642,
+        "rarimo": 0.9791,
+        "rollup-evm": 1.0,
+        "ssc": 0.0977,
+        "stride": 0.0621,
+        "tenet": 0.9177,
+        "uptick": 0.1336,
+        "xtelabs": 0.961
+      },
+      "ssc": {
+        "artela": 0.0818,
+        "brcchain": 0.0977,
+        "bridgeless": 0.0974,
+        "cosmos-evm": 0.0976,
+        "cvn": 0.1006,
+        "de-evm": 0.0976,
+        "egorasmarket": 0.0968,
+        "guru": 0.0967,
+        "helios": 0.1002,
+        "hetu": 0.0972,
+        "irishub": 0.1678,
+        "kava": 0.0983,
+        "lambdavm": 0.0972,
+        "mezod": 0.0872,
+        "mtt": 0.0977,
+        "ollo": 0.16,
+        "planq": 0.0972,
+        "rarimo": 0.0977,
+        "rollup-evm": 0.0977,
+        "ssc": 1.0,
+        "stride": 0.4973,
+        "tenet": 0.0969,
+        "uptick": 0.2156,
+        "xtelabs": 0.1006
+      },
+      "stride": {
+        "artela": 0.0549,
+        "brcchain": 0.0621,
+        "bridgeless": 0.0619,
+        "cosmos-evm": 0.0597,
+        "cvn": 0.064,
+        "de-evm": 0.062,
+        "egorasmarket": 0.0591,
+        "guru": 0.0614,
+        "helios": 0.0613,
+        "hetu": 0.0618,
+        "irishub": 0.121,
+        "kava": 0.0625,
+        "lambdavm": 0.0633,
+        "mezod": 0.0512,
+        "mtt": 0.0621,
+        "ollo": 0.1805,
+        "planq": 0.0618,
+        "rarimo": 0.0621,
+        "rollup-evm": 0.0621,
+        "ssc": 0.4973,
+        "stride": 1.0,
+        "tenet": 0.0593,
+        "uptick": 0.1349,
+        "xtelabs": 0.064
+      },
+      "tenet": {
+        "artela": 0.5994,
+        "brcchain": 0.9177,
+        "bridgeless": 0.9629,
+        "cosmos-evm": 0.6872,
+        "cvn": 0.9358,
+        "de-evm": 0.9392,
+        "egorasmarket": 0.9288,
+        "guru": 0.963,
+        "helios": 0.8389,
+        "hetu": 0.9371,
+        "irishub": 0.4104,
+        "kava": 0.9389,
+        "lambdavm": 0.7078,
+        "mezod": 0.7743,
+        "mtt": 0.92,
+        "ollo": 0.0594,
+        "planq": 0.9348,
+        "rarimo": 0.9222,
+        "rollup-evm": 0.9177,
+        "ssc": 0.0969,
+        "stride": 0.0593,
+        "tenet": 1.0,
+        "uptick": 0.1314,
+        "xtelabs": 0.9083
+      },
+      "uptick": {
+        "artela": 0.111,
+        "brcchain": 0.1336,
+        "bridgeless": 0.1331,
+        "cosmos-evm": 0.129,
+        "cvn": 0.137,
+        "de-evm": 0.1333,
+        "egorasmarket": 0.1312,
+        "guru": 0.1322,
+        "helios": 0.132,
+        "hetu": 0.1329,
+        "irishub": 0.1863,
+        "kava": 0.1342,
+        "lambdavm": 0.1228,
+        "mezod": 0.1157,
+        "mtt": 0.1336,
+        "ollo": 0.1106,
+        "planq": 0.1329,
+        "rarimo": 0.1336,
+        "rollup-evm": 0.1336,
+        "ssc": 0.2156,
+        "stride": 0.1349,
+        "tenet": 0.1314,
+        "uptick": 1.0,
+        "xtelabs": 0.137
+      },
+      "xtelabs": {
+        "artela": 0.6015,
+        "brcchain": 0.961,
+        "bridgeless": 0.9329,
+        "cosmos-evm": 0.6866,
+        "cvn": 0.9423,
+        "de-evm": 0.934,
+        "egorasmarket": 0.9026,
+        "guru": 0.9285,
+        "helios": 0.8314,
+        "hetu": 0.9035,
+        "irishub": 0.4307,
+        "kava": 0.936,
+        "lambdavm": 0.7167,
+        "mezod": 0.7461,
+        "mtt": 0.9587,
+        "ollo": 0.0645,
+        "planq": 0.9412,
+        "rarimo": 0.961,
+        "rollup-evm": 0.961,
+        "ssc": 0.1006,
+        "stride": 0.064,
+        "tenet": 0.9083,
+        "uptick": 0.137,
+        "xtelabs": 1.0
+      }
+    },
+    "clusters": {
+      "1": [
+        "irishub"
+      ],
+      "2": [
+        "ollo"
+      ],
+      "3": [
+        "ssc"
+      ],
+      "4": [
+        "stride"
+      ],
+      "5": [
+        "artela",
+        "brcchain",
+        "bridgeless",
+        "cosmos-evm",
+        "cvn",
+        "de-evm",
+        "egorasmarket",
+        "guru",
+        "helios",
+        "hetu",
+        "kava",
+        "lambdavm",
+        "mezod",
+        "mtt",
+        "planq",
+        "rarimo",
+        "rollup-evm",
+        "tenet",
+        "xtelabs"
+      ],
+      "6": [
+        "uptick"
+      ]
+    },
+    "high_similarity_pairs": [
+      [
+        "bridgeless",
+        "guru",
+        0.9862
+      ],
+      [
+        "brcchain",
+        "rollup-evm",
+        0.9838
+      ],
+      [
+        "brcchain",
+        "mtt",
+        0.9814
+      ],
+      [
+        "mtt",
+        "rollup-evm",
+        0.9814
+      ],
+      [
+        "brcchain",
+        "rarimo",
+        0.9791
+      ],
+      [
+        "rarimo",
+        "rollup-evm",
+        0.9791
+      ],
+      [
+        "mtt",
+        "rarimo",
+        0.9768
+      ],
+      [
+        "mtt",
+        "planq",
+        0.9665
+      ],
+      [
+        "kava",
+        "planq",
+        0.9652
+      ],
+      [
+        "brcchain",
+        "planq",
+        0.9642
+      ],
+      [
+        "planq",
+        "rollup-evm",
+        0.9642
+      ],
+      [
+        "bridgeless",
+        "kava",
+        0.964
+      ],
+      [
+        "bridgeless",
+        "cvn",
+        0.9635
+      ],
+      [
+        "guru",
+        "tenet",
+        0.963
+      ],
+      [
+        "bridgeless",
+        "tenet",
+        0.9629
+      ],
+      [
+        "kava",
+        "mtt",
+        0.9616
+      ],
+      [
+        "kava",
+        "rarimo",
+        0.9616
+      ],
+      [
+        "brcchain",
+        "xtelabs",
+        0.961
+      ],
+      [
+        "rarimo",
+        "xtelabs",
+        0.961
+      ],
+      [
+        "rollup-evm",
+        "xtelabs",
+        0.961
+      ],
+      [
+        "cvn",
+        "de-evm",
+        0.9599
+      ],
+      [
+        "bridgeless",
+        "hetu",
+        0.9596
+      ],
+      [
+        "bridgeless",
+        "planq",
+        0.9596
+      ],
+      [
+        "planq",
+        "rarimo",
+        0.9595
+      ],
+      [
+        "brcchain",
+        "kava",
+        0.9593
+      ],
+      [
+        "kava",
+        "rollup-evm",
+        0.9593
+      ],
+      [
+        "mtt",
+        "xtelabs",
+        0.9587
+      ],
+      [
+        "guru",
+        "kava",
+        0.9572
+      ],
+      [
+        "cvn",
+        "guru",
+        0.9566
+      ],
+      [
+        "de-evm",
+        "egorasmarket",
+        0.9561
+      ],
+      [
+        "guru",
+        "hetu",
+        0.9552
+      ],
+      [
+        "cvn",
+        "kava",
+        0.955
+      ],
+      [
+        "bridgeless",
+        "de-evm",
+        0.9549
+      ],
+      [
+        "guru",
+        "planq",
+        0.9529
+      ],
+      [
+        "de-evm",
+        "guru",
+        0.9505
+      ],
+      [
+        "cvn",
+        "planq",
+        0.9482
+      ],
+      [
+        "bridgeless",
+        "rarimo",
+        0.9468
+      ],
+      [
+        "guru",
+        "rarimo",
+        0.9424
+      ],
+      [
+        "cvn",
+        "xtelabs",
+        0.9423
+      ],
+      [
+        "brcchain",
+        "bridgeless",
+        0.9421
+      ],
+      [
+        "bridgeless",
+        "rollup-evm",
+        0.9421
+      ],
+      [
+        "planq",
+        "xtelabs",
+        0.9412
+      ],
+      [
+        "bridgeless",
+        "mtt",
+        0.9398
+      ],
+      [
+        "de-evm",
+        "tenet",
+        0.9392
+      ],
+      [
+        "kava",
+        "tenet",
+        0.9389
+      ],
+      [
+        "brcchain",
+        "guru",
+        0.9378
+      ],
+      [
+        "guru",
+        "rollup-evm",
+        0.9378
+      ],
+      [
+        "de-evm",
+        "kava",
+        0.9372
+      ],
+      [
+        "hetu",
+        "tenet",
+        0.9371
+      ],
+      [
+        "kava",
+        "xtelabs",
+        0.936
+      ],
+      [
+        "cvn",
+        "tenet",
+        0.9358
+      ],
+      [
+        "guru",
+        "mtt",
+        0.9355
+      ],
+      [
+        "hetu",
+        "kava",
+        0.935
+      ],
+      [
+        "planq",
+        "tenet",
+        0.9348
+      ],
+      [
+        "de-evm",
+        "xtelabs",
+        0.934
+      ],
+      [
+        "de-evm",
+        "planq",
+        0.933
+      ],
+      [
+        "bridgeless",
+        "xtelabs",
+        0.9329
+      ],
+      [
+        "cvn",
+        "rarimo",
+        0.9327
+      ],
+      [
+        "cvn",
+        "hetu",
+        0.9318
+      ],
+      [
+        "hetu",
+        "planq",
+        0.9309
+      ],
+      [
+        "cvn",
+        "egorasmarket",
+        0.9301
+      ],
+      [
+        "egorasmarket",
+        "tenet",
+        0.9288
+      ],
+      [
+        "guru",
+        "xtelabs",
+        0.9285
+      ],
+      [
+        "egorasmarket",
+        "guru",
+        0.9284
+      ],
+      [
+        "brcchain",
+        "cvn",
+        0.928
+      ],
+      [
+        "cvn",
+        "mtt",
+        0.928
+      ],
+      [
+        "cvn",
+        "rollup-evm",
+        0.928
+      ],
+      [
+        "de-evm",
+        "rarimo",
+        0.9247
+      ],
+      [
+        "de-evm",
+        "hetu",
+        0.9238
+      ],
+      [
+        "bridgeless",
+        "egorasmarket",
+        0.9236
+      ],
+      [
+        "rarimo",
+        "tenet",
+        0.9222
+      ],
+      [
+        "brcchain",
+        "de-evm",
+        0.92
+      ],
+      [
+        "de-evm",
+        "rollup-evm",
+        0.92
+      ],
+      [
+        "mtt",
+        "tenet",
+        0.92
+      ],
+      [
+        "hetu",
+        "rarimo",
+        0.9179
+      ],
+      [
+        "de-evm",
+        "mtt",
+        0.9177
+      ],
+      [
+        "brcchain",
+        "tenet",
+        0.9177
+      ],
+      [
+        "rollup-evm",
+        "tenet",
+        0.9177
+      ],
+      [
+        "hetu",
+        "mtt",
+        0.9156
+      ],
+      [
+        "brcchain",
+        "hetu",
+        0.9133
+      ],
+      [
+        "hetu",
+        "rollup-evm",
+        0.9133
+      ],
+      [
+        "egorasmarket",
+        "kava",
+        0.9107
+      ],
+      [
+        "egorasmarket",
+        "hetu",
+        0.9091
+      ],
+      [
+        "tenet",
+        "xtelabs",
+        0.9083
+      ],
+      [
+        "egorasmarket",
+        "planq",
+        0.9068
+      ],
+      [
+        "hetu",
+        "xtelabs",
+        0.9035
+      ],
+      [
+        "egorasmarket",
+        "xtelabs",
+        0.9026
+      ],
+      [
+        "egorasmarket",
+        "rarimo",
+        0.8941
+      ],
+      [
+        "egorasmarket",
+        "mtt",
+        0.8919
+      ],
+      [
+        "brcchain",
+        "egorasmarket",
+        0.8896
+      ],
+      [
+        "egorasmarket",
+        "rollup-evm",
+        0.8896
+      ],
+      [
+        "cvn",
+        "helios",
+        0.8571
+      ],
+      [
+        "guru",
+        "helios",
+        0.8571
+      ],
+      [
+        "de-evm",
+        "helios",
+        0.8552
+      ],
+      [
+        "bridgeless",
+        "helios",
+        0.8519
+      ],
+      [
+        "egorasmarket",
+        "helios",
+        0.8469
+      ],
+      [
+        "helios",
+        "hetu",
+        0.8394
+      ],
+      [
+        "helios",
+        "tenet",
+        0.8389
+      ],
+      [
+        "helios",
+        "kava",
+        0.8383
+      ],
+      [
+        "helios",
+        "planq",
+        0.8326
+      ],
+      [
+        "helios",
+        "xtelabs",
+        0.8314
+      ],
+      [
+        "helios",
+        "rarimo",
+        0.8239
+      ],
+      [
+        "brcchain",
+        "helios",
+        0.8193
+      ],
+      [
+        "helios",
+        "mtt",
+        0.8193
+      ],
+      [
+        "helios",
+        "rollup-evm",
+        0.8193
+      ],
+      [
+        "bridgeless",
+        "mezod",
+        0.7885
+      ],
+      [
+        "guru",
+        "mezod",
+        0.7873
+      ],
+      [
+        "mezod",
+        "tenet",
+        0.7743
+      ],
+      [
+        "hetu",
+        "mezod",
+        0.7733
+      ],
+      [
+        "mezod",
+        "planq",
+        0.7733
+      ],
+      [
+        "kava",
+        "mezod",
+        0.7719
+      ],
+      [
+        "cvn",
+        "mezod",
+        0.7649
+      ],
+      [
+        "cosmos-evm",
+        "helios",
+        0.7618
+      ],
+      [
+        "mezod",
+        "mtt",
+        0.7593
+      ],
+      [
+        "brcchain",
+        "mezod",
+        0.7572
+      ],
+      [
+        "mezod",
+        "rarimo",
+        0.7572
+      ],
+      [
+        "mezod",
+        "rollup-evm",
+        0.7572
+      ],
+      [
+        "de-evm",
+        "mezod",
+        0.7564
+      ],
+      [
+        "mezod",
+        "xtelabs",
+        0.7461
+      ],
+      [
+        "egorasmarket",
+        "mezod",
+        0.7455
+      ],
+      [
+        "cvn",
+        "lambdavm",
+        0.7339
+      ],
+      [
+        "bridgeless",
+        "lambdavm",
+        0.7292
+      ],
+      [
+        "de-evm",
+        "lambdavm",
+        0.7278
+      ],
+      [
+        "kava",
+        "lambdavm",
+        0.7246
+      ],
+      [
+        "guru",
+        "lambdavm",
+        0.724
+      ],
+      [
+        "lambdavm",
+        "planq",
+        0.7221
+      ],
+      [
+        "lambdavm",
+        "xtelabs",
+        0.7167
+      ],
+      [
+        "cosmos-evm",
+        "cvn",
+        0.7166
+      ],
+      [
+        "hetu",
+        "lambdavm",
+        0.7137
+      ],
+      [
+        "brcchain",
+        "lambdavm",
+        0.7117
+      ],
+      [
+        "lambdavm",
+        "rollup-evm",
+        0.7117
+      ],
+      [
+        "lambdavm",
+        "mtt",
+        0.7096
+      ],
+      [
+        "lambdavm",
+        "tenet",
+        0.7078
+      ],
+      [
+        "lambdavm",
+        "rarimo",
+        0.7075
+      ],
+      [
+        "cosmos-evm",
+        "guru",
+        0.7064
+      ],
+      [
+        "egorasmarket",
+        "lambdavm",
+        0.703
+      ],
+      [
+        "cosmos-evm",
+        "de-evm",
+        0.7014
+      ],
+      [
+        "bridgeless",
+        "cosmos-evm",
+        0.7006
+      ]
+    ]
+  },
+  "p6": {
+    "similarity_matrix": {
+      "decogit": {
+        "decogit": 1.0,
+        "halbornsec-ctf": 0.377,
+        "haven": 0.3826,
+        "hero": 0.3929,
+        "icplaza": 0.2628,
+        "jackal": 0.3333,
+        "ollo": 0.3529,
+        "side-ibc": 0.3308,
+        "stateset": 0.3673,
+        "ununifi": 0.1424
+      },
+      "halbornsec-ctf": {
+        "decogit": 0.377,
+        "halbornsec-ctf": 1.0,
+        "haven": 0.4425,
+        "hero": 0.4909,
+        "icplaza": 0.3259,
+        "jackal": 0.3409,
+        "ollo": 0.42,
+        "side-ibc": 0.3969,
+        "stateset": 0.4375,
+        "ununifi": 0.1807
+      },
+      "haven": {
+        "decogit": 0.3826,
+        "halbornsec-ctf": 0.4425,
+        "haven": 1.0,
+        "hero": 0.466,
+        "icplaza": 0.2656,
+        "jackal": 0.3704,
+        "ollo": 0.4301,
+        "side-ibc": 0.3387,
+        "stateset": 0.4494,
+        "ununifi": 0.1592
+      },
+      "hero": {
+        "decogit": 0.3929,
+        "halbornsec-ctf": 0.4909,
+        "haven": 0.466,
+        "hero": 1.0,
+        "icplaza": 0.32,
+        "jackal": 0.3846,
+        "ollo": 0.4667,
+        "side-ibc": 0.3802,
+        "stateset": 0.4651,
+        "ununifi": 0.1736
+      },
+      "icplaza": {
+        "decogit": 0.2628,
+        "halbornsec-ctf": 0.3259,
+        "haven": 0.2656,
+        "hero": 0.32,
+        "icplaza": 1.0,
+        "jackal": 0.2718,
+        "ollo": 0.3304,
+        "side-ibc": 0.3288,
+        "stateset": 0.3243,
+        "ununifi": 0.1667
+      },
+      "jackal": {
+        "decogit": 0.3333,
+        "halbornsec-ctf": 0.3409,
+        "haven": 0.3704,
+        "hero": 0.3846,
+        "icplaza": 0.2718,
+        "jackal": 1.0,
+        "ollo": 0.4412,
+        "side-ibc": 0.303,
+        "stateset": 0.4375,
+        "ununifi": 0.09
+      },
+      "ollo": {
+        "decogit": 0.3529,
+        "halbornsec-ctf": 0.42,
+        "haven": 0.4301,
+        "hero": 0.4667,
+        "icplaza": 0.3304,
+        "jackal": 0.4412,
+        "ollo": 1.0,
+        "side-ibc": 0.3784,
+        "stateset": 0.5526,
+        "ununifi": 0.1395
+      },
+      "side-ibc": {
+        "decogit": 0.3308,
+        "halbornsec-ctf": 0.3969,
+        "haven": 0.3387,
+        "hero": 0.3802,
+        "icplaza": 0.3288,
+        "jackal": 0.303,
+        "ollo": 0.3784,
+        "side-ibc": 1.0,
+        "stateset": 0.3738,
+        "ununifi": 0.1687
+      },
+      "stateset": {
+        "decogit": 0.3673,
+        "halbornsec-ctf": 0.4375,
+        "haven": 0.4494,
+        "hero": 0.4651,
+        "icplaza": 0.3243,
+        "jackal": 0.4375,
+        "ollo": 0.5526,
+        "side-ibc": 0.3738,
+        "stateset": 1.0,
+        "ununifi": 0.1279
+      },
+      "ununifi": {
+        "decogit": 0.1424,
+        "halbornsec-ctf": 0.1807,
+        "haven": 0.1592,
+        "hero": 0.1736,
+        "icplaza": 0.1667,
+        "jackal": 0.09,
+        "ollo": 0.1395,
+        "side-ibc": 0.1687,
+        "stateset": 0.1279,
+        "ununifi": 1.0
+      }
+    },
+    "clusters": {
+      "1": [
+        "decogit"
+      ],
+      "2": [
+        "halbornsec-ctf"
+      ],
+      "3": [
+        "haven"
+      ],
+      "4": [
+        "hero"
+      ],
+      "5": [
+        "icplaza"
+      ],
+      "6": [
+        "jackal"
+      ],
+      "7": [
+        "ollo"
+      ],
+      "8": [
+        "side-ibc"
+      ],
+      "9": [
+        "stateset"
+      ],
+      "10": [
+        "ununifi"
+      ]
+    },
+    "high_similarity_pairs": []
+  }
+}

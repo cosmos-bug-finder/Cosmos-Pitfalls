@@ -1,0 +1,554 @@
+{
+  "gitopia": {
+    "items": [
+      {
+        "tag": "DeleteGrant",
+        "file": "/Cosmos/chain-registry/gitopia/repo/gitopia/x/gitopia/keeper/msg_server_provider.go",
+        "line": 96,
+        "content": "k.authzKeeper.DeleteGrant(ctx, grantee, granter, t)"
+      },
+      {
+        "tag": "DeleteGrant",
+        "file": "/Cosmos/chain-registry/gitopia/repo/gitopia/x/gitopia/keeper/msg_server_provider.go",
+        "line": 103,
+        "content": "k.authzKeeper.DeleteGrant(ctx, grantee, granter, t)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.13"
+  },
+  "arkeo": {
+    "items": [
+      {
+        "tag": "FundCommunityPool",
+        "file": "/Cosmos/chain-registry/arkeo/repo/arkeo/x/claim/keeper/claim.go",
+        "line": 290,
+        "content": "// \treturn k.distrKeeper.FundCommunityPool(ctx, sdk.NewCoins(amt), moduleAccAddr)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.11"
+  },
+  "celestia": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/celestia/repo/celestia-app/test/util/common.go",
+        "line": 411,
+        "content": "require.NoError(t, input.BankKeeper.MintCoins(input.Context, blobstreamModuleName, InitCoins))"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/celestia/repo/celestia-app/test/util/common.go",
+        "line": 476,
+        "content": "require.NoError(t, input.BankKeeper.MintCoins(input.Context, blobstreamModuleName, weightCoins))"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/celestia/repo/celestia-app/test/util/common.go",
+        "line": 477,
+        "content": "require.NoError(t, input.BankKeeper.SendCoinsFromModuleToAccount(input.Context, blobstreamModuleName, accAddr, weightCoins))"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.13"
+  },
+  "dungeon": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/dungeon/repo/celestia-app/test/util/common.go",
+        "line": 411,
+        "content": "require.NoError(t, input.BankKeeper.MintCoins(input.Context, blobstreamModuleName, InitCoins))"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/dungeon/repo/celestia-app/test/util/common.go",
+        "line": 476,
+        "content": "require.NoError(t, input.BankKeeper.MintCoins(input.Context, blobstreamModuleName, weightCoins))"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/dungeon/repo/celestia-app/test/util/common.go",
+        "line": 477,
+        "content": "require.NoError(t, input.BankKeeper.SendCoinsFromModuleToAccount(input.Context, blobstreamModuleName, accAddr, weightCoins))"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.13"
+  },
+  "axelar": {
+    "items": [
+      {
+        "tag": "BurnCoins",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/distribution/keeper/keeper.go",
+        "line": 70,
+        "content": "funcs.MustNoErr(k.bankKeeper.BurnCoins(ctx, distributionTypes.ModuleName, feesToBurn))"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/distribution/keeper/keeper.go",
+        "line": 77,
+        "content": "funcs.MustNoErr(k.bankKeeper.MintCoins(ctx, distributionTypes.ModuleName, feesBurned))"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/x/distribution/keeper/keeper.go",
+        "line": 78,
+        "content": "funcs.MustNoErr(k.bankKeeper.SendCoinsFromModuleToAccount(ctx, distributionTypes.ModuleName, types.ZeroAddress, feesBurned))"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.45.16"
+  },
+  "chain4energy": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/chain4energy/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 47,
+        "content": "bu.helperBankKeeper.MintCoins(ctx, helperModuleAccount, coinsToMint)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/chain4energy/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 48,
+        "content": "bu.helperBankKeeper.SendCoinsFromModuleToAccount(ctx, helperModuleAccount, toAddr, coinsToMint)"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/chain4energy/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 60,
+        "content": "bu.helperBankKeeper.MintCoins(ctx, helperModuleAccount, mintedCoins)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToModule",
+        "file": "/Cosmos/chain-registry/chain4energy/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 61,
+        "content": "bu.helperBankKeeper.SendCoinsFromModuleToModule(ctx, helperModuleAccount, moduleName, mintedCoins)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.12"
+  },
+  "mtgbp": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/mtgbp/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 47,
+        "content": "bu.helperBankKeeper.MintCoins(ctx, helperModuleAccount, coinsToMint)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/mtgbp/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 48,
+        "content": "bu.helperBankKeeper.SendCoinsFromModuleToAccount(ctx, helperModuleAccount, toAddr, coinsToMint)"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/mtgbp/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 60,
+        "content": "bu.helperBankKeeper.MintCoins(ctx, helperModuleAccount, mintedCoins)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToModule",
+        "file": "/Cosmos/chain-registry/mtgbp/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 61,
+        "content": "bu.helperBankKeeper.SendCoinsFromModuleToModule(ctx, helperModuleAccount, moduleName, mintedCoins)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.12"
+  },
+  "logos": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/logos/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 47,
+        "content": "bu.helperBankKeeper.MintCoins(ctx, helperModuleAccount, coinsToMint)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/logos/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 48,
+        "content": "bu.helperBankKeeper.SendCoinsFromModuleToAccount(ctx, helperModuleAccount, toAddr, coinsToMint)"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/logos/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 60,
+        "content": "bu.helperBankKeeper.MintCoins(ctx, helperModuleAccount, mintedCoins)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToModule",
+        "file": "/Cosmos/chain-registry/logos/repo/c4e-chain/testutil/cosmossdk/bank_utils.go",
+        "line": 61,
+        "content": "bu.helperBankKeeper.SendCoinsFromModuleToModule(ctx, helperModuleAccount, moduleName, mintedCoins)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.12"
+  },
+  "sommelier": {
+    "items": [
+      {
+        "tag": "BurnCoins",
+        "file": "/Cosmos/chain-registry/sommelier/repo/sommelier/x/axelarcork/keeper/axelarcork.go",
+        "line": 59,
+        "content": "k.bankKeeper.BurnCoins(ctx, types.ModuleName, balancesToBurn)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.15"
+  },
+  "sunrise": {
+    "items": [
+      {
+        "tag": "Delegate",
+        "file": "/Cosmos/chain-registry/sunrise/repo/sunrise/x/accounts/self_delegatable_lockup/continuous_locking_account.go",
+        "line": 69,
+        "content": "// \treturn cva.BaseLockup.Delegate(ctx, msg, cva.GetLockedCoinsWithDenoms)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.52.0"
+  },
+  "neutron": {
+    "items": [
+      {
+        "tag": "FundCommunityPool",
+        "file": "/Cosmos/chain-registry/neutron/repo/neutron/x/tokenfactory/keeper/createdenom.go",
+        "line": 91,
+        "content": "// if err := k.communityPoolKeeper.FundCommunityPool(ctx, params.DenomCreationFee, accAddr); err != nil {"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.11"
+  },
+  "impacthub": {
+    "items": [
+      {
+        "tag": "InputOutputCoins",
+        "file": "/Cosmos/chain-registry/impacthub/repo/ixo-blockchain/x/claims/keeper/payments.go",
+        "line": 256,
+        "content": "// 2. if inputs and outputs are not empty, it makes the payment by calling k.BankKeeper.InputOutputCoins()"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.10"
+  },
+  "osmosis": {
+    "items": [
+      {
+        "tag": "SendCoinsFromAccountToModule",
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/gamm/keeper/pool.go",
+        "line": 191,
+        "content": "// \t\terr = k.bankKeeper.SendCoinsFromAccountToModule(ctx, addr, types.ModuleName, sdk.Coins{coin})"
+      },
+      {
+        "tag": "BurnCoins",
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/gamm/keeper/pool.go",
+        "line": 196,
+        "content": "// \t\terr = k.bankKeeper.BurnCoins(ctx, types.ModuleName, sdk.Coins{coin})"
+      },
+      {
+        "tag": "SendCoins",
+        "file": "/Cosmos/chain-registry/osmosis/repo/osmosis/x/gamm/keeper/pool.go",
+        "line": 208,
+        "content": "// \t\t\terr = k.bankKeeper.SendCoins("
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.12"
+  },
+  "pylons": {
+    "items": [
+      {
+        "tag": "WithdrawValidatorCommission",
+        "file": "/Cosmos/chain-registry/pylons/repo/pylons/app/export.go",
+        "line": 80,
+        "content": "// _, err := app.DistrKeeper.WithdrawValidatorCommission(ctx, val.GetOperator())"
+      },
+      {
+        "tag": "WithdrawDelegationRewards",
+        "file": "/Cosmos/chain-registry/pylons/repo/pylons/app/export.go",
+        "line": 90,
+        "content": "// _, err := app.DistrKeeper.WithdrawDelegationRewards(ctx, delegation.GetDelegatorAddr(), delegation.GetValidatorAddr())"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.46.6"
+  },
+  "coreum": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/testutil/simapp/simapp.go",
+        "line": 275,
+        "content": "t, s.BankKeeper.MintCoins(sdkCtx, minttypes.ModuleName, coins),"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/coreum/repo/coreum/testutil/simapp/simapp.go",
+        "line": 278,
+        "content": "t, s.BankKeeper.SendCoinsFromModuleToAccount(sdkCtx, minttypes.ModuleName, recipient, coins),"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.13"
+  },
+  "likecoin": {
+    "items": [
+      {
+        "tag": "ApplyAndReturnValidatorSetUpdates",
+        "file": "/Cosmos/chain-registry/likecoin/repo/likecoin-chain/app/export.go",
+        "line": 166,
+        "content": "app.StakingKeeper.ApplyAndReturnValidatorSetUpdates(ctx)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.46.16"
+  },
+  "stratos": {
+    "items": [
+      {
+        "tag": "BurnCoins",
+        "file": "/Cosmos/chain-registry/stratos/repo/stratos-chain/x/pot/keeper/keeper.go",
+        "line": 120,
+        "content": "k.bankKeeper.BurnCoins(ctx, distrtypes.ModuleName, coins)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.11"
+  },
+  "injective": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/suite.go",
+        "line": 70,
+        "content": "require.NoError(t, s.App.BankKeeper.MintCoins(s.Ctx, minttypes.ModuleName, InitCoins))"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/suite.go",
+        "line": 71,
+        "content": "require.NoError(t, s.App.BankKeeper.SendCoinsFromModuleToAccount(s.Ctx, minttypes.ModuleName, acc.GetAddress(), InitCoins))"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/common.go",
+        "line": 266,
+        "content": "input.BankKeeper.MintCoins(input.Context, minttypes.ModuleName, InitCoins)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/common.go",
+        "line": 267,
+        "content": "input.BankKeeper.SendCoinsFromModuleToAccount(input.Context, minttypes.ModuleName, acc.GetAddress(), InitCoins)"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/common.go",
+        "line": 326,
+        "content": "input.BankKeeper.MintCoins(input.Context, minttypes.ModuleName, InitCoins)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/common.go",
+        "line": 327,
+        "content": "input.BankKeeper.SendCoinsFromModuleToAccount(input.Context, minttypes.ModuleName, acc.GetAddress(), InitCoins)"
+      },
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/common.go",
+        "line": 651,
+        "content": "//\terr := k.BankKeeper.MintCoins(ctx, types.ModuleName, vouchers)"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/injective/repo/injective-core/injective-chain/modules/peggy/testpeggy/common.go",
+        "line": 652,
+        "content": "//\terr = k.BankKeeper.SendCoinsFromModuleToAccount(ctx, types.ModuleName, dest, vouchers)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.9"
+  },
+  "onex": {
+    "items": [
+      {
+        "tag": "WithdrawValidatorCommission",
+        "file": "/Cosmos/chain-registry/onex/repo/onex/app/export.go",
+        "line": 78,
+        "content": "// \t_, err := app.DistrKeeper.WithdrawValidatorCommission(ctx, val.GetOperator())"
+      },
+      {
+        "tag": "WithdrawDelegationRewards",
+        "file": "/Cosmos/chain-registry/onex/repo/onex/app/export.go",
+        "line": 88,
+        "content": "// \t_, err := app.DistrKeeper.WithdrawDelegationRewards(ctx, delegation.GetDelegatorAddr(), delegation.GetValidatorAddr())"
+      },
+      {
+        "tag": "ApplyAndReturnValidatorSetUpdates",
+        "file": "/Cosmos/chain-registry/onex/repo/onex/app/export.go",
+        "line": 169,
+        "content": "// if _, err := app.StakingKeeper.ApplyAndReturnValidatorSetUpdates(ctx); err != nil {"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.45.16"
+  },
+  "mantrachain": {
+    "items": [
+      {
+        "tag": "FundCommunityPool",
+        "file": "/Cosmos/chain-registry/mantrachain/repo/mantrachain/x/tokenfactory/keeper/createdenom.go",
+        "line": 89,
+        "content": "// if err := k.communityPoolKeeper.FundCommunityPool(ctx, params.DenomCreationFee, accAddr); err != nil {"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.11"
+  },
+  "odin": {
+    "items": [
+      {
+        "tag": "AddVote",
+        "file": "/Cosmos/chain-registry/odin/repo/odin-core/testing/utils.go",
+        "line": 34,
+        "content": "require.NoError(endpoint.Chain.T, endpoint.Chain.App.GovKeeper.AddVote("
+      },
+      {
+        "tag": "FundCommunityPool",
+        "file": "/Cosmos/chain-registry/odin/repo/odin-core/testing/testapp/setup.go",
+        "line": 425,
+        "content": "app.DistrKeeper.FundCommunityPool(ctx, DefaultCommunityPool, FeePoolProvider.Address)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.7"
+  },
+  "six": {
+    "items": [
+      {
+        "tag": "BurnCoins",
+        "file": "/Cosmos/chain-registry/six/repo/six-protocol/x/tokenmngr/keeper/msg_server_convert_to_atto.go",
+        "line": 71,
+        "content": "// if err := k.bankKeeper.BurnCoins(ctx, types.ModuleName, convertAmount); err != nil {"
+      }
+    ],
+    "result": "invalid",
+    "sdk_version": "0.45.9"
+  },
+  "elys": {
+    "items": [
+      {
+        "tag": "MintCoins",
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/amm/keeper/pool.go",
+        "line": 243,
+        "content": "k.bankKeeper.MintCoins(ctx, types.ModuleName, sdk.NewCoins(sdk.NewCoin(asset.Token.Denom, asset.Token.Amount.Sub(balance.Amount))))"
+      },
+      {
+        "tag": "SendCoinsFromModuleToAccount",
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/amm/keeper/pool.go",
+        "line": 244,
+        "content": "k.bankKeeper.SendCoinsFromModuleToAccount(ctx, types.ModuleName, sdk.MustAccAddressFromBech32(pool.GetAddress()), sdk.NewCoins(sdk.NewCoin(asset.Token.Denom, asset.Token.Amount.Sub(balance.Amount))))"
+      },
+      {
+        "tag": "SendCoinsFromAccountToModule",
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/amm/keeper/pool.go",
+        "line": 248,
+        "content": "k.bankKeeper.SendCoinsFromAccountToModule(ctx, sdk.MustAccAddressFromBech32(pool.GetAddress()), types.ModuleName, sdk.NewCoins(sdk.NewCoin(asset.Token.Denom, balance.Amount.Sub(asset.Token.Amount))))"
+      },
+      {
+        "tag": "BurnCoins",
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/amm/keeper/pool.go",
+        "line": 249,
+        "content": "k.bankKeeper.BurnCoins(ctx, types.ModuleName, sdk.NewCoins(sdk.NewCoin(asset.Token.Denom, balance.Amount.Sub(asset.Token.Amount))))"
+      },
+      {
+        "tag": "SendCoins",
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/leveragelp/keeper/position.go",
+        "line": 347,
+        "content": "k.bankKeeper.SendCoins(ctx, position.GetPositionAddress(), positionOwner, sdk.Coins{sdk.NewCoin(position.Collateral.Denom, userAmount)})"
+      },
+      {
+        "tag": "SendCoins",
+        "file": "/Cosmos/chain-registry/elys/repo/elys/x/leveragelp/keeper/position.go",
+        "line": 404,
+        "content": "k.bankKeeper.SendCoins(ctx, position.GetPositionAddress(), sdk.MustAccAddressFromBech32(position.Address), sdk.Coins{sdk.NewCoin(position.Collateral.Denom, payToUser)})"
+      }
+    ],
+    "result": "invalid : unexploit",
+    "sdk_version": "0.50.13"
+  },
+  "desmos": {
+    "items": [
+      {
+        "tag": "SaveGrant",
+        "file": "/Cosmos/chain-registry/desmos/repo/desmos/x/subspaces/keeper/msg_server.go",
+        "line": 883,
+        "content": "k.Keeper.SaveGrant(ctx, types.NewGrant(msg.SubspaceID, msg.Granter, msg.Grantee.GetCachedValue().(types.Grantee), allowance))"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.13"
+  },
+  "rebus": {
+    "items": [
+      {
+        "tag": "FundCommunityPool",
+        "file": "/Cosmos/chain-registry/rebus/repo/rebus.core/x/mint/keeper/keeper.go",
+        "line": 146,
+        "content": "k.distrKeeper.FundCommunityPool(ctx, communityRewardCoins, k.accountKeeper.GetModuleAddress(types.ModuleName))"
+      }
+    ],
+    "result": "valid",
+    "sdk_version": "0.45.12"
+  },
+  "odin1": {
+    "items": [
+      {
+        "tag": "AddVote",
+        "file": "/Cosmos/chain-registry/odin1/repo/odin-core/testing/utils.go",
+        "line": 34,
+        "content": "require.NoError(endpoint.Chain.T, endpoint.Chain.App.GovKeeper.AddVote("
+      },
+      {
+        "tag": "FundCommunityPool",
+        "file": "/Cosmos/chain-registry/odin1/repo/odin-core/testing/testapp/setup.go",
+        "line": 425,
+        "content": "app.DistrKeeper.FundCommunityPool(ctx, DefaultCommunityPool, FeePoolProvider.Address)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.50.7"
+  },
+  "regen": {
+    "items": [
+      {
+        "tag": "SendCoins",
+        "file": "/Cosmos/chain-registry/regen/repo/regen-ledger/x/ecocredit/server/testsuite/suite.go",
+        "line": 245,
+        "content": "require.NoError(s.bankKeeper.SendCoins(s.sdkCtx, user, user2, sdk.NewCoins(sdk.NewInt64Coin(basketDenom, i64BT))))"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.47.17"
+  },
+  "okexchain": {
+    "items": [
+      {
+        "tag": "WithdrawDelegationRewards",
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/app/export.go",
+        "line": 87,
+        "content": "//\t_, _ = app.DistrKeeper.WithdrawDelegationRewards(ctx, delegation.DelegatorAddress, delegation.ValidatorAddress)"
+      }
+    ],
+    "result": "",
+    "sdk_version": "0.39.2"
+  }
+}

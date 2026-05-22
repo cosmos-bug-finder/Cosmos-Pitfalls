@@ -1,0 +1,1222 @@
+{
+  "nibiru": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/nibiru/repo/nibiru/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 12,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 13,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 14,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 223,
+            "content": "// Override Wasm size limitation from WASMD."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 325,
+            "content": "&app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 443,
+            "content": "EvmKeeper:      app.EvmKeeper,"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "aura1": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/aura1/repo/aura/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 134,
+            "content": "wasmapp \"github.com/CosmWasm/wasmd/app\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 135,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 136,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 137,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 155,
+            "content": "evmkeeper \"github.com/evmos/evmos/v18/x/evm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 207,
+            "content": "// https://github.com/CosmWasm/wasmd/blob/02a54d33ff2c064f3539ae12d75d027d9c665f05/x/wasm/internal/types/proposal.go#L28-L34"
+          },
+          {
+            "tag": "wasmd",
+            "line": 216,
+            "content": "// produce a list of enabled proposals to pass into wasmd app."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 386,
+            "content": "EvmKeeper       *evmkeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 553,
+            "content": "evmKeeper := evmkeeper.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 559,
+            "content": "app.EvmKeeper = evmKeeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 560,
+            "content": "app.evmutilKeeper.SetEvmKeeper(app.EvmKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 564,
+            "content": "app.AccountKeeper, app.BankKeeper, app.EvmKeeper, app.StakingKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 640,
+            "content": "evmKeeper.WithPrecompiles("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 653,
+            "content": "app.EvmKeeper = app.EvmKeeper.SetHooks("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 654,
+            "content": "evmkeeper.NewMultiEvmHooks("
+          },
+          {
+            "tag": "wasmd",
+            "line": 660,
+            "content": "wasmDir := filepath.Join(homePath, \"wasm\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 684,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "wasmd",
+            "line": 711,
+            "content": "govRouter.AddRoute(wasmtypes.RouterKey, wasm.NewWasmProposalHandler(app.WasmKeeper, enabledProposals)) //nolint:staticcheck // still use same ver 0.41.0 of wasmd"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 767,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper, app.GetSubspace(evmtypes.ModuleName)),"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "axelar": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/axelar/repo/axelar-core/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 12,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 13,
+            "content": "wasmclient \"github.com/CosmWasm/wasmd/x/wasm/client\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 14,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 15,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 113,
+            "content": "evmKeeper \"github.com/axelarnetwork/axelar-core/x/evm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 163,
+            "content": "// MaxWasmSize specifies the maximum wasm code size (in bytes) that can be uploaded. wasmd's setting is used by default"
+          },
+          {
+            "tag": "wasmd",
+            "line": 164,
+            "content": "// https://github.com/CosmWasm/wasmd/blob/main/README.md#compile-time-parameters"
+          },
+          {
+            "tag": "wasmd",
+            "line": 207,
+            "content": "wasmDir string,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 245,
+            "content": "SetKeeper(keepers, initEvmKeeper(appCodec, keys, keepers))"
+          },
+          {
+            "tag": "wasmd",
+            "line": 262,
+            "content": "if wasmDir == \"\" {"
+          },
+          {
+            "tag": "wasmd",
+            "line": 264,
+            "content": "wasmDir = filepath.Join(homePath, dbDir, \"wasm\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 267,
+            "content": "wasmPath, err := filepath.Abs(wasmDir)"
+          },
+          {
+            "tag": "wasmd",
+            "line": 269,
+            "content": "panic(fmt.Sprintf(\"failed to resolve absolute path for new wasm dir %s: %v\", wasmDir, err))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 374,
+            "content": "GetKeeper[evmKeeper.BaseKeeper](keepers).InitChains(app.NewContext(true, tmproto.Header{}))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 444,
+            "content": "AddRoute(evmTypes.ModuleName, evmKeeper.NewMessageRoute())."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 602,
+            "content": "GetKeeper[evmKeeper.BaseKeeper](keepers),"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "paloma": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/paloma/repo/paloma/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 25,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 26,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 27,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 267,
+            "content": "EvmKeeper          evmmodulekeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 599,
+            "content": "app.EvmKeeper = *evmmodulekeeper.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 610,
+            "content": "&app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 613,
+            "content": "app.ValsetKeeper.EvmKeeper = app.EvmKeeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 614,
+            "content": "app.EvmKeeper.AddMessageConsensusAttestedListener(&app.MetrixKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 632,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 651,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 663,
+            "content": "app.EvmKeeper.Skyway = app.SkywayKeeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 664,
+            "content": "app.ConsensusKeeper.LateInject(app.EvmKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 682,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 684,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 694,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 703,
+            "content": "AddRoute(evmmoduletypes.RouterKey, evm.NewReferenceChainReferenceIDProposalHandler(app.EvmKeeper))."
+          },
+          {
+            "tag": "wasmd",
+            "line": 732,
+            "content": "wasmDir := filepath.Join(homePath, \"data\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 791,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 845,
+            "content": "evmModule := evm.NewAppModule(appCodec, app.EvmKeeper, app.AccountKeeper, app.BankKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1104,
+            "content": "app.EvmKeeper,"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "xpla": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/xpla/repo/xpla/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 57,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 58,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 59,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 303,
+            "content": "EvmKeeper:             app.EvmKeeper,"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "uptick": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/uptick/repo/uptick/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 11,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 12,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 13,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 123,
+            "content": "evmkeeper \"github.com/evmos/ethermint/x/evm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 191,
+            "content": "// https://github.com/CosmWasm/wasmd/blob/02a54d33ff2c064f3539ae12d75d027d9c665f05/x/wasm/internal/types/proposal.go#L28-L34"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 351,
+            "content": "EvmKeeper       *evmkeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 582,
+            "content": "app.EvmKeeper = evmkeeper.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 614,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 650,
+            "content": "app.EvmKeeper = app.EvmKeeper.SetHooks("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 651,
+            "content": "evmkeeper.NewMultiEvmHooks("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 693,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "wasmd",
+            "line": 712,
+            "content": "wasmDir := filepath.Join(homePath, \"data\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 736,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 813,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper, app.GetSubspace(evmtypes.ModuleName)),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 971,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper, app.GetSubspace(evmtypes.ModuleName)),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 999,
+            "content": "EvmKeeper:         app.EvmKeeper,"
+          }
+        ]
+      }
+    ],
+    "result": "valid"
+  },
+  "blockx": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/blockx/repo/uptick/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 11,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 12,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 13,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 123,
+            "content": "evmkeeper \"github.com/evmos/ethermint/x/evm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 191,
+            "content": "// https://github.com/CosmWasm/wasmd/blob/02a54d33ff2c064f3539ae12d75d027d9c665f05/x/wasm/internal/types/proposal.go#L28-L34"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 351,
+            "content": "EvmKeeper       *evmkeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 582,
+            "content": "app.EvmKeeper = evmkeeper.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 614,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 650,
+            "content": "app.EvmKeeper = app.EvmKeeper.SetHooks("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 651,
+            "content": "evmkeeper.NewMultiEvmHooks("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 693,
+            "content": "app.EvmKeeper,"
+          },
+          {
+            "tag": "wasmd",
+            "line": 712,
+            "content": "wasmDir := filepath.Join(homePath, \"data\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 736,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 813,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper, app.GetSubspace(evmtypes.ModuleName)),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 971,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper, app.GetSubspace(evmtypes.ModuleName)),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 999,
+            "content": "EvmKeeper:         app.EvmKeeper,"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "oraichain": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/oraichain/repo/orai/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 38,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 39,
+            "content": "wasmclient \"github.com/CosmWasm/wasmd/x/wasm/client\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 55,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 159,
+            "content": "evmkeeper \"github.com/tharsis/ethermint/x/evm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 189,
+            "content": "// produce a list of enabled proposals to pass into wasmd app."
+          },
+          {
+            "tag": "wasmd",
+            "line": 209,
+            "content": "// DefaultNodeHome default home directories for wasmd"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 343,
+            "content": "EvmKeeper          *evmkeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 523,
+            "content": "app.EvmKeeper = evmkeeper.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 528,
+            "content": "app.EvmutilKeeper.SetEvmKeeper(app.EvmKeeper)"
+          },
+          {
+            "tag": "wasmd",
+            "line": 623,
+            "content": "// For wasmd we use the demo controller from https://github.com/cosmos/interchain-accounts but see notes below"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 774,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 953,
+            "content": "EvmKeeper:     app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1011,
+            "content": "registry.InitializePrecompiles(app.ContractKeeper, app.WasmKeeper, app.EvmKeeper, app.BankKeeper, app.AccountKeeper)"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "titan": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/titan/repo/titan/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 121,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 122,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 123,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 131,
+            "content": "evmkeeper \"github.com/titantkx/ethermint/x/evm/keeper\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 335,
+            "content": "EvmKeeper       *evmkeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 520,
+            "content": "app.EvmKeeper = evmkeeper.NewKeeper("
+          },
+          {
+            "tag": "wasmd",
+            "line": 635,
+            "content": "wasmDir := filepath.Join(homePath, \"wasm\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 658,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 855,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper, evmSs),"
+          },
+          {
+            "tag": "wasmd",
+            "line": 1039,
+            "content": "// see cmd/wasmd/root.go: 206 - 214 approx"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1082,
+            "content": "EvmKeeper:              app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1086,
+            "content": "TxFeeChecker:           ethermintante.NewDynamicFeeChecker(app.EvmKeeper),"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "sei": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/sei/repo/sei-chain/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 19,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 131,
+            "content": "evmkeeper \"github.com/sei-protocol/sei-chain/x/evm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 158,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 159,
+            "content": "wasmclient \"github.com/CosmWasm/wasmd/x/wasm/client\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 160,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 254,
+            "content": "// See: https://github.com/CosmWasm/wasmd/blob/02a54d33ff2c064f3539ae12d75d027d9c665f05/x/wasm/internal/types/proposal.go#L28-L34"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 346,
+            "content": "EvmKeeper           evmkeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 530,
+            "content": "evmkeeper.NewEvmAddressHandler(&app.EvmKeeper),"
+          },
+          {
+            "tag": "wasmd",
+            "line": 547,
+            "content": "wasmDir := filepath.Join(homePath, \"wasm\")"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 593,
+            "content": "&app.EvmKeeper,"
+          },
+          {
+            "tag": "wasmd",
+            "line": 613,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 631,
+            "content": "app.EvmKeeper = *evmkeeper.NewKeeper(keys[evmtypes.StoreKey],"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 635,
+            "content": "app.BankKeeper.RegisterRecipientChecker(app.EvmKeeper.CanAddressReceive)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 648,
+            "content": "app.EvmKeeper.QueryConfig = &evmQueryConfig"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 653,
+            "content": "app.EvmKeeper.EthReplayConfig = ethReplayConfig"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 658,
+            "content": "app.EvmKeeper.EthBlockTestConfig = ethBlockTestConfig"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 664,
+            "content": "app.EvmKeeper.EthClient = ethclient.NewClient(rpcclient)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 690,
+            "content": "aclOpts = append(aclOpts, aclkeeper.WithDependencyGeneratorMappings(customDependencyGenerators.GetCustomDependencyGenerators(app.EvmKeeper)))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 712,
+            "content": "AddRoute(evmtypes.RouterKey, evm.NewProposalHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 734,
+            "content": "&app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 752,
+            "content": "app.EvmKeeper.SetCustomPrecompiles(customPrecompiles, LatestUpgrade)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 787,
+            "content": "evm.NewAppModule(appCodec, &app.EvmKeeper),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 957,
+            "content": "EVMKeeper:           &app.EvmKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1027,
+            "content": "return app.EvmKeeper.FlushTransientReceipts(ctx)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1225,
+            "content": "if app.EvmKeeper.EthReplayConfig.Enabled || app.EvmKeeper.EthBlockTestConfig.Enabled {"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1240,
+            "content": "if app.EvmKeeper.EthReplayConfig.Enabled || app.EvmKeeper.EthBlockTestConfig.Enabled {"
+          },
+          {
+            "tag": "wasmd",
+            "line": 1452,
+            "content": "ctx = app.addBadWasmDependenciesToContext(ctx, concurrentResults)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1653,
+            "content": "app.EvmKeeper.SetTxResults(txResults)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1654,
+            "content": "app.EvmKeeper.SetMsgs(evmTxs)"
+          },
+          {
+            "tag": "wasmd",
+            "line": 1727,
+            "content": "func (app *App) addBadWasmDependenciesToContext(ctx sdk.Context, txResults []*abci.ExecTxResult) sdk.Context {"
+          },
+          {
+            "tag": "wasmd",
+            "line": 1746,
+            "content": "return ctx.WithContext(context.WithValue(ctx.Context(), aclconstants.BadWasmDependencyAddressesKey, wasmContractsWithIncorrectDependencies))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1750,
+            "content": "if app.EvmKeeper.EthReplayConfig.Enabled || app.EvmKeeper.EthBlockTestConfig.Enabled {"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1895,
+            "content": "evmHTTPServer, err := evmrpc.NewEVMHTTPServer(app.Logger(), app.evmRPCConfig, clientCtx.Client, &app.EvmKeeper, app.BaseApp, app.AnteHandler, app.RPCContextProvider, app.encodingConfig.TxConfig, DefaultNodeHome, nil, app.mevHandler)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1905,
+            "content": "evmWSServer, err := evmrpc.NewEVMWebSocketServer(app.Logger(), app.evmRPCConfig, clientCtx.Client, &app.EvmKeeper, app.BaseApp, app.AnteHandler, app.RPCContextProvider, app.encodingConfig.TxConfig, DefaultNodeHome)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 1939,
+            "content": "isGasless, err := antedecorators.IsTxGasless(decodedTx, ctx, app.OracleKeeper, &app.EvmKeeper)"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "aura": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/aura/repo/aura/app/app.go",
+        "matches": [
+          {
+            "tag": "wasmd",
+            "line": 134,
+            "content": "wasmapp \"github.com/CosmWasm/wasmd/app\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 135,
+            "content": "\"github.com/CosmWasm/wasmd/x/wasm\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 136,
+            "content": "wasmkeeper \"github.com/CosmWasm/wasmd/x/wasm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 137,
+            "content": "wasmtypes \"github.com/CosmWasm/wasmd/x/wasm/types\""
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 155,
+            "content": "evmkeeper \"github.com/evmos/evmos/v18/x/evm/keeper\""
+          },
+          {
+            "tag": "wasmd",
+            "line": 207,
+            "content": "// https://github.com/CosmWasm/wasmd/blob/02a54d33ff2c064f3539ae12d75d027d9c665f05/x/wasm/internal/types/proposal.go#L28-L34"
+          },
+          {
+            "tag": "wasmd",
+            "line": 216,
+            "content": "// produce a list of enabled proposals to pass into wasmd app."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 386,
+            "content": "EvmKeeper       *evmkeeper.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 553,
+            "content": "evmKeeper := evmkeeper.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 559,
+            "content": "app.EvmKeeper = evmKeeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 560,
+            "content": "app.evmutilKeeper.SetEvmKeeper(app.EvmKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 564,
+            "content": "app.AccountKeeper, app.BankKeeper, app.EvmKeeper, app.StakingKeeper,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 640,
+            "content": "evmKeeper.WithPrecompiles("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 653,
+            "content": "app.EvmKeeper = app.EvmKeeper.SetHooks("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 654,
+            "content": "evmkeeper.NewMultiEvmHooks("
+          },
+          {
+            "tag": "wasmd",
+            "line": 660,
+            "content": "wasmDir := filepath.Join(homePath, \"wasm\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 684,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "wasmd",
+            "line": 711,
+            "content": "govRouter.AddRoute(wasmtypes.RouterKey, wasm.NewWasmProposalHandler(app.WasmKeeper, enabledProposals)) //nolint:staticcheck // still use same ver 0.41.0 of wasmd"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 767,
+            "content": "evm.NewAppModule(app.EvmKeeper, app.AccountKeeper, app.GetSubspace(evmtypes.ModuleName)),"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  },
+  "okexchain": {
+    "items": [
+      {
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/app/app.go",
+        "matches": [
+          {
+            "tag": "evmkeeper",
+            "line": 257,
+            "content": "EvmKeeper            *evm.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 421,
+            "content": "app.EvmKeeper = evm.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 423,
+            "content": "(&bankKeeper).SetInnerTxKeeper(app.EvmKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 437,
+            "content": "app.FarmKeeper = farm.NewKeeper(auth.FeeCollectorName, app.SupplyKeeper, app.TokenKeeper, app.SwapKeeper, *app.EvmKeeper, app.subspaces[farm.StoreKey],"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 439,
+            "content": "app.InfuraKeeper = infura.NewKeeper(app.EvmKeeper, logger, streamMetrics)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 503,
+            "content": "app.AccountKeeper, app.SupplyKeeper, app.BankKeeper, app.EvmKeeper, app.TransferKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 507,
+            "content": "app.EvmKeeper, app.SupplyKeeper, app.AccountKeeper)"
+          },
+          {
+            "tag": "wasmd",
+            "line": 511,
+            "content": "wasmDir := wasm.WasmDir()"
+          },
+          {
+            "tag": "wasmd",
+            "line": 529,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 534,
+            "content": "(&app.WasmKeeper).SetInnerTxKeeper(app.EvmKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 546,
+            "content": "AddRoute(evm.RouterKey, evm.NewManageContractDeploymentWhitelistProposalHandler(app.EvmKeeper))."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 558,
+            "content": "AddRoute(evm.RouterKey, app.EvmKeeper)."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 573,
+            "content": "app.EvmKeeper.SetGovKeeper(app.GovKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 617,
+            "content": "app.VMBridgeKeeper = vmbridge.NewKeeper(app.marshal, app.Logger(), app.EvmKeeper, app.WasmPermissionKeeper, app.AccountKeeper, app.BankKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 618,
+            "content": "app.EvmKeeper.SetCallToCM(vmbridge.PrecompileHooks(app.VMBridgeKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 620,
+            "content": "app.EvmKeeper.SetHooks("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 646,
+            "content": "evm.NewAppModule(app.EvmKeeper, &app.AccountKeeper),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 755,
+            "content": "app.SetAnteHandler(ante.NewAnteHandler(app.AccountKeeper, app.EvmKeeper, app.SupplyKeeper, validateMsgHook(app.OrderKeeper), app.WasmHandler, app.IBCKeeper, app.StakingKeeper, app.ParamsKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 757,
+            "content": "app.SetGasRefundHandler(refund.NewGasRefundHandler(app.AccountKeeper, app.SupplyKeeper, app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 759,
+            "content": "app.AddCustomizeModuleOnStopLogic(NewEvmModuleStopLogic(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 760,
+            "content": "app.SetMptCommitHandler(NewMptCommitHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 764,
+            "content": "app.SetParallelTxLogHandlers(fixLogForParallelTxHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 766,
+            "content": "app.SetPartialConcurrentHandlers(getTxFeeAndFromHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 768,
+            "content": "app.SetEvmSysContractAddressHandler(NewEvmSysContractAddressHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 769,
+            "content": "app.SetEvmWatcherCollector(app.EvmKeeper.Watcher.Collect)"
+          }
+        ]
+      },
+      {
+        "file": "/Cosmos/chain-registry/okexchain/repo/exchain/libs/ibc-go/testing/simapp/app.go",
+        "matches": [
+          {
+            "tag": "evmkeeper",
+            "line": 263,
+            "content": "EvmKeeper      *evm.Keeper"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 425,
+            "content": "app.EvmKeeper = evm.NewKeeper("
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 427,
+            "content": "(&bankKeeper).SetInnerTxKeeper(app.EvmKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 441,
+            "content": "app.FarmKeeper = farm.NewKeeper(auth.FeeCollectorName, app.SupplyKeeper.Keeper, app.TokenKeeper, app.SwapKeeper, *app.EvmKeeper, app.subspaces[farm.StoreKey],"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 511,
+            "content": "app.AccountKeeper, app.SupplyKeeper, app.BankKeeper, app.EvmKeeper, app.TransferKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 521,
+            "content": "AddRoute(evm.RouterKey, evm.NewManageContractDeploymentWhitelistProposalHandler(app.EvmKeeper))."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 530,
+            "content": "AddRoute(evm.RouterKey, app.EvmKeeper)."
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 541,
+            "content": "app.EvmKeeper.SetGovKeeper(app.GovKeeper)"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 548,
+            "content": "//app.EvmKeeper.SetHooks(evm.NewLogProcessEvmHook(erc20.NewSendToIbcEventHandler(app.Erc20Keeper)))"
+          },
+          {
+            "tag": "wasmd",
+            "line": 599,
+            "content": "wasmDir := filepath.Join(homeDir, \"wasm\")"
+          },
+          {
+            "tag": "wasmd",
+            "line": 620,
+            "content": "wasmDir,"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 639,
+            "content": "evm2.TNewEvmModuleAdapter(app.EvmKeeper, &app.AccountKeeper),"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 746,
+            "content": "app.SetAnteHandler(ante.NewAnteHandler(app.AccountKeeper, app.EvmKeeper, app.SupplyKeeper, validateMsgHook(app.OrderKeeper), app.WasmHandler, app.IBCKeeper, app.StakingKeeper, app.ParamsKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 748,
+            "content": "app.SetGasRefundHandler(refund.NewGasRefundHandler(app.AccountKeeper, app.SupplyKeeper, app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 753,
+            "content": "app.SetParallelTxLogHandlers(fixLogForParallelTxHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 754,
+            "content": "app.SetPartialConcurrentHandlers(getTxFeeAndFromHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 756,
+            "content": "app.SetEvmSysContractAddressHandler(NewEvmSysContractAddressHandler(app.EvmKeeper))"
+          },
+          {
+            "tag": "evmkeeper",
+            "line": 813,
+            "content": "func getTxFeeAndFromHandler(ek ante.EVMKeeper) sdk.GetTxFeeAndFromHandler {"
+          }
+        ]
+      }
+    ],
+    "result": "invalid"
+  }
+}
