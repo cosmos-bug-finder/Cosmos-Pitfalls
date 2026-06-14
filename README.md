@@ -128,7 +128,7 @@ Full-chain or unit-test output (e.g., event logs) is too noisy to pinpoint the i
 
 ## D. Propagation Analysis
 
-Propagation analysis is determined through **manual code auditing** of inheritance relationships. Pairwise code similarity (`Similarity = 1 − (added + removed) / total`, via `git diff --no-index --numstat`; [source](./record/simlarity/similarity.py)) with Union-Find clustering is provided as supplementary quantitative evidence.
+Propagation analysis is determined through **manual code auditing** of inheritance relationships. Pairwise code similarity (`Similarity = 1 − (added + removed) / total`, via `git diff --no-index --numstat`; [source](./record/simlarity/similarity.py)) with Union-Find clustering is provided as supplementary quantitative evidence. 
 
 ### Full Similarity Matrices
 
@@ -252,7 +252,8 @@ Regarding detection methodology, existing static analysis tools (e.g., CodeQL an
 <details>
 <summary><b>Q: Do all matches indicate vulnerabilities?</b></summary>
 
-Crucially, we do not treat the presence of a risky pattern as a confirmed vulnerability. Some projects intentionally adopt such patterns under specific architectural constraints. For example, in `Band` (P5), although our PoC demonstrated a dirty write condition, the project's indexing mechanism prevents practical impact. Likewise, many P7 candidates deliberately restrict the message types handled by `router.handler` and relax signer checks to serve specific business logic. Among the P6 matches, from the search results, projects like `Helio` and `Injective` are matched, but they are not exploitable since the logic is in `genesis` flows or uses `SendCoinsFromModuleToAccount`, preventing attackers from directly triggering transfer failures. We excluded such contextually safe cases. Our final results therefore include only findings that we determine to remain exploitable after contextual and exploitability analysis.
+Crucially, we do not treat the presence of a risky pattern as a confirmed vulnerability. Some projects intentionally adopt such patterns under specific architectural constraints. For example, in `Band` (P5), although our PoC demonstrated a dirty write condition, the project's indexing mechanism prevents practical impact. Likewise, many P7 candidates deliberately restrict the message types handled by `router.handler` and relax signer checks to serve specific business logic. Among the P6 matches, from the search results, projects like `Helio` and `Injective` are matched, but they are not exploitable since the logic is in `genesis` flows or uses `SendCoinsFromModuleToAccount`, preventing attackers from directly triggering transfer failures. We excluded such contextually safe cases. Our final results therefore include only findings that we determine to remain exploitable after contextual and exploitability analysis. Notably, P8 is found when using Evmos and modules that support `router.Handler`; however, after Evmos was deprecated and significantly modified by Cosmos maintainers, signature verification was moved into `Msg.ValidateBasic`, preventing the exploit from reaching Evmos through `router.Handler` due to failed signature checks. Therefore, Evmos-like modules with custom gas mechanisms still require manual review to determine whether other modules can directly invoke Evmos methods.
+
 
 The detailed exclusion records for each pitfall category in chain-registry are documented in [`./record/negative-record/`](./record/negative-record/). Since it is difficult to document the findings found directly on GitHub, we just show the positive results above.
 
