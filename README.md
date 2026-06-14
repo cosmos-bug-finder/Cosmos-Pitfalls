@@ -97,7 +97,7 @@ The following shows what we consider to be high-impact findings in this study.
 
 The vast majority of the projects listed above remain available when we identified the issue (verified by the accessibility of their official websites at the time the issues were identified). In addition, other items have been retained in the list due to their unique significance. For instance, `HalbornSecurity` was discovered as a CTF challenge created by an external party based on one of our previous findings. While `Cosmos/Evm` and `Ignite` are not projects, they are widely utilized as dependency libraries or tutorial code.
 
-It is worth noting that although `P5` and `P7` each contain only one finding in our result set, this does not mean the pitfall patterns are isolated. For `P5`, we observed the same development pattern in `Band` project and provided [PoCs](https://github.com/cosmos-bug-finder/Cosmos-Pitfalls/tree/main/poc/P5#band-excluded--not-exploitable), but excluded those cases because special business-logic designs constrained the full exploit chain. For `P7`, we identified another project with the same pattern, but since the project did not respond to our disclosure, we omit all details for ethical reasons.
+Although `P5` and `P7` each have only one validated finding, the patterns are not isolated. For `P5`, we observed the same pattern in `Band` and provide a [PoC](https://github.com/cosmos-bug-finder/Cosmos-Pitfalls/tree/main/poc/P5#band-excluded--not-exploitable), but exclude it due to business-logic constraints. For `P7`, we found another instance but omit details for ethical reasons because the project did not respond to disclosure.
 
 ### Originality Statement
 
