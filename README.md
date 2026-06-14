@@ -281,9 +281,28 @@ Yes, the 65 validated findings represent a lower bound. Our keyword-matching ste
 | Uptick | [https://www.upticknft.com/marketplace](https://www.upticknft.com/marketplace) |
 | Pell Network | [https://pell.network/](https://pell.network/) |
 
-The above projects were identified in `Table 3` as possessing economic value but were not annotated with total economic metrics due to the lack of coverage by CoinMarketCap; their mainnet portals are provided here to substantiate their economic functionality.
+The above projects were identified in `Table 3` as possessing economic value but were not annotated with total economic metrics due to the lack of coverage by CoinMarketCap; their mainnet portals are provided here to substantiate their economic functionality. The market capitalization of other Cosmos projects can be seen on [Mintscan](https://www.mintscan.io/).
 
-## G. Record
+## H. Real-world Impact Discussion and Severity Clarification
+
+Using a conservative severity standard, we treat **P5** and **P7** as **Critical** due to direct asset-theft impact, **P2** and **P8** as **High** due to direct chain-halt impact, and **P1**, **P3**, **P4**, and **P6** as **Medium/Low** because no practical path to significant value asset theft or direct chain halt has been identified.
+
+| Case                                        | Scope and Rationale                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **P7 Secret Network**                       | **Included.** Secret’s market capitalization was approximately **$50M** when P7 was identified, and the issue had a direct asset-theft path. [SCRT](https://coinmarketcap.com/currencies/secret/)                                                                                                                                                                                                                                             |
+| **P5 Evmos / Ethermint**                    | **Included.** Evmos’ market capitalization later peaked at approximately **$2B** in 2022, although the issue was identified in 2021 when market-cap records were unavailable. [EVMOS](https://coinmarketcap.com/currencies/evmos/)                                                                                                                                                                                                            |
+| **P5 related EVM chains**                   | **Excluded.** These chains reused the affected EVMOS code only after P5 had already been fixed in the upstream dependency. Examples include [Cronos](https://coinmarketcap.com/currencies/cronos/), [Injective](https://coinmarketcap.com/currencies/injective/), [Kava](https://coinmarketcap.com/currencies/kava/), [ZetaChain](https://coinmarketcap.com/currencies/zetachain/), and [MANTRA](https://coinmarketcap.com/currencies/mantra/). |
+| **P4 duplicated-event / fake-deposit risk** | **Excluded.** In exchanges we could register, deposits required `Tx.memos`, which blocked fake deposit exploitation through indirect transfers. Risk may still exist for systems that credit deposits from contract calls or special message handlers, where one transfer can emit multiple transfer events.                                                                                                                                                    |
+| **P6 unchecked transfer failure**           | **Excluded.** The asset value is project-specific and unclear; for example, Jackal names do not have an obvious market value.                                                                                                                                                                                                                                                                                                                 |
+
+**P1** does not directly halt chains like P2 or P8, but can cause several-fold excess gas consumption under `MaxGas`. Interestingly, when combined with another Cosmos SDK issue we identified, P1 can cause a much larger gas-consumption amplification; see the [P1 appendix](https://github.com/cosmos-bug-finder/Cosmos-Pitfalls/tree/main/poc/P1#appendix) for details.
+
+**P3** causes event loss rather than asset theft or chain halt. This can still mislead bridges, exchanges, and indexers: critical mint or transfer records may be missed, degrading user experience and increasing reliance on centralized tracking infrastructure.
+
+
+
+
+## H. Record
 
 The [`record/`](./record/) directory contains supplementary data for this research:
 
