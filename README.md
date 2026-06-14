@@ -10,12 +10,12 @@ The following shows what we consider to be high-impact findings in this study.
 
 - [Evmos/ethermint](./high-light-findings/evm-ethermint) - `Evmos/ethermint` is a widely used evm module in Cosmos ecosystem, including Cronos($3.13B), Injective($310M), Mantra($71.84M), Kava($61M), Zeta($71M) and so on.([CVE](https://www.cve.org/CVERecord?id=CVE-2021-25837))
 
-- [Secret](./high-light-findings/secret) - Prevented the potential $50 million value assets theft ([acknowledgment](./record/acknowledgments/secret.md))
+- [Secret](./high-light-findings/secret) - Prevented the potential $50 million value assets theft ([Acknowledgment](./record/acknowledgments/secret.md))
 
 ### Chain Halt
 
 - [Mantra](./high-light-findings/mantra-tokenfactory) - Market capitalization of $50 million([CVE](https://github.com/MANTRA-Chain/mantrachain/security/advisories/GHSA-qwvm-wqq8-8j69))
-- [Injective](./high-light-findings/Injective) - Market capitalization of $300 million ([acknowledgment](./record/acknowledgments/injective.md))
+- [Injective](./high-light-findings/Injective) - Market capitalization of $300 million ([Acknowledgment](./record/acknowledgments/injective.md))
 
 ## B. Findings Summary
 
@@ -67,7 +67,7 @@ The following shows what we consider to be high-impact findings in this study.
 | 36 |  | [Hetu Chain](https://github.com/hetu-project/hetu-chain) | Mock | [hetu-chain#2](https://github.com/hetu-project/hetu-chain/issues/2) | - | EVM | ✅ [Fixed](https://github.com/hetu-project/hetu-chain/pull/3) | [Issue Credit](https://github.com/hetu-project/hetu-chain/issues/2) |
 | 37 |  | [Helios Core](https://github.com/helios-network/helios-core) | Mock | [helios-core#36](https://github.com/helios-network/helios-core/issues/36) | - | EVM | [Acknowledged](https://github.com/helios-network/helios-core/issues/36) | [Issue Credit](https://github.com/helios-network/helios-core/issues/36) |
 | 38 |  | [LambdaVM](https://github.com/LambdaIM/lambdavm) | Mock | [lambdavm#255](https://github.com/LambdaIM/lambdavm/issues/255) | - | EVM | - | - |
-| 39 |  | [Guru](https://github.com/GPTx-global/guru) | Mock | [guru-v1#32](https://github.com/gurufinglobal/guru-v1/issues/32) | - | EVM | Acknowledged | [Issue Credit](https://github.com/gurufinglobal/guru-v1/issues/32) |
+| 39 |  | [Guru](https://github.com/GPTx-global/guru) | Mock | [guru-v1#32](https://github.com/gurufinglobal/guru-v1/issues/32) | - | EVM | [Acknowledged](https://github.com/gurufinglobal/guru-v1/issues/32) | [Issue Credit](https://github.com/gurufinglobal/guru-v1/issues/32) |
 | 40 |  | [Bridgeless Core](https://github.com/hyle-team/bridgeless-core) | Mock | [bridgeless-core#99](https://github.com/Bridgeless-Project/bridgeless-core/issues/99) | - | EVM | ✅ [Fixed](https://github.com/Bridgeless-Project/bridgeless-core/pull/101) | [Issue Credit](https://github.com/Bridgeless-Project/bridgeless-core/issues/99) |
 | 41 |  | [Egochain](https://github.com/EgorasMarket/Egochain-Blockchain) | Mock | [Egochain#223](https://github.com/EgorasMarket/Egochain-Blockchain/issues/223) | - | EVM | - | - |
 | 42 |  | [CVN](https://github.com/cvn-network/cvn) | Mock | [cvn#3](https://github.com/cvn-network/cvn/issues/3) | - | EVM | - | - |
@@ -80,7 +80,7 @@ The following shows what we consider to be high-impact findings in this study.
 | 49 |  | [OLLO](https://github.com/OllO-Station/ollo) | Mock | [ollo#75](https://github.com/OllO-Station/ollo/issues/75) | - | EVM | - | - |
 | 50 | **P5** | [Evmos](https://github.com/evmos/evmos) | Full Chain | [CVE-2021-25837](https://www.cve.org/CVERecord?id=CVE-2021-25837) | - |  | ✅ Fixed | [**CVE-2021-25837**](https://www.cve.org/CVERecord?id=CVE-2021-25837) |
 | 51 | **P6** | [Jackal](https://github.com/JackalLabs/canine-chain) | UnitTest | [canine-chain#8](https://github.com/JackalLabs/canine-chain/issues/8) | - | RNS | ✅ [Fixed](https://github.com/JackalLabs/canine-chain/pull/9) | [Issue Credit](https://github.com/JackalLabs/canine-chain/issues/8) |
-| 52 |  | [Ignite](https://github.com/ignite/cli/blob/main/docs/versioned_docs/version-v0.26/02-guide) | UnitTest | [cli#2828](https://github.com/ignite/cli/issues/2828) | - | RNS & Loan | ✅ (Fixed)[https://github.com/ignite/cli/issues/2828] | [Issue Credit](https://github.com/ignite/cli/issues/2828) |
+| 52 |  | [Ignite](https://github.com/ignite/cli/blob/main/docs/versioned_docs/version-v0.26/02-guide) | UnitTest | [cli#2828](https://github.com/ignite/cli/issues/2828) | - | RNS & Loan | ✅ [Fixed](https://github.com/ignite/cli/issues/2828) | [Issue Credit](https://github.com/ignite/cli/issues/2828) |
 | 53 |  | [Side Protocol](https://github.com/sideprotocol/ibcswap) | UnitTest | [ibcswap#8](https://github.com/sideprotocol/ibcswap/issues/8) | - |  | ✅ [Fixed](https://github.com/sideprotocol/ibcswap/commit/85f9d32099ebd6558486610bdb9f7918282a590f) | [Issue Credit](https://github.com/sideprotocol/ibcswap/issues/8) |
 | 54 |  | [OLLO](https://github.com/OllO-Station/ollo) | UnitTest | [ollo#20](https://github.com/OllO-Station/ollo/issues/20) | - | Loan | ✅ [Fixed](https://github.com/OllO-Station/ollo/commit/9ed0245b09218858a3806064af683cb18e1e1a39) | [Issue Credit](https://github.com/OllO-Station/ollo/issues/20) |
 | 55 |  | [Ununifi](https://github.com/exoralayer/chain) | UnitTest | [chain#612](https://github.com/exoralayer/chain/issues/612) | - |  | ✅ [Fixed](https://github.com/exoralayer/chain/commit/eac956e480e264341c13530094c153b11e9fc3a7) | [Issue Credit](https://github.com/exoralayer/chain/issues/612) |
@@ -90,7 +90,7 @@ The following shows what we consider to be high-impact findings in this study.
 | 59 |  | [hero](https://github.com/strangelove-ventures/hero) | UnitTest | [msg_server_burn.go#L41](https://github.com/strangelove-ventures/hero/blob/d6737b82c5ff4976f9a9a57d75a73d61f84bf395/x/tokenfactory/keeper/msg_server_burn.go#L41) | - |  | - | - |
 | 60 |  | [decoGit](https://github.com/ritajeong/decoGit) | UnitTest | [msg_server_buy_sticker.go#L39](https://github.com/ritajeong/decoGit/blob/9cc1398419dfd0dc26577a7709bcbbf919c1d0d2/server/chain/x/decogit/keeper/msg_server_buy_sticker.go#L39) | - |  | - | - |
 | 61 |  | [HalbornSecurity](https://github.com/HalbornSecurity/CTFs) | UnitTest | [msg_server_mint_hal.go#L55](https://github.com/HalbornSecurity/CTFs/blob/684f1af02132d4cfa4c6ac04924d8c8391a6e9cf/HalbornCTF_Golang_Cosmos/x/hal/keeper/msg_server_mint_hal.go#L55) | - |  | - | - |
-| 62 | **P7** | [Secret Network](https://github.com/scrtlabs/SecretNetwork) | Full Chain | [Ack](../../record/acknowledgments/secret.md) | - |  | ✅ [Fixed](./record/acknowledgments/secret.md) | [Private Credit](https://www.mintscan.io/secret/address/secret10e2s2ygx7zmdcrnmwphuljl8sg0ytl6aam545t) |
+| 62 | **P7** | [Secret Network](https://github.com/scrtlabs/SecretNetwork) | Full Chain | [Ack](./record/acknowledgments/secret.md) | - |  | ✅ [Fixed](./record/acknowledgments/secret.md) | [Bounty Evident](https://www.mintscan.io/secret/address/secret10e2s2ygx7zmdcrnmwphuljl8sg0ytl6aam545t) |
 | 63 | **P8** | [Injective](https://github.com/InjectiveFoundation/injective-core) | Full Chain | [app.go#L349-L353](https://github.com/InjectiveFoundation/injective-core/blob/release/v1.18.x/injective-chain/app/app.go#L349-L353) | [Privileged Account](https://docs.injective.network/developers-cosmwasm/smart-contracts/your-first-smart-contract#upload-the-wasm-contract) | Evm & Wasm  | ✅ Fixed | [Private Credit](./record/acknowledgments/injective.md) |
 | 64 |  | [PellNetwork](https://github.com/0xPellNetwork/aegis) | Full Chain | [app.go#L331-L341](https://github.com/0xPellNetwork/aegis/blob/main/app/app.go#L331-L341) | - | Evm & Wasm | - | - |
 | 65 |  | [Uptick](https://github.com/UptickNetwork/uptick) | Full Chain | [app.go#L89-L96](https://github.com/UptickNetwork/uptick/blob/main/app/app.go#L89-L96) | - | Evm & Wasm | ✅ [Fixed](https://github.com/UptickNetwork/uptick/releases/tag/v0.3.1) | [Release Credit](https://github.com/UptickNetwork/uptick/releases/tag/v0.3.1) |
@@ -285,7 +285,7 @@ The above projects were identified in `Table 3` as possessing economic value but
 
 ## H. Real-world Impact Discussion and Severity Clarification
 
-Using a conservative severity standard, we treat **P5** and **P7** as **Critical** due to direct asset-theft impact, **P2** and **P8** as **High** due to direct chain-halt impact, and **P1**, **P3**, **P4**, and **P6** as **Medium/Low** because no practical path to significant value asset theft or direct chain halt has been identified.
+Using a conservative severity standard, we treat **P5** and **P7** as **Critical** due to direct asset-theft impact, **P2** and **P8** as **High** due to direct chain-halt impact, and **P1**, **P3**, **P4**, and **P6** as **Medium/Low** because no practical path to significant asset theft or direct chain halt has been identified. The table below lists cases that we consider relevant to the direct significant asset-impact assessment, including both cases we include and cases we exclude, together with the rationale for each decision.
 
 | Case                                        | Scope and Rationale                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
