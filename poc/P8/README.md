@@ -8,7 +8,7 @@
 |---|---------|----------|-----------------|
 | 63 | [Injective](https://github.com/InjectiveFoundation/injective-core) | Full Chain | [app.go#L349-L353](https://github.com/InjectiveFoundation/injective-core/blob/release/v1.18.x/injective-chain/app/app.go#L349-L353) |
 | 64 | [Uptick](https://github.com/UptickNetwork/uptick) | Full Chain | [app.go#L89-L96](https://github.com/UptickNetwork/uptick/blob/main/app/app.go#L89-L96) |
-| 65 |  | [Althea](https://github.com/AltheaFoundation/althea-L1) | [-](https://github.com/AltheaFoundation/althea-L1/commit/ced08fcbdb5c0c1f2b16fa79c62cd0301c64ad91) |
+| 65 | [Althea](https://github.com/AltheaFoundation/althea-L1) | [-](https://github.com/AltheaFoundation/althea-L1/commit/ced08fcbdb5c0c1f2b16fa79c62cd0301c64ad91) |
 
 ---
 
