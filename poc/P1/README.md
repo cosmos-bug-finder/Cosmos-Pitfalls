@@ -8,12 +8,12 @@
 |---|---------|----------|-----------------|
 | 1 | [Mantra](https://github.com/MANTRA-Chain/mantrachain) | UnitTest | [cosmos-sdk#25303](https://github.com/cosmos/cosmos-sdk/pull/25303) |
 | 2 | [Osmosis](https://github.com/osmosis-labs/osmosis) | UnitTest | [osmosis#9511](https://github.com/osmosis-labs/osmosis/pull/9511) |
-| 3 | [Neutron](https://github.com/neutron-org/neutron) | UnitTest | [neutron#978](https://github.com/neutron-org/neutron/pull/978) |
+| 3 | [n***](https://github.com/n***-org/n***) | UnitTest | [n***#978](https://github.com/n***-org/n***/pull/978) |
 | 4 | [Tower](https://github.com/quasar-finance/quasar) | UnitTest | [before_send.go#L161](https://github.com/quasar-finance/quasar/blob/main/x/tokenfactory/keeper/before_send.go#L161) |
 | 5 | [Phoenix](https://github.com/phoenix-directive/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) |
 | 6 | [JMES](https://github.com/jmesworld/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) |
 | 7 | [Symphony](https://github.com/Orchestra-Labs/symphony) | UnitTest | [before_send.go#L165](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/before_send.go#L165) |
-| 8 | [Juno](https://github.com/CosmosContracts/juno) | UnitTest | [contracts.go#L70-L87](https://github.com/CosmosContracts/juno/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) |
+| 8 | [j***](https://github.com/CosmosContracts/j***) | UnitTest | [contracts.go#L70-L87](https://github.com/CosmosContracts/j***/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) |
 
 ---
 
@@ -35,7 +35,7 @@
 ## PoC
 
 
-### PoC #1–#7: TokenFactory (Mantra, Osmosis, Neutron, Tower, Phoenix, JMES, Symphony)
+### PoC #1–#7: TokenFactory (Mantra, Osmosis, n***, Tower, Phoenix, JMES, Symphony)
 
 A minimal reproduction would:
 
@@ -115,7 +115,7 @@ Same issue also find in concentrated-liquidity. plz remember review all .WithGas
 - Consensus/Liveness degradation: Blocks can contain work far exceeding MaxGas while appearing cheap in accounting, extending block execution time.
 - Economic impact: High allowing unfair proposer advantage. Specifically, malicious proposals can make it difficult for other proposers to complete Block verification by submitting bad blocks beyond MaxGas, thus making them miss their PrepareProposal windows, thereby improving the advantages of malicious Proposers to produce blocks in disguise.
 
-### PoC #8: Juno
+### PoC #8: j***
 
 1. Add Below Test to you project
 Add below test to cwhook `x/auth/keeper/msg_server_test.go`
@@ -123,7 +123,7 @@ Add below test to cwhook `x/auth/keeper/msg_server_test.go`
 func (s *KeeperTestSuite) TestContractExecution() {
 	s.SetupTest()
 	_, _, sender := testdata.KeyTestPubAddr()
-	coin := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("ujuno", sdkmath.NewInt(1000000000000000000)))
+	coin := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("uj***", sdkmath.NewInt(1000000000000000000)))
 	s.FundAcc(sender, coin)
 	wasmCode, err := os.ReadFile("...wasm")//use the wasm path you compiled in below poc contract!
 	contractAddress := s.InstantiateContract(sender.String(), "", wasmCode)
@@ -135,7 +135,7 @@ func (s *KeeperTestSuite) TestContractExecution() {
 		ContractAddress: contractAddress,
 		RegisterAddress: sender.String(),
 	})
-	coin2 := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("ujuno", sdkmath.NewInt(1000000000000000000)))
+	coin2 := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("uj***", sdkmath.NewInt(1000000000000000000)))
 	addr2, err := sdk.AccAddressFromBech32(contractAddress)
 	s.FundAcc(addr2, coin2)
 	s.Require().NoError(err)
@@ -201,7 +201,7 @@ pub fn sudo(deps: DepsMut, _env: Env, msg: SudoMsg) -> Result<Response, Contract
     match msg {
         SudoMsg::AfterDelegationModified(del) => {
             let delegate_amount = Coin {
-                denom: "ujuno".to_string(),
+                denom: "uj***".to_string(),
                 amount: Uint128::new(1),
             };
             let cosmos_msg1 = CosmosMsg::Staking(StakingMsg::Delegate {
