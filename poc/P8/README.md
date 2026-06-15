@@ -21,6 +21,6 @@
 
 ## PoC
 
-### PoC #63–#65: Wasm+EVM (Injective, Uptick, PellNetwork)
+### PoC #63–#65: Wasm+EVM (Injective, Uptick)
 
 see [Injective-case](../../high-light-findings/Injective/)
