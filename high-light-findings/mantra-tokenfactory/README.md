@@ -119,5 +119,5 @@ func (s *KeeperTestSuite) TestBeforeSendHook() {
 
 Finally, by executing the corresponding test, we can observe that the transaction enters an infinite execution loop and stops after 30s. By setting breakpoints and debugging, we can further confirm the existence of this issue. This means that by triggering the `SendCoins` hook function, an attacker can force the node into a state of infinite hook execution. The number of messages that need to be executed reaches `2^500 - 1`, making it practically impossible for execution to ever complete.
 
-This issue has a more severe impact on Mantra. The reason we did not use chains such as Neutron as examples is that, prior to our disclosure, Mantra was a permissionless chain, whereas Neutron requires explicit authorization to set hooks.
+This issue has a more severe impact on Mantra. The reason we did not use chains such as n*** as examples is that, prior to our disclosure, Mantra was a permissionless chain, whereas n*** requires explicit authorization to set hooks.
 
