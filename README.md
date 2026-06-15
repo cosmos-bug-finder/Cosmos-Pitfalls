@@ -31,26 +31,26 @@ The following shows what we consider to be high-impact findings in this study.
 |---|---------|---------|----------|-----------------|--------------------|-----------|-----|--------|
 | 1 | **P1** | [Mantra](https://github.com/MANTRA-Chain/mantrachain) | UnitTest | [cosmos-sdk#25303](https://github.com/cosmos/cosmos-sdk/pull/25303) | - | tokenfactory | ✅ [Fixed](https://github.com/MANTRA-Chain/mantrachain/pull/438/changes) | [Issue Credit](https://github.com/cosmos/cosmos-sdk/pull/25303) |
 | 2 |  | [Osmosis](https://github.com/osmosis-labs/osmosis) | UnitTest | [osmosis#9511](https://github.com/osmosis-labs/osmosis/pull/9511) | [Privileged Account](https://docs.osmosis.zone/cosmwasm/local/submit-wasm-proposal) | tokenfactory  | ✅ [Fixed](https://github.com/osmosis-labs/osmosis/pull/9511) | [Issue Credit](https://github.com/osmosis-labs/osmosis/pull/9511) |
-| 3 |  | [Neutron](https://github.com/neutron-org/neutron) | UnitTest | [neutron#978](https://github.com/neutron-org/neutron/pull/978) | [Privileged Account](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/msg_server.go#L210-L217) | tokenfactory | [Acknowledged](https://github.com/neutron-org/neutron/pull/978) | - |
+| 3 |  | [n***](https://github.com/n***-org/n***) | UnitTest | [n***#978](https://github.com/n***-org/n***/pull/978) | [Privileged Account](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/msg_server.go#L210-L217) | tokenfactory | [Acknowledged](https://github.com/n***-org/n***/pull/978) | - |
 | 4 |  | [Tower](https://github.com/quasar-finance/quasar) | UnitTest | [before_send.go#L161](https://github.com/quasar-finance/quasar/blob/main/x/tokenfactory/keeper/before_send.go#L161) | [Privileged Account](https://github.com/quasar-finance/quasar/blob/main/demos/upgrade-handler/v3.0.0/post_upgrade.sh) | tokenfactory | - | - |
 | 5 |  | [Phoenix](https://github.com/phoenix-directive/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) | - | tokenfactory | - | - |
 | 6 |  | [JMES](https://github.com/jmesworld/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) | - | tokenfactory | - | - |
 | 7 |  | [Symphony](https://github.com/Orchestra-Labs/symphony) | UnitTest | [before_send.go#L165](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/before_send.go#L165) | [Privileged Account](https://github.com/Orchestra-Labs/symphony/blob/main/x/cosmwasmpool/README.md#governance-and-code-id-management) | tokenfactory | - | - |
-| 8 |  | [Juno](https://github.com/CosmosContracts/juno) | UnitTest | [contracts.go#L70-L87](https://github.com/CosmosContracts/juno/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) | - |  | [Acknowledged](https://github.com/CosmosContracts/juno/commit/7dbbf115e2c0c33b4117fb26c1e11e6e1a324b67) | - |
+| 8 |  | [j***](https://github.com/CosmosContracts/j***) | UnitTest | [contracts.go#L70-L87](https://github.com/CosmosContracts/j***/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) | - |  | [Acknowledged](https://github.com/CosmosContracts/j***/commit/7dbbf115e2c0c33b4117fb26c1e11e6e1a324b67) | - |
 | 9 | **P2** | [Mantra](https://github.com/MANTRA-Chain/mantrachain) | UnitTest | [cosmos-sdk#25303](https://github.com/cosmos/cosmos-sdk/pull/25303) | - | tokenfactory | ✅ [Fixed](https://github.com/MANTRA-Chain/mantrachain/pull/438/changes) | [CVE-2025-61595](https://github.com/MANTRA-Chain/mantrachain/security/advisories/GHSA-qwvm-wqq8-8j69) |
-| 10 |  | [Neutron](https://github.com/neutron-org/neutron) | UnitTest | [neutron#978](https://github.com/neutron-org/neutron/pull/978) | [Privileged Account](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/msg_server.go#L210-L217) | tokenfactory | [Acknowledged](https://github.com/neutron-org/neutron/pull/978) | [Private Credit](./record/acknowledgments/neutron.md) |
+| 10 |  | [n***](https://github.com/n***-org/n***) | UnitTest | [n***#978](https://github.com/n***-org/n***/pull/978) | [Privileged Account](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/msg_server.go#L210-L217) | tokenfactory | [Acknowledged](https://github.com/n***-org/n***/pull/978) | [Private Credit](./record/acknowledgments/n***.md) |
 | 11 |  | [Tower](https://github.com/quasar-finance/quasar) | UnitTest | [before_send.go#L161](https://github.com/quasar-finance/quasar/blob/main/x/tokenfactory/keeper/before_send.go#L161) | [Privileged Account](https://github.com/quasar-finance/quasar/blob/main/demos/upgrade-handler/v3.0.0/post_upgrade.sh) | tokenfactory | - | - |
 | 12 |  | [Phoenix](https://github.com/phoenix-directive/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) | - | tokenfactory | - | - |
 | 13 |  | [JMES](https://github.com/jmesworld/core) | UnitTest | [before_send.go#L144](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L144) | - | tokenfactory | - | - |
 | 14 |  | [Symphony](https://github.com/Orchestra-Labs/symphony) | UnitTest | [before_send.go#L165](https://github.com/Orchestra-Labs/symphony/blob/main/x/tokenfactory/keeper/before_send.go#L165) | [Privileged Account](https://github.com/Orchestra-Labs/symphony/blob/main/x/cosmwasmpool/README.md#governance-and-code-id-management) | tokenfactory | - | - |
-| 15 |  | [Juno](https://github.com/CosmosContracts/juno) | Mock | [contracts.go#L70-L87](https://github.com/CosmosContracts/juno/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) | - |  | [Acknowledged](https://github.com/CosmosContracts/juno/commit/7dbbf115e2c0c33b4117fb26c1e11e6e1a324b67) | [Private Credit](./record/acknowledgments/juno.md) |
+| 15 |  | [j***](https://github.com/CosmosContracts/j***) | Mock | [contracts.go#L70-L87](https://github.com/CosmosContracts/j***/blob/main/x/cw-hooks/keeper/contracts.go#L70-L87) | - |  | [Acknowledged](https://github.com/CosmosContracts/j***/commit/7dbbf115e2c0c33b4117fb26c1e11e6e1a324b67) | [Private Credit](./record/acknowledgments/j***.md) |
 | 16 | **P3** | [Sei](https://github.com/sei-protocol/sei-chain) | Mock | [sei-chain#2355](https://github.com/sei-protocol/sei-chain/issues/2355) | - |  | - | - |
 | 17 |  | [Mitosis](https://github.com/mitosis-org/chain/) | Mock | [chain#87](https://github.com/mitosis-org/chain/issues/87) | - |  | - | - |
 | 18 |  | [tgrade](https://github.com/confio/tgrade/) | Mock | [abci.go#L36-L50](https://github.com/confio/tgrade/blob/main/x/poe/abci.go#L36-L50) | - |  | - | - |
 | 19 |  | [Symphony](https://github.com/Orchestra-Labs/symphony) | Mock | [pool_hooks.go#L121-L130](https://github.com/Orchestra-Labs/symphony/blob/main/x/concentrated-liquidity/pool_hooks.go#L121-L130) | - |  | - | - |
 | 20 |  | [Osmosis](https://github.com/osmosis-labs/osmosis) | Mock | [osmosis#9499](https://github.com/osmosis-labs/osmosis/issues/9499) | - | tokenfactory  | - | - |
 | 21 |  | [Mantra](https://github.com/MANTRA-Chain/mantrachain) | Mock | [mantrachain#430](https://github.com/MANTRA-Chain/mantrachain/pull/430) | - | tokenfactory | ✅ [Fixed](https://github.com/MANTRA-Chain/mantrachain/pull/430) | [Issue Credit](https://github.com/MANTRA-Chain/mantrachain/issues/427) |
-| 22 |  | [Neutron](https://github.com/neutron-org/neutron) | Mock | [before_send.go#L165](https://github.com/neutron-org/neutron/blob/daf306ddee9402879acad215dd2e5f2d99f49c8f/x/tokenfactory/keeper/before_send.go#L165) | - | tokenfactory | [Acknowledged](https://github.com/neutron-org/neutron/commit/3e26ebbb8f3aed251af2828aca9d29666feb8622) | - |
+| 22 |  | [n***](https://github.com/n***-org/n***) | Mock | [before_send.go#L165](https://github.com/n***-org/n***/blob/daf306ddee9402879acad215dd2e5f2d99f49c8f/x/tokenfactory/keeper/before_send.go#L165) | - | tokenfactory | [Acknowledged](https://github.com/n***-org/n***/commit/3e26ebbb8f3aed251af2828aca9d29666feb8622) | - |
 | 23 |  | [Tower](https://github.com/quasar-finance/quasar) | Mock | [before_send.go#L159-L162](https://github.com/quasar-finance/quasar/blob/main/x/tokenfactory/keeper/before_send.go#L159-L162) | - | tokenfactory | - | - |
 | 24 |  | [Phoenix](https://github.com/phoenix-directive/core) | Mock | [before_send.go#L138-L146](https://github.com/phoenix-directive/core/blob/release/v2.18/x/tokenfactory/keeper/before_send.go#L138-L146) | - | tokenfactory | - | - |
 | 25 |  | [JMES](https://github.com/jmesworld/core) | Mock | [before_send.go#L135-L139](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L135-L139) | - | tokenfactory | - | - |
@@ -135,12 +135,12 @@ Propagation analysis is determined through **manual code auditing** of inheritan
 <details>
 <summary><b>P1 Pairwise Similarity Matrix</b></summary>
 
-| | jmes | juno | mantra | neutron | osmosis | phoneix | symphony | tower |
+| | jmes | j*** | mantra | n*** | osmosis | phoneix | symphony | tower |
 |---|---|---|---|---|---|---|---|---|
 | **jmes** | 1.0 | 0.2222 | 0.7609 | 0.7331 | 0.7135 | 0.869 | 0.7198 | 0.7262 |
-| **juno** | 0.2222 | 1.0 | 0.2456 | 0.2206 | 0.2344 | 0.2322 | 0.237 | 0.2322 |
+| **j***** | 0.2222 | 1.0 | 0.2456 | 0.2206 | 0.2344 | 0.2322 | 0.237 | 0.2322 |
 | **mantra** | 0.7609 | 0.2456 | 1.0 | 0.7791 | 0.7156 | 0.7103 | 0.7222 | 0.7227 |
-| **neutron** | 0.7331 | 0.2206 | 0.7791 | 1.0 | 0.6146 | 0.6904 | 0.6196 | 0.5863 |
+| **n***** | 0.7331 | 0.2206 | 0.7791 | 1.0 | 0.6146 | 0.6904 | 0.6196 | 0.5863 |
 | **osmosis** | 0.7135 | 0.2344 | 0.7156 | 0.6146 | 1.0 | 0.6721 | 0.981 | 0.8852 |
 | **phoneix** | 0.869 | 0.2322 | 0.7103 | 0.6904 | 0.6721 | 1.0 | 0.6777 | 0.6778 |
 | **symphony** | 0.7198 | 0.237 | 0.7222 | 0.6196 | 0.981 | 0.6777 | 1.0 | 0.8981 |
@@ -151,12 +151,12 @@ Propagation analysis is determined through **manual code auditing** of inheritan
 <details>
 <summary><b>P2 Pairwise Similarity Matrix</b></summary>
 
-| | jmes | juno | mantra | neutron | phoneix | symphony | tower |
+| | jmes | j*** | mantra | n*** | phoneix | symphony | tower |
 |---|---|---|---|---|---|---|---|
 | **jmes** | 1.0 | 0.2222 | 0.7609 | 0.7331 | 0.869 | 0.7198 | 0.7262 |
-| **juno** | 0.2222 | 1.0 | 0.2456 | 0.2206 | 0.2322 | 0.237 | 0.2322 |
+| **j***** | 0.2222 | 1.0 | 0.2456 | 0.2206 | 0.2322 | 0.237 | 0.2322 |
 | **mantra** | 0.7609 | 0.2456 | 1.0 | 0.7791 | 0.7103 | 0.7222 | 0.7227 |
-| **neutron** | 0.7331 | 0.2206 | 0.7791 | 1.0 | 0.6904 | 0.6196 | 0.5863 |
+| **n***** | 0.7331 | 0.2206 | 0.7791 | 1.0 | 0.6904 | 0.6196 | 0.5863 |
 | **phoneix** | 0.869 | 0.2322 | 0.7103 | 0.6904 | 1.0 | 0.6777 | 0.6778 |
 | **symphony** | 0.7198 | 0.237 | 0.7222 | 0.6196 | 0.6777 | 1.0 | 0.8981 |
 | **tower** | 0.7262 | 0.2322 | 0.7227 | 0.5863 | 0.6778 | 0.8981 | 1.0 |
@@ -166,13 +166,13 @@ Propagation analysis is determined through **manual code auditing** of inheritan
 <details>
 <summary><b>P3 Pairwise Similarity Matrix</b></summary>
 
-| | jmes | juno | mantra | mitosis | neutron | osmosis | phoneix | sei | symphony | tgrade | tower |
+| | jmes | j*** | mantra | mitosis | n*** | osmosis | phoneix | sei | symphony | tgrade | tower |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | **jmes** | 1.0 | 0.2222 | 0.7609 | 0.2778 | 0.7331 | 0.7135 | 0.869 | 0.1756 | 0.2241 | 0.1357 | 0.7262 |
-| **juno** | 0.2222 | 1.0 | 0.2456 | 0.2842 | 0.2206 | 0.2344 | 0.2322 | 0.25 | 0.2083 | 0.25 | 0.2322 |
+| **j***** | 0.2222 | 1.0 | 0.2456 | 0.2842 | 0.2206 | 0.2344 | 0.2322 | 0.25 | 0.2083 | 0.25 | 0.2322 |
 | **mantra** | 0.7609 | 0.2456 | 1.0 | 0.2869 | 0.7791 | 0.7156 | 0.7103 | 0.1789 | 0.2164 | 0.1359 | 0.7227 |
 | **mitosis** | 0.2778 | 0.2842 | 0.2869 | 1.0 | 0.2633 | 0.2553 | 0.2536 | 0.2483 | 0.2559 | 0.1739 | 0.2536 |
-| **neutron** | 0.7331 | 0.2206 | 0.7791 | 0.2633 | 1.0 | 0.6146 | 0.6904 | 0.1538 | 0.2332 | 0.128 | 0.5863 |
+| **n***** | 0.7331 | 0.2206 | 0.7791 | 0.2633 | 1.0 | 0.6146 | 0.6904 | 0.1538 | 0.2332 | 0.128 | 0.5863 |
 | **osmosis** | 0.7135 | 0.2344 | 0.7156 | 0.2553 | 0.6146 | 1.0 | 0.6721 | 0.1447 | 0.2171 | 0.1434 | 0.8852 |
 | **phoneix** | 0.869 | 0.2322 | 0.7103 | 0.2536 | 0.6904 | 0.6721 | 1.0 | 0.1572 | 0.2415 | 0.1388 | 0.6778 |
 | **sei** | 0.1756 | 0.25 | 0.1789 | 0.2483 | 0.1538 | 0.1447 | 0.1572 | 1.0 | 0.144 | 0.2281 | 0.1485 |
