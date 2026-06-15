@@ -12,7 +12,7 @@
 | 19 | [Symphony](https://github.com/Orchestra-Labs/symphony) | Mock | [before_send.go#L121-L130](https://github.com/Orchestra-Labs/symphony/blob/main/x/concentrated-liquidity/pool_hooks.go#L121-L130) |
 | 20 | [Osmosis](https://github.com/osmosis-labs/osmosis) | Mock | [osmosis#9499](https://github.com/osmosis-labs/osmosis/issues/9499) |
 | 21 | [Mantra](https://github.com/MANTRA-Chain/mantrachain) | Mock | [mantrachain#430](https://github.com/MANTRA-Chain/mantrachain/pull/430) |
-| 22 | [Neutron](https://github.com/neutron-org/neutron) | Mock | [before_send.go#L165](https://github.com/neutron-org/neutron/blob/daf306ddee9402879acad215dd2e5f2d99f49c8f/x/tokenfactory/keeper/before_send.go#L165) |
+| 22 | [n***](https://github.com/n***-org/n***) | Mock | [before_send.go#L165](https://github.com/n***-org/n***/blob/daf306ddee9402879acad215dd2e5f2d99f49c8f/x/tokenfactory/keeper/before_send.go#L165) |
 | 23 | [Tower](https://github.com/quasar-finance/quasar) | Mock | [before_send.go#L159-L162](https://github.com/quasar-finance/quasar/blob/main/x/tokenfactory/keeper/before_send.go#L159-L162) |
 | 24 | [Phoenix](https://github.com/phoenix-directive/core) | Mock | [before_send.go#L138-L146](https://github.com/phoenix-directive/core/blob/release/v2.18/x/tokenfactory/keeper/before_send.go#L138-L146) |
 | 25 | [JMES](https://github.com/jmesworld/core) | Mock | [before_send.go#L135-L139](https://github.com/jmesworld/core/blob/main/x/tokenfactory/keeper/before_send.go#L135-L139) |
@@ -37,7 +37,7 @@ or
 
 ## PoC
 
-### PoC #19–#25: `WithEventManager` — TokenFactory (Osmosis, Mantra, Neutron, Tower, Phoenix, JMES, Symphony)
+### PoC #19–#25: `WithEventManager` — TokenFactory (Osmosis, Mantra, n***, Tower, Phoenix, JMES, Symphony)
 x/tokenfactory/keeper/event_in_before_test.go
 ```go
 package keeper_test
